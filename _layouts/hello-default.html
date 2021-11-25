@@ -6,15 +6,20 @@
   <!--HEAD-->
   <head>
     <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+for (let item of anchorlinks) { // relitere 
+    item.addEventListener('click', (e)=> {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+    })
+}
     </script>
     <style>html{visibility: hidden;opacity:0;}</style>
     <title>{{ site.title }}</title>
