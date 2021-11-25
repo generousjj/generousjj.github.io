@@ -15,17 +15,18 @@ plugins:
   
 #---------------------------------------------------
 
-exclude:
-  - vendor
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - gems
-  - _posts/0000-00-00-welcome-to-jekyll.markdown.erb
-  - ruby
-  - vendors
-  - vercel/path0/vendor
-  - vercel
-  - path0/vendor
+exclude: [vendor, .sass-cache/, .jekyll-cache/, gemfiles/, Gemfile, Gemfile.lock]
+ 
+ # - vendor
+ # - .sass-cache/
+ # - .jekyll-cache/
+ # - gemfiles/
+ # - Gemfile
+ # - Gemfile.lock
+ # - gems
+ # - _posts/0000-00-00-welcome-to-jekyll.markdown.erb
+ # - ruby
+ # - vendors
+ # - vercel/path0/vendor
+ # - vercel
+ # - path0/vendor
