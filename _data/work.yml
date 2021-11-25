@@ -2,7 +2,7 @@
 # in the root directory
 
 work:
-  - category: Club Penguin
+  - category: Automation
     items:
       - item: mascotbot.html
         image: https://cdn.discordapp.com/attachments/911039624149876787/913272138176270376/EUUo_2F8_400x400_1.jpeg
