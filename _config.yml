@@ -16,6 +16,7 @@ plugins:
 #---------------------------------------------------
 
 exclude:
+  - vendor
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
@@ -24,7 +25,6 @@ exclude:
   - gems
   - _posts/0000-00-00-welcome-to-jekyll.markdown.erb
   - ruby
-  - vendor
   - vendors
   - vercel/path0/vendor
   - path0/vendor
