@@ -44,4 +44,4 @@ cta_button_label: contact # the label on the button
 [//]: # (write a bit about yourself here)
 I enjoy graphic design and Python programming, mostly servicing large servers in the Club Penguin community.
 
-Additionally, I have done private work using Python to help clients automate and synthesize information from various APIs.
+<strong>Additionally, I have done private work using Python to help clients automate and synthesize information from various APIs.</strong>
