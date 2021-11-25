@@ -5,8 +5,7 @@ layout: hello-default
 
 # these variables are required -------------------------------
 banner_title: generousjj
-banner_subtitle: he/him • i play games and code sometimes.
-  python programmer, graphic designer
+banner_subtitle: he/him • i play games and code sometimes
 background_image: /images/Background-6.jpeg
 
 # all of the following variables are optional -----------------
