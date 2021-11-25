@@ -6,24 +6,19 @@
   <!--HEAD-->
   <head>
     <script>
-function ScrollTo(name) {
-  //init thread
-  ScrollToResolver(document.getElementById(name));
-}
-
-function ScrollToResolver(elem) {
-  var jump = parseInt(elem.getBoundingClientRect().top * .2);
-  document.body.scrollTop += jump;
-  document.documentElement.scrollTop += jump;
-  //lastjump detects anchor unreachable, also manual scrolling to cancel animation if scroll > jump
-  if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
-    elem.lastjump = Math.abs(jump);
-    setTimeout(function() {
-      ScrollToResolver(elem);
-    }, "100");
-  } else {
-    elem.lastjump = null;
-  }
+let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+for (let item of anchorlinks) { // relitere 
+    item.addEventListener('click', (e)=> {
+        let hashval = item.getAttribute('href')
+        let target = document.querySelector(hashval)
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+        history.pushState(null, null, hashval)
+        e.preventDefault()
+    })
 }
     </script>
     <style>html{visibility: hidden;opacity:0;}</style>
@@ -78,7 +73,7 @@ function ScrollToResolver(elem) {
     <!-- HEADER -->		
     <header id="header">
       <h1 id="logo" style="text-transform:lowercase">
-        <a href="/#">generousjj</a></h1>
+        <a href="/">generousjj</a></h1>
       <nav id="nav">
         <ul>
           <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#about">about</a></li>
