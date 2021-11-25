@@ -4,7 +4,7 @@ layout: hello-default
 # using Markdown language, you can customize the following variables!
 
 # these variables are required -------------------------------
-banner_title: <img src="https://cdn.discordapp.com/attachments/844742124213501963/913298816248217650/parsguinlogo.png"></img><br>generousjj
+banner_title: <img src="https://cdn.discordapp.com/attachments/844742124213501963/913298816248217650/parsguinlogo.png" width="30%" height="30%"></img><br>generousjj
 banner_subtitle: he/him • i play games and code sometimes
 background_image: /images/Background-6.jpeg
 
