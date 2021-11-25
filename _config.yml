@@ -17,6 +17,7 @@ plugins:
 
 exclude:
   - vendor/
+  - vendor/bundle/
   - tmp/
   - ruby/2.7.0/
   - vendor
