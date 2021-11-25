@@ -7,7 +7,7 @@ layout: hello-default
 banner_title: generousjj
 banner_subtitle: he/him • i play games and code sometimes.
   python programmer, graphic designer
-background_image: /images/background.jpeg
+background_image: /images/2aca46156b3c015fa12130a81cbd603a.jpeg
 
 # all of the following variables are optional -----------------
 # page_url: /hello # only include this variable if you aren't building the page to your primary domain 
