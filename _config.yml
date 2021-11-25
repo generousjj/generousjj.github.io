@@ -27,4 +27,5 @@ exclude:
   - ruby
   - vendors
   - vercel/path0/vendor
+  - vercel
   - path0/vendor
