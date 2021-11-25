@@ -21,6 +21,7 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - ruby
   - vendor
   - vendors
   - vercel/path0/vendor
