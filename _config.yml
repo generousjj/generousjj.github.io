@@ -1,10 +1,11 @@
 # _config.yml
 
 # required, replace with your own information -----
-title: Hello for Github Pages
-author: Sara Gong
+title: generousjj
+author: generousjj
 description: > 
-  A minimalist template for designing a personal GitHub Pages website - without typing a single line of code.
+  he/him • i play games and code sometimes.
+  python programmer, graphic designer
 baseurl: ""
 
 plugins:
