@@ -5,6 +5,17 @@
 
   <!--HEAD-->
   <head>
+    <script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
     <style>html{visibility: hidden;opacity:0;}</style>
     <title>{{ site.title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
