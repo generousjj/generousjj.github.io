@@ -19,7 +19,7 @@ twitter_username: generousjjcp # # your twitter handle
 # github_username:  generousjj # your github username
 # linkedin: saragong # the part after ("https://www.linkedin.com/in/...")
 # facebook_username: <-- your facebook username (the part after "https://www.facebook.com/...")
-# google_analytics: <-- your google analytics Tracking ID
+google_analytics: G-SXEW87ELDY # # <-- your google analytics Tracking ID
 
 # By declaring these variables, you can include a button that links to an external website or to media.
 # about_button:  # the link
