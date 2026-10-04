@@ -16,7 +16,7 @@ h1{font-size:27px;letter-spacing:-.6px;margin:3px 0 2px}.sub{font-size:13px;colo
 .seg{position:sticky;top:max(8px,env(safe-area-inset-top));z-index:10;display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#081728ee;border:1px solid var(--line);padding:5px;border-radius:14px;backdrop-filter:blur(14px)}
 .seg button{border:0;background:transparent;color:var(--muted);font:700 14px inherit;border-radius:10px;padding:11px 6px}.seg button.active{background:var(--panel2);color:var(--text)}
 .topline{display:flex;align-items:center;gap:8px;margin:12px 1px 10px}.label{font-size:13px;color:var(--muted)}.updated{margin-left:auto;font-size:12px;color:var(--muted)}
-.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 11px}.control{display:grid;gap:4px}.control label{font-size:11px;color:var(--muted);padding-left:2px}.control select{width:100%;min-height:42px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:11px;padding:0 10px;font-size:14px;font-weight:650}.count{font-size:12px;color:var(--muted);margin:0 1px 10px}@media(max-width:430px){.controls{grid-template-columns:1fr 1fr}}
+.filterhead{display:flex;align-items:center;gap:8px;margin:1px 1px 7px}.filtertitle{font-size:12px;font-weight:750;color:#d5e4f3}.filterhint{font-size:11px;color:var(--muted)}.reset{margin-left:auto;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:9px;padding:6px 9px;font-size:11px;font-weight:700}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 11px}.control{display:grid;gap:4px}.control label{font-size:11px;color:var(--muted);padding-left:2px}.control select{width:100%;min-height:42px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:11px;padding:0 10px;font-size:14px;font-weight:650}.count{font-size:12px;color:var(--muted);margin:0 1px 10px}@media(max-width:430px){.controls{grid-template-columns:1fr 1fr}}
 .cards{display:grid;gap:9px}.card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),var(--panel));border-radius:16px;padding:13px 14px;display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center}
 .rank{font-size:18px;font-weight:800;color:#89a8c9;text-align:center}.rank.top{color:#fff}.name{font-size:16px;font-weight:760;line-height:1.2}.meta{font-size:12px;color:var(--muted);margin-top:5px;display:flex;gap:6px;flex-wrap:wrap}
 .badge{border:1px solid #31577a;background:#102a43;color:#bdddff;border-radius:999px;padding:2px 6px;font-size:10px;font-weight:750}.wait{text-align:right;min-width:70px}.mins{font-size:28px;font-weight:850;letter-spacing:-1px;line-height:1}.unit{font-size:11px;color:var(--muted);margin-top:3px}
@@ -42,43 +42,20 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 <span class="updated" id="updated">Loading…</span>
 </div>
 
+<div class="filterhead">
+  <span class="filtertitle">Sort & filters</span>
+  <span class="filterhint">Combine any</span>
+  <button class="reset" id="resetFilters">Reset</button>
+</div>
 <div class="controls">
-  <div class="control">
-    <label for="sort">Sort</label>
-    <select id="sort">
-      <option value="best">Best Bet</option>
-      <option value="short">Shortest wait</option>
-      <option value="long">Longest wait</option>
-      <option value="popular">Most popular</option>
-      <option value="name">Name A-Z</option>
-    </select>
-  </div>
-  <div class="control">
-    <label for="statusFilter">Status</label>
-    <select id="statusFilter">
-      <option value="all">All attractions</option>
-      <option value="open">Open only</option>
-      <option value="closed">Closed only</option>
-    </select>
-  </div>
-  <div class="control">
-    <label for="waitFilter">Wait</label>
-    <select id="waitFilter">
-      <option value="all">Any wait</option>
-      <option value="15">15 min or less</option>
-      <option value="30">30 min or less</option>
-      <option value="45">45 min or less</option>
-      <option value="60">60 min or less</option>
-    </select>
-  </div>
-  <div class="control">
-    <label for="queueFilter">Queue data</label>
-    <select id="queueFilter">
-      <option value="all">All</option>
-      <option value="posted">Posted wait only</option>
-      <option value="none">No posted wait</option>
-    </select>
-  </div>
+  <div class="control"><label for="sort">Sort</label><select id="sort"><option value="best">Best Bet</option><option value="short">Shortest wait</option><option value="long">Longest wait</option><option value="popular">Most popular</option><option value="name">Name A-Z</option></select></div>
+  <div class="control"><label for="statusFilter">Status</label><select id="statusFilter"><option value="all">Any status</option><option value="open">Open only</option><option value="closed">Closed only</option></select></div>
+  <div class="control"><label for="waitFilter">Wait</label><select id="waitFilter"><option value="all">Any wait</option><option value="15">15 min or less</option><option value="30">30 min or less</option><option value="45">45 min or less</option><option value="60">60 min or less</option></select></div>
+  <div class="control"><label for="queueFilter">Posted wait</label><select id="queueFilter"><option value="all">Any</option><option value="posted">Has posted wait</option><option value="none">No posted wait</option></select></div>
+  <div class="control"><label for="singleFilter">Single rider</label><select id="singleFilter"><option value="all">Any</option><option value="available">Available now</option><option value="supports">Supports single rider</option><option value="none">No single rider</option></select></div>
+  <div class="control"><label for="settingFilter">Indoor / outdoor</label><select id="settingFilter"><option value="all">Any setting</option><option value="indoor">Indoor</option><option value="outdoor">Outdoor</option><option value="mixed">Mixed indoor/outdoor</option></select></div>
+  <div class="control"><label for="thrillFilter">Thrill level</label><select id="thrillFilter"><option value="all">Any thrill</option><option value="low">Low</option><option value="moderate">Moderate</option><option value="high">High</option></select></div>
+  <div class="control"><label for="popFilter">Popularity</label><select id="popFilter"><option value="all">Any popularity</option><option value="very">Very popular</option><option value="popular">Popular</option><option value="moderate">Moderate</option><option value="lower">Lower demand</option></select></div>
 </div>
 <div class="count" id="count"></div>
 
