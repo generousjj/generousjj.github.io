@@ -64,7 +64,7 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 
 <div class="note">
 <strong style="color:var(--text)">How it ranks:</strong> about 60% ride popularity + 40% short wait.
-Best Bet favors popular attractions with shorter waits. Use the controls above to switch to pure wait-time, popularity, alphabetical, status, or wait-threshold views.
+Best Bet favors popular attractions with shorter waits. Every filter is optional and independent, so you can combine status, wait, single rider, indoor/outdoor, thrill level, and popularity however you want.
 </div>
 
 <footer>
@@ -89,6 +89,14 @@ const POP={
 "the little mermaid ~ ariel's undersea adventure":3.5,"inside out emotional whirlwind":3,"luigi's rollickin' roadsters":3.4,
 "mater's junkyard jamboree":3.3,"silly symphony swings":3,"golden zephyr":2.7
 };
+const META={"walt disney - a magical life":{"setting":"indoor","thrill":"low"},"pirate's lair on tom sawyer island":{"setting":"outdoor","thrill":"low"},"big thunder mountain railroad":{"setting":"outdoor","thrill":"high"},"walt disney's enchanted tiki room":{"setting":"indoor","thrill":"low"},"great moments with mr. lincoln":{"setting":"indoor","thrill":"low"},"jungle cruise":{"setting":"outdoor","thrill":"low"},"astro orbitor":{"setting":"outdoor","thrill":"moderate"},"buzz lightyear astro blasters":{"setting":"indoor","thrill":"low"},"casey jr. circus train":{"setting":"outdoor","thrill":"low"},"disneyland monorail":{"setting":"mixed","thrill":"low"},"disneyland railroad":{"setting":"mixed","thrill":"low"},"dumbo the flying elephant":{"setting":"outdoor","thrill":"low"},"finding nemo submarine voyage":{"setting":"mixed","thrill":"low"},"haunted mansion":{"setting":"indoor","thrill":"moderate"},"haunted mansion holiday":{"setting":"indoor","thrill":"moderate"},"indiana jones adventure":{"setting":"indoor","thrill":"high","single":true},"it's a small world":{"setting":"indoor","thrill":"low"},"it's a small world holiday":{"setting":"indoor","thrill":"low"},"king arthur carrousel":{"setting":"outdoor","thrill":"low"},"mad tea party":{"setting":"outdoor","thrill":"moderate"},"matterhorn bobsleds":{"setting":"outdoor","thrill":"high","single":true},"mickey & minnie's runaway railway":{"setting":"indoor","thrill":"moderate"},"mickey and minnie's runaway railway":{"setting":"indoor","thrill":"moderate"},"millennium falcon: smugglers run":{"setting":"indoor","thrill":"moderate","single":true},"mr. toad's wild ride":{"setting":"indoor","thrill":"moderate"},"peter pan's flight":{"setting":"indoor","thrill":"low"},"pinocchio's daring journey":{"setting":"indoor","thrill":"low"},"pirates of the caribbean":{"setting":"indoor","thrill":"low"},"roger rabbit's car toon spin":{"setting":"indoor","thrill":"moderate"},"sailing ship columbia":{"setting":"outdoor","thrill":"low"},"snow white's enchanted wish":{"setting":"indoor","thrill":"low"},"space mountain":{"setting":"indoor","thrill":"high","single":true},"hyperspace mountain":{"setting":"indoor","thrill":"high","single":true},"star tours - the adventures continue":{"setting":"indoor","thrill":"high"},"star tours – the adventures continue":{"setting":"indoor","thrill":"high"},"star wars: rise of the resistance":{"setting":"mixed","thrill":"high"},"storybook land canal boats":{"setting":"outdoor","thrill":"low"},"tiana's bayou adventure":{"setting":"mixed","thrill":"high","single":true},"the many adventures of winnie the pooh":{"setting":"indoor","thrill":"low"},"mark twain riverboat":{"setting":"outdoor","thrill":"low"},"davy crockett's explorer canoes":{"setting":"outdoor","thrill":"moderate"},"main street vehicles":{"setting":"outdoor","thrill":"low"},"alice in wonderland":{"setting":"indoor","thrill":"low"},"autopia":{"setting":"outdoor","thrill":"low"},"radiator springs racers":{"setting":"mixed","thrill":"high","single":true},"guardians of the galaxy – mission: breakout!":{"setting":"indoor","thrill":"high"},"guardians of the galaxy - mission: breakout!":{"setting":"indoor","thrill":"high"},"guardians of the galaxy - monsters after dark":{"setting":"indoor","thrill":"high"},"web slingers: a spider-man adventure":{"setting":"indoor","thrill":"moderate","single":true},"incredicoaster":{"setting":"outdoor","thrill":"high","single":true},"soarin' around the world":{"setting":"indoor","thrill":"moderate","single":true},"soarin’ across america":{"setting":"indoor","thrill":"moderate","single":true},"soarin' across america":{"setting":"indoor","thrill":"moderate","single":true},"soarin' over california":{"setting":"indoor","thrill":"moderate","single":true},"toy story midway mania!":{"setting":"indoor","thrill":"low"},"grizzly river run":{"setting":"outdoor","thrill":"high","single":true},"monsters, inc. mike & sulley to the rescue!":{"setting":"indoor","thrill":"low"},"goofy's sky school":{"setting":"outdoor","thrill":"high","single":true},"the little mermaid ~ ariel's undersea adventure":{"setting":"indoor","thrill":"low"},"inside out emotional whirlwind":{"setting":"outdoor","thrill":"low"},"luigi's rollickin' roadsters":{"setting":"outdoor","thrill":"moderate"},"mater's junkyard jamboree":{"setting":"outdoor","thrill":"moderate"},"mater's graveyard jambooree":{"setting":"outdoor","thrill":"moderate"},"mater's jingle jamboree":{"setting":"outdoor","thrill":"moderate"},"silly symphony swings":{"setting":"outdoor","thrill":"moderate"},"golden zephyr":{"setting":"outdoor","thrill":"low"},"jumpin' jellyfish":{"setting":"outdoor","thrill":"moderate"},"redwood creek challenge trail":{"setting":"outdoor","thrill":"moderate"},"animation academy":{"setting":"indoor","thrill":"low"},"turtle talk with crush":{"setting":"indoor","thrill":"low"},"mickey's philharmagic":{"setting":"indoor","thrill":"low"},"pixar pal-a-round – non-swinging":{"setting":"outdoor","thrill":"low"},"pixar pal-a-round - non-swinging":{"setting":"outdoor","thrill":"low"},"pixar pal-a-round - swinging":{"setting":"outdoor","thrill":"moderate"},"jessie's critter carousel":{"setting":"outdoor","thrill":"low"}};
+function normName(x){return String(x?.name||"").toLowerCase().trim()}
+function meta(x){return META[normName(x)]||{setting:"unknown",thrill:"unknown"}}
+function liveSingleRider(x){const sr=x?.queue?.SINGLE_RIDER;return !!sr && (sr.waitTime!=null || sr.state==="AVAILABLE" || Object.keys(sr).length>0)}
+function supportsSingleRider(x){return liveSingleRider(x) || !!meta(x).single}
+function popBucket(x){const p=pop(x);if(p>=4.5)return "very";if(p>=3.8)return "popular";if(p>=3.0)return "moderate";return "lower"}
+function settingLabel(v){return v==="mixed"?"Indoor/outdoor":v==="indoor"?"Indoor":v==="outdoor"?"Outdoor":""}
+function thrillLabel(v){return v==="low"?"Low thrill":v==="moderate"?"Moderate thrill":v==="high"?"High thrill":""}
 let park="dl",payload=null,lastLoad=null;
 const q=s=>document.querySelector(s);
 
@@ -126,6 +134,10 @@ function render(){
  const statusFilter=q("#statusFilter").value;
  const waitFilter=q("#waitFilter").value;
  const queueFilter=q("#queueFilter").value;
+ const singleFilter=q("#singleFilter").value;
+ const settingFilter=q("#settingFilter").value;
+ const thrillFilter=q("#thrillFilter").value;
+ const popFilter=q("#popFilter").value;
 
  let rows=raw.filter(x=>x.entityType==="ATTRACTION");
 
@@ -139,6 +151,12 @@ function render(){
 
  if(queueFilter==="posted") rows=rows.filter(x=>wait(x)!=null);
  if(queueFilter==="none") rows=rows.filter(x=>wait(x)==null);
+ if(singleFilter==="available") rows=rows.filter(x=>liveSingleRider(x));
+ if(singleFilter==="supports") rows=rows.filter(x=>supportsSingleRider(x));
+ if(singleFilter==="none") rows=rows.filter(x=>!supportsSingleRider(x));
+ if(settingFilter!=="all") rows=rows.filter(x=>meta(x).setting===settingFilter);
+ if(thrillFilter!=="all") rows=rows.filter(x=>meta(x).thrill===thrillFilter);
+ if(popFilter!=="all") rows=rows.filter(x=>popBucket(x)===popFilter);
 
  rows.sort((a,b)=>{
    const wa=wait(a), wb=wait(b);
@@ -152,7 +170,9 @@ function render(){
  const shown=rows;
  q("#count").textContent=shown.length+" attraction"+(shown.length===1?"":"s")+" shown";
  q("#cards").innerHTML=shown.map((x,i)=>{
-   const w=wait(x),s=score(x),p=pop(x);
+   const w=wait(x),s=score(x),p=pop(x),m=meta(x);
+   const srLive=liveSingleRider(x),srSupport=supportsSingleRider(x);
+   const extraMeta=[srLive?"Single rider now":srSupport?"Single rider":"",settingLabel(m.setting),thrillLabel(m.thrill)].filter(Boolean).map(v=>"<span>"+esc(v)+"</span>").join("");
    let tag=s>=4.05?"Excellent bet":s>=3.5?"Good bet":"";
    return `<div class="card">
      <div class="rank ${i<3?"top":""}">${i+1}</div>
@@ -160,6 +180,7 @@ function render(){
        <div class="meta">
          ${tag?`<span class="badge">${tag}</span>`:""}
          ${p>=4.5?"<span>Very popular</span>":p>=3.8?"<span>Popular</span>":""}
+         ${extraMeta}
          <span>${esc(x.status==="OPERATING"?"Open":x.status||"Unknown")}</span>
        </div>
      </div>
@@ -207,7 +228,8 @@ document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
  b.classList.add("active");park=b.dataset.park;render();
 });
 q("#refresh").onclick=load;
-["sort","statusFilter","waitFilter","queueFilter"].forEach(id=>q("#"+id).addEventListener("change",render));
+["sort","statusFilter","waitFilter","queueFilter","singleFilter","settingFilter","thrillFilter","popFilter"].forEach(id=>q("#"+id).addEventListener("change",render));
+q("#resetFilters").onclick=()=>{q("#sort").value="best";["statusFilter","waitFilter","queueFilter","singleFilter","settingFilter","thrillFilter","popFilter"].forEach(id=>q("#"+id).value="all");render();};
 setInterval(()=>{if(payload)render()},30000);
 setInterval(load,300000);
 load();
