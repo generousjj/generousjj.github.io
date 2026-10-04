@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="DLR Best Bet">
+<title>DLR Best Bet</title>
+<style>
+:root{--bg:#07111f;--panel:#0d1a2a;--panel2:#122238;--text:#f7f9fc;--muted:#9fb0c6;--line:#20344c;--good:#83e4a9;--warn:#ffd271;--bad:#ff8d8d;--accent:#76baff}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",sans-serif}
+body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}.wrap{max-width:760px;margin:auto;padding:16px 12px 34px}
+h1{font-size:27px;letter-spacing:-.6px;margin:3px 0 2px}.sub{font-size:13px;color:var(--muted);margin-bottom:13px}
+.seg{position:sticky;top:max(8px,env(safe-area-inset-top));z-index:10;display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#081728ee;border:1px solid var(--line);padding:5px;border-radius:14px;backdrop-filter:blur(14px)}
+.seg button{border:0;background:transparent;color:var(--muted);font:700 14px inherit;border-radius:10px;padding:11px 6px}.seg button.active{background:var(--panel2);color:var(--text)}
+.topline{display:flex;align-items:center;gap:8px;margin:12px 1px 10px}.label{font-size:13px;color:var(--muted)}.updated{margin-left:auto;font-size:12px;color:var(--muted)}
+.filterbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 10px;font-weight:750;font-size:12px}.filterbtn svg{width:16px;height:16px}.filtercount{display:none;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--accent);color:#06111e;align-items:center;justify-content:center;font-size:10px;font-weight:850}.filtercount.show{display:inline-flex}.count{font-size:12px;color:var(--muted);margin:0 1px 10px}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none;align-items:flex-end;justify-content:center}.overlay.open{display:flex}.sheet{width:min(760px,100%);max-height:82vh;overflow:auto;background:#0b1726;border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;padding:14px 14px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -18px 50px rgba(0,0,0,.4)}.sheethead{display:flex;align-items:center;gap:10px;position:sticky;top:-14px;background:#0b1726;padding:3px 0 12px;z-index:2}.sheettitle{font-size:19px;font-weight:800}.sheetactions{margin-left:auto;display:flex;gap:7px}.sheetbtn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 11px;font-size:12px;font-weight:750}.sheetbtn.clear{background:transparent;color:var(--muted)}.filtersection{padding:12px 0;border-top:1px solid var(--line)}.filtersection:first-of-type{border-top:0}.filtersection h3{font-size:12px;color:#d5e4f3;margin:0 0 8px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:9px 12px;font-size:13px;font-weight:700}.chip.selected{background:#173657;border-color:#4a83b7;color:#eef7ff}body.sheetopen{overflow:hidden}.cards{display:grid;gap:9px}.card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),var(--panel));border-radius:16px;padding:13px 14px;display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center}
+.rank{font-size:18px;font-weight:800;color:#89a8c9;text-align:center}.rank.top{color:#fff}.name{font-size:16px;font-weight:760;line-height:1.2}.meta{font-size:12px;color:var(--muted);margin-top:5px;display:flex;gap:6px;flex-wrap:wrap}
+.badge{border:1px solid #31577a;background:#102a43;color:#bdddff;border-radius:999px;padding:2px 6px;font-size:10px;font-weight:750}.wait{text-align:right;min-width:70px}.mins{font-size:28px;font-weight:850;letter-spacing:-1px;line-height:1}.unit{font-size:11px;color:var(--muted);margin-top:3px}
+.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}.muted{color:var(--muted)}
+.note,.error{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:13px 14px;color:var(--muted);font-size:13px;line-height:1.4;margin:10px 0}.error{color:#ffc6c6;border-color:#5a3138;background:#211418}
+button.refresh{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 11px;font-weight:700;font-size:12px}
+footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;margin-top:18px}a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>DLR Best Bet</h1>
+<div class="sub">Popular rides with unusually reasonable waits rise to the top.</div>
+
+<div class="seg">
+<button class="active" data-park="dl">Disneyland</button>
+<button data-park="dca">DCA</button>
+</div>
+
+
+<div class="topline">
+<span class="label">Attractions</span>
+<button class="filterbtn" id="openFilters" aria-label="Open filters">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/>
+    <path d="M4 17h2"/><path d="M10 17h10"/><circle cx="8" cy="17" r="2"/>
+  </svg>
+  Filters <span class="filtercount" id="filterCount">0</span>
+</button>
+<button class="refresh" id="refresh">Refresh</button>
+<span class="updated" id="updated">Loading…</span>
+</div>
+
+<div class="overlay" id="filterOverlay">
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="Ride filters">
+    <div class="sheethead">
+      <div class="sheettitle">Filters</div>
+      <div class="sheetactions">
+        <button class="sheetbtn clear" id="clearFilters">Clear</button>
+        <button class="sheetbtn" id="closeFilters">Done</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Sort</h3>
+      <div class="chips" data-group="sort" data-single="true">
+        <button class="chip selected" data-value="best">Best Bet</button>
+        <button class="chip" data-value="short">Shortest wait</button>
+        <button class="chip" data-value="long">Longest wait</button>
+        <button class="chip" data-value="popular">Most popular</button>
+        <button class="chip" data-value="name">A-Z</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Status</h3>
+      <div class="chips" data-group="status" data-single="true">
+        <button class="chip" data-value="open">Open</button>
+        <button class="chip" data-value="closed">Closed</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Wait time</h3>
+      <div class="chips" data-group="wait" data-single="true">
+        <button class="chip" data-value="15">≤ 15 min</button>
+        <button class="chip" data-value="30">≤ 30 min</button>
+        <button class="chip" data-value="45">≤ 45 min</button>
+        <button class="chip" data-value="60">≤ 60 min</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Single rider</h3>
+      <div class="chips" data-group="single" data-single="true">
+        <button class="chip" data-value="available">Available now</button>
+        <button class="chip" data-value="supports">Supports single rider</button>
+        <button class="chip" data-value="none">No single rider</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Indoor / outdoor</h3>
+      <div class="chips" data-group="setting">
+        <button class="chip" data-value="indoor">Indoor</button>
+        <button class="chip" data-value="mixed">Mixed</button>
+        <button class="chip" data-value="outdoor">Outdoor</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Thrill level</h3>
+      <div class="chips" data-group="thrill">
+        <button class="chip" data-value="low">Low</button>
+        <button class="chip" data-value="moderate">Moderate</button>
+        <button class="chip" data-value="high">High</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Popularity</h3>
+      <div class="chips" data-group="popularity">
+        <button class="chip" data-value="very">Very popular</button>
+        <button class="chip" data-value="popular">Popular</button>
+        <button class="chip" data-value="moderate">Moderate</button>
+        <button class="chip" data-value="lower">Lower demand</button>
+      </div>
+    </div>
+
+    <div class="filtersection">
+      <h3>Posted wait</h3>
+      <div class="chips" data-group="queue" data-single="true">
+        <button class="chip" data-value="posted">Has posted wait</button>
+        <button class="chip" data-value="none">No posted wait</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="count" id="count"></div>
+
+<div id="message"></div>
+<div class="cards" id="cards"></div>
+
+<div class="note">
+<strong style="color:var(--text)">How it ranks:</strong> about 60% ride popularity + 40% short wait.
+Best Bet favors popular attractions with shorter waits. Tap Filters to combine multiple preferences, such as Indoor + Mixed, without cluttering the main list.
+</div>
+
+<footer>
+Live data refreshed about every 5 minutes via <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">ThemeParks.wiki</a>.
+Unofficial and not affiliated with Disney.
+</footer>
+</div>
+
+<script>
+const POP={
+"star wars: rise of the resistance":5,"space mountain":5,"indiana jones adventure":5,"tiana's bayou adventure":5,
+"matterhorn bobsleds":4.6,"big thunder mountain railroad":4.7,"haunted mansion":4.7,"haunted mansion holiday":4.7,
+"mickey & minnie's runaway railway":4.7,"mickey and minnie's runaway railway":4.7,"peter pan's flight":4.6,
+"pirates of the caribbean":4.5,"millennium falcon: smugglers run":4.4,"alice in wonderland":4.1,"jungle cruise":4.2,
+"roger rabbit's car toon spin":3.8,"star tours - the adventures continue":3.8,"it's a small world":3.6,"buzz lightyear astro blasters":3.5,
+"autopia":3,"finding nemo submarine voyage":3.2,"mr. toad's wild ride":3.8,"snow white's enchanted wish":3.6,
+"pinocchio's daring journey":3.1,"dumbo the flying elephant":3.1,"mad tea party":3,"casey jr. circus train":3,"storybook land canal boats":3.2,
+"the many adventures of winnie the pooh":2.9,
+"radiator springs racers":5,"guardians of the galaxy – mission: breakout!":5,"guardians of the galaxy - mission: breakout!":5,
+"web slingers: a spider-man adventure":4.6,"incredicoaster":4.7,"soarin' around the world":4.6,"toy story midway mania!":4.4,
+"grizzly river run":4.1,"monsters, inc. mike & sulley to the rescue!":3.8,"goofy's sky school":3.5,
+"the little mermaid ~ ariel's undersea adventure":3.5,"inside out emotional whirlwind":3,"luigi's rollickin' roadsters":3.4,
+"mater's junkyard jamboree":3.3,"silly symphony swings":3,"golden zephyr":2.7
+};
+const META={"walt disney - a magical life":{"setting":"indoor","thrill":"low"},"pirate's lair on tom sawyer island":{"setting":"outdoor","thrill":"low"},"big thunder mountain railroad":{"setting":"outdoor","thrill":"high"},"walt disney's enchanted tiki room":{"setting":"indoor","thrill":"low"},"great moments with mr. lincoln":{"setting":"indoor","thrill":"low"},"jungle cruise":{"setting":"outdoor","thrill":"low"},"astro orbitor":{"setting":"outdoor","thrill":"moderate"},"buzz lightyear astro blasters":{"setting":"indoor","thrill":"low"},"casey jr. circus train":{"setting":"outdoor","thrill":"low"},"disneyland monorail":{"setting":"mixed","thrill":"low"},"disneyland railroad":{"setting":"mixed","thrill":"low"},"dumbo the flying elephant":{"setting":"outdoor","thrill":"low"},"finding nemo submarine voyage":{"setting":"mixed","thrill":"low"},"haunted mansion":{"setting":"indoor","thrill":"moderate"},"haunted mansion holiday":{"setting":"indoor","thrill":"moderate"},"indiana jones adventure":{"setting":"indoor","thrill":"high","single":true},"it's a small world":{"setting":"indoor","thrill":"low"},"it's a small world holiday":{"setting":"indoor","thrill":"low"},"king arthur carrousel":{"setting":"outdoor","thrill":"low"},"mad tea party":{"setting":"outdoor","thrill":"moderate"},"matterhorn bobsleds":{"setting":"outdoor","thrill":"high","single":true},"mickey & minnie's runaway railway":{"setting":"indoor","thrill":"moderate"},"mickey and minnie's runaway railway":{"setting":"indoor","thrill":"moderate"},"millennium falcon: smugglers run":{"setting":"indoor","thrill":"moderate","single":true},"mr. toad's wild ride":{"setting":"indoor","thrill":"moderate"},"peter pan's flight":{"setting":"indoor","thrill":"low"},"pinocchio's daring journey":{"setting":"indoor","thrill":"low"},"pirates of the caribbean":{"setting":"indoor","thrill":"low"},"roger rabbit's car toon spin":{"setting":"indoor","thrill":"moderate"},"sailing ship columbia":{"setting":"outdoor","thrill":"low"},"snow white's enchanted wish":{"setting":"indoor","thrill":"low"},"space mountain":{"setting":"indoor","thrill":"high","single":true},"hyperspace mountain":{"setting":"indoor","thrill":"high","single":true},"star tours - the adventures continue":{"setting":"indoor","thrill":"high"},"star tours – the adventures continue":{"setting":"indoor","thrill":"high"},"star wars: rise of the resistance":{"setting":"mixed","thrill":"high"},"storybook land canal boats":{"setting":"outdoor","thrill":"low"},"tiana's bayou adventure":{"setting":"mixed","thrill":"high","single":true},"the many adventures of winnie the pooh":{"setting":"indoor","thrill":"low"},"mark twain riverboat":{"setting":"outdoor","thrill":"low"},"davy crockett's explorer canoes":{"setting":"outdoor","thrill":"moderate"},"main street vehicles":{"setting":"outdoor","thrill":"low"},"alice in wonderland":{"setting":"indoor","thrill":"low"},"autopia":{"setting":"outdoor","thrill":"low"},"radiator springs racers":{"setting":"mixed","thrill":"high","single":true},"guardians of the galaxy – mission: breakout!":{"setting":"indoor","thrill":"high"},"guardians of the galaxy - mission: breakout!":{"setting":"indoor","thrill":"high"},"guardians of the galaxy - monsters after dark":{"setting":"indoor","thrill":"high"},"web slingers: a spider-man adventure":{"setting":"indoor","thrill":"moderate","single":true},"incredicoaster":{"setting":"outdoor","thrill":"high","single":true},"soarin' around the world":{"setting":"indoor","thrill":"moderate","single":true},"soarin’ across america":{"setting":"indoor","thrill":"moderate","single":true},"soarin' across america":{"setting":"indoor","thrill":"moderate","single":true},"soarin' over california":{"setting":"indoor","thrill":"moderate","single":true},"toy story midway mania!":{"setting":"indoor","thrill":"low"},"grizzly river run":{"setting":"outdoor","thrill":"high","single":true},"monsters, inc. mike & sulley to the rescue!":{"setting":"indoor","thrill":"low"},"goofy's sky school":{"setting":"outdoor","thrill":"high","single":true},"the little mermaid ~ ariel's undersea adventure":{"setting":"indoor","thrill":"low"},"inside out emotional whirlwind":{"setting":"outdoor","thrill":"low"},"luigi's rollickin' roadsters":{"setting":"outdoor","thrill":"moderate"},"mater's junkyard jamboree":{"setting":"outdoor","thrill":"moderate"},"mater's graveyard jambooree":{"setting":"outdoor","thrill":"moderate"},"mater's jingle jamboree":{"setting":"outdoor","thrill":"moderate"},"silly symphony swings":{"setting":"outdoor","thrill":"moderate"},"golden zephyr":{"setting":"outdoor","thrill":"low"},"jumpin' jellyfish":{"setting":"outdoor","thrill":"moderate"},"redwood creek challenge trail":{"setting":"outdoor","thrill":"moderate"},"animation academy":{"setting":"indoor","thrill":"low"},"turtle talk with crush":{"setting":"indoor","thrill":"low"},"mickey's philharmagic":{"setting":"indoor","thrill":"low"},"pixar pal-a-round – non-swinging":{"setting":"outdoor","thrill":"low"},"pixar pal-a-round - non-swinging":{"setting":"outdoor","thrill":"low"},"pixar pal-a-round - swinging":{"setting":"outdoor","thrill":"moderate"},"jessie's critter carousel":{"setting":"outdoor","thrill":"low"}};
+function normName(x){return String(x?.name||"").toLowerCase().trim()}
+function meta(x){return META[normName(x)]||{setting:"unknown",thrill:"unknown"}}
+function liveSingleRider(x){const sr=x?.queue?.SINGLE_RIDER;return !!sr && (sr.waitTime!=null || sr.state==="AVAILABLE" || Object.keys(sr).length>0)}
+function supportsSingleRider(x){return liveSingleRider(x) || !!meta(x).single}
+function popBucket(x){const p=pop(x);if(p>=4.5)return "very";if(p>=3.8)return "popular";if(p>=3.0)return "moderate";return "lower"}
+function settingLabel(v){return v==="mixed"?"Indoor/outdoor":v==="indoor"?"Indoor":v==="outdoor"?"Outdoor":""}
+function thrillLabel(v){return v==="low"?"Low thrill":v==="moderate"?"Moderate thrill":v==="high"?"High thrill":""}
+let park="dl",payload=null,lastLoad=null;
+const q=s=>document.querySelector(s);
+const FILTERS={
+  sort:new Set(["best"]),
+  status:new Set(),
+  wait:new Set(),
+  queue:new Set(),
+  single:new Set(),
+  setting:new Set(),
+  thrill:new Set(),
+  popularity:new Set()
+};
+function selected(group){return FILTERS[group]||new Set()}
+function activeFilterCount(){
+  return ["status","wait","queue","single","setting","thrill","popularity"].reduce((n,k)=>n+selected(k).size,0);
+}
+function updateFilterBadge(){
+  const n=activeFilterCount(),el=q("#filterCount");
+  el.textContent=n; el.classList.toggle("show",n>0);
+}
+function groupHas(group,value){return selected(group).has(value)}
+function unionMatch(group,value){const s=selected(group);return s.size===0||s.has(value)}
+
+
+function pop(x){
+ const n=String(x.name||"").toLowerCase().trim();
+ if(POP[n]!=null)return POP[n];
+ if(n.includes("rise of the resistance"))return 5;
+ if(n.includes("radiator springs racers"))return 5;
+ if(n.includes("mission: breakout"))return 5;
+ if(n.includes("runaway railway"))return 4.7;
+ if(n.includes("smugglers run"))return 4.4;
+ if(n.includes("soarin"))return 4.6;
+ if(n.includes("midway mania"))return 4.4;
+ if(n.includes("tiana"))return 5;
+ return 2.5;
+}
+function wait(x){const w=x?.queue?.STANDBY?.waitTime;return Number.isFinite(w)?w:null}
+function score(x){
+ if(x.status!=="OPERATING")return -99;
+ const p=pop(x),w=wait(x);
+ const waitScore=w==null?1.4:Math.max(0,5*(1-Math.min(w,90)/90));
+ return p*.60+waitScore*.40;
+}
+function cls(w){if(w==null)return"muted";if(w<=25)return"good";if(w<=50)return"warn";return"bad"}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function ago(iso){
+ if(!iso)return"";
+ const m=Math.max(0,Math.round((Date.now()-new Date(iso))/60000));
+ return m<1?"just now":m+"m ago";
+}
+function render(){
+ if(!payload)return;
+ const raw=payload[park]?.liveData||[];
+ const sort=[...selected("sort")][0]||"best";
+ const statusFilter=[...selected("status")][0]||"all";
+ const waitFilter=[...selected("wait")][0]||"all";
+ const queueFilter=[...selected("queue")][0]||"all";
+ const singleFilter=[...selected("single")][0]||"all";
+
+ let rows=raw.filter(x=>x.entityType==="ATTRACTION");
+
+ if(statusFilter==="open") rows=rows.filter(x=>x.status==="OPERATING");
+ if(statusFilter==="closed") rows=rows.filter(x=>x.status!=="OPERATING");
+
+ if(waitFilter!=="all"){
+   const max=Number(waitFilter);
+   rows=rows.filter(x=>wait(x)!=null && wait(x)<=max);
+ }
+
+ if(queueFilter==="posted") rows=rows.filter(x=>wait(x)!=null);
+ if(queueFilter==="none") rows=rows.filter(x=>wait(x)==null);
+ if(singleFilter==="available") rows=rows.filter(x=>liveSingleRider(x));
+ if(singleFilter==="supports") rows=rows.filter(x=>supportsSingleRider(x));
+ if(singleFilter==="none") rows=rows.filter(x=>!supportsSingleRider(x));
+ if(selected("setting").size) rows=rows.filter(x=>selected("setting").has(meta(x).setting));
+ if(selected("thrill").size) rows=rows.filter(x=>selected("thrill").has(meta(x).thrill));
+ if(selected("popularity").size) rows=rows.filter(x=>selected("popularity").has(popBucket(x)));
+
+ rows.sort((a,b)=>{
+   const wa=wait(a), wb=wait(b);
+   if(sort==="short") return (wa??9999)-(wb??9999) || score(b)-score(a);
+   if(sort==="long") return (wb??-1)-(wa??-1) || score(b)-score(a);
+   if(sort==="popular") return pop(b)-pop(a) || (wa??9999)-(wb??9999);
+   if(sort==="name") return String(a.name||"").localeCompare(String(b.name||""));
+   return score(b)-score(a) || (wa??9999)-(wb??9999);
+ });
+
+ const shown=rows;
+ q("#count").textContent=shown.length+" attraction"+(shown.length===1?"":"s")+" shown";
+ q("#cards").innerHTML=shown.map((x,i)=>{
+   const w=wait(x),s=score(x),p=pop(x),m=meta(x);
+   const srLive=liveSingleRider(x),srSupport=supportsSingleRider(x);
+   const extraMeta=[srLive?"Single rider now":srSupport?"Single rider":"",settingLabel(m.setting),thrillLabel(m.thrill)].filter(Boolean).map(v=>"<span>"+esc(v)+"</span>").join("");
+   let tag=s>=4.05?"Excellent bet":s>=3.5?"Good bet":"";
+   return `<div class="card">
+     <div class="rank ${i<3?"top":""}">${i+1}</div>
+     <div><div class="name">${esc(x.name)}</div>
+       <div class="meta">
+         ${tag?`<span class="badge">${tag}</span>`:""}
+         ${p>=4.5?"<span>Very popular</span>":p>=3.8?"<span>Popular</span>":""}
+         ${extraMeta}
+         <span>${esc(x.status==="OPERATING"?"Open":x.status||"Unknown")}</span>
+       </div>
+     </div>
+     <div class="wait"><div class="mins ${cls(w)}">${w==null?"—":w}</div><div class="unit">${w==null?"no posted wait":"minutes"}</div></div>
+   </div>`;
+ }).join("");
+ q("#message").innerHTML=shown.length?"":'<div class="error">No attractions match those filters.</div>';
+ const g=payload.generatedAt?new Date(payload.generatedAt):lastLoad;
+ q("#updated").textContent=g?"data "+ago(g):"loaded";
+}
+async function load(){
+ q("#updated").textContent="Refreshing…";
+ const ts=Date.now();
+ const dlUrl="https://api.themeparks.wiki/v1/entity/7340550b-c14d-4def-80bb-acdb51d49a66/live?"+ts;
+ const dcaUrl="https://api.themeparks.wiki/v1/entity/832fcd51-ea19-4e77-85c7-75d5843b127c/live?"+ts;
+ try{
+   const [dlr,dcar]=await Promise.all([
+     fetch(dlUrl,{cache:"no-store"}),
+     fetch(dcaUrl,{cache:"no-store"})
+   ]);
+   if(!dlr.ok||!dcar.ok)throw new Error("Live API unavailable");
+   payload={
+     generatedAt:new Date().toISOString(),
+     dl:await dlr.json(),
+     dca:await dcar.json()
+   };
+   lastLoad=new Date();
+   q("#message").innerHTML="";
+   render();
+ }catch(e){
+   try{
+     const r=await fetch("./data.json?"+ts,{cache:"no-store"});
+     if(!r.ok)throw new Error("Backup data unavailable");
+     payload=await r.json(); lastLoad=new Date(payload.generatedAt||Date.now());
+     q("#message").innerHTML='<div class="note">Using the most recent backup snapshot because direct live refresh failed.</div>';
+     render();
+   }catch(e2){
+     q("#message").innerHTML='<div class="error">Could not load live or backup wait data.</div>';
+     q("#updated").textContent="not available";
+   }
+ }
+}
+document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".seg button").forEach(x=>x.classList.remove("active"));
+ b.classList.add("active");park=b.dataset.park;render();
+});
+q("#refresh").onclick=load;
+function openFilterSheet(){
+ q("#filterOverlay").classList.add("open");document.body.classList.add("sheetopen");
+}
+function closeFilterSheet(){
+ q("#filterOverlay").classList.remove("open");document.body.classList.remove("sheetopen");
+}
+q("#openFilters").onclick=openFilterSheet;
+q("#closeFilters").onclick=closeFilterSheet;
+q("#filterOverlay").addEventListener("click",e=>{if(e.target===q("#filterOverlay"))closeFilterSheet()});
+document.querySelectorAll(".chips").forEach(group=>{
+ const key=group.dataset.group;
+ const isSingle=group.dataset.single==="true";
+ group.querySelectorAll(".chip").forEach(btn=>{
+   btn.onclick=()=>{
+     const value=btn.dataset.value;
+     if(isSingle){
+       const was=selected(key).has(value);
+       selected(key).clear();
+       group.querySelectorAll(".chip").forEach(x=>x.classList.remove("selected"));
+       if(!was){selected(key).add(value);btn.classList.add("selected")}
+       if(key==="sort" && selected(key).size===0){selected(key).add("best");group.querySelector('[data-value="best"]').classList.add("selected")}
+     }else{
+       if(selected(key).has(value)){selected(key).delete(value);btn.classList.remove("selected")}
+       else{selected(key).add(value);btn.classList.add("selected")}
+     }
+     updateFilterBadge();render();
+   };
+ });
+});
+q("#clearFilters").onclick=()=>{
+ ["status","wait","queue","single","setting","thrill","popularity"].forEach(k=>selected(k).clear());
+ selected("sort").clear();selected("sort").add("best");
+ document.querySelectorAll(".chip").forEach(x=>x.classList.remove("selected"));
+ document.querySelector('.chips[data-group="sort"] [data-value="best"]').classList.add("selected");
+ updateFilterBadge();render();
+};
+setInterval(()=>{if(payload)render()},30000);
+setInterval(load,300000);
+load();
+</script>
+</body>
+</html>
