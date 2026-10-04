@@ -21,7 +21,7 @@ h1{font-size:27px;letter-spacing:-.6px;margin:3px 0 2px}.sub{font-size:13px;colo
 .badge{border:1px solid #31577a;background:#102a43;color:#bdddff;border-radius:999px;padding:2px 6px;font-size:10px;font-weight:750}.wait{text-align:right;min-width:70px}.mins{font-size:28px;font-weight:850;letter-spacing:-1px;line-height:1}.unit{font-size:11px;color:var(--muted);margin-top:3px}
 .good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}.muted{color:var(--muted)}
 .note,.error{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:13px 14px;color:var(--muted);font-size:13px;line-height:1.4;margin:10px 0}.error{color:#ffc6c6;border-color:#5a3138;background:#211418}
-button.refresh{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 11px;font-weight:700;font-size:12px}
+button.refresh,.locationbtn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 10px;font-weight:700;font-size:12px}.locationbtn{display:inline-flex;align-items:center;gap:5px}.locationbtn.on{border-color:#3f7fb4;background:#12304e}.locationbtn svg{width:15px;height:15px}.distance{color:#b8cbe0}
 footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;margin-top:18px}a{color:var(--accent)}
 </style>
 </head>
@@ -45,6 +45,10 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
   </svg>
   Filters <span class="filtercount" id="filterCount">0</span>
 </button>
+<button class="locationbtn" id="locationBtn" aria-label="Use my location">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+  <span id="locationText">Location</span>
+</button>
 <button class="refresh" id="refresh">Refresh</button>
 <span class="updated" id="updated">Loading…</span>
 </div>
@@ -63,6 +67,7 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
       <h3>Sort</h3>
       <div class="chips" data-group="sort" data-single="true">
         <button class="chip selected" data-value="best">Best Bet</button>
+        <button class="chip" data-value="nearby">Best nearby</button>
         <button class="chip" data-value="short">Shortest wait</button>
         <button class="chip" data-value="long">Longest wait</button>
         <button class="chip" data-value="popular">Most popular</button>
@@ -142,7 +147,7 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 
 <div class="note">
 <strong style="color:var(--text)">How it ranks:</strong> about 60% ride popularity + 40% short wait.
-Best Bet favors popular attractions with shorter waits. Tap Filters to combine multiple preferences, such as Indoor + Mixed, without cluttering the main list.
+Best Bet favors popular attractions with shorter waits. Best nearby adds straight-line proximity from your phone. Tap Filters to combine preferences such as Indoor + Mixed.
 </div>
 
 <footer>
@@ -175,7 +180,8 @@ function supportsSingleRider(x){return liveSingleRider(x) || !!meta(x).single}
 function popBucket(x){const p=pop(x);if(p>=4.5)return "very";if(p>=3.8)return "popular";if(p>=3.0)return "moderate";return "lower"}
 function settingLabel(v){return v==="mixed"?"Indoor/outdoor":v==="indoor"?"Indoor":v==="outdoor"?"Outdoor":""}
 function thrillLabel(v){return v==="low"?"Low thrill":v==="moderate"?"Moderate thrill":v==="high"?"High thrill":""}
-let park="dl",payload=null,lastLoad=null;
+let park="dl",payload=null,lastLoad=null,userLocation=null,geoWatch=null;
+const ENTITY_LOCATIONS={};
 const q=s=>document.querySelector(s);
 const FILTERS={
   sort:new Set(["best"]),
@@ -219,6 +225,31 @@ function score(x){
  const waitScore=w==null?1.4:Math.max(0,5*(1-Math.min(w,90)/90));
  return p*.60+waitScore*.40;
 }
+function entityLocation(x){
+ const loc=ENTITY_LOCATIONS[x?.id];
+ if(!loc || !Number.isFinite(loc.latitude) || !Number.isFinite(loc.longitude)) return null;
+ return loc;
+}
+function distanceMiles(x){
+ if(!userLocation)return null;
+ const loc=entityLocation(x); if(!loc)return null;
+ const R=3958.8,toRad=d=>d*Math.PI/180;
+ const dLat=toRad(loc.latitude-userLocation.latitude),dLon=toRad(loc.longitude-userLocation.longitude);
+ const a=Math.sin(dLat/2)**2+Math.cos(toRad(userLocation.latitude))*Math.cos(toRad(loc.latitude))*Math.sin(dLon/2)**2;
+ return 2*R*Math.asin(Math.sqrt(a));
+}
+function nearbyScore(x){
+ if(x.status!=="OPERATING")return -99;
+ const d=distanceMiles(x);
+ if(d==null)return score(x);
+ const proximity=Math.max(0,5*(1-Math.min(d,.75)/.75));
+ return score(x)*.60+proximity*.40;
+}
+function formatDistance(d){
+ if(d==null)return "";
+ if(d<0.1)return Math.max(100,Math.round(d*5280/50)*50)+" ft away";
+ return d.toFixed(1)+" mi away";
+}
 function cls(w){if(w==null)return"muted";if(w<=25)return"good";if(w<=50)return"warn";return"bad"}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function ago(iso){
@@ -256,6 +287,7 @@ function render(){
 
  rows.sort((a,b)=>{
    const wa=wait(a), wb=wait(b);
+   if(sort==="nearby") return nearbyScore(b)-nearbyScore(a) || (distanceMiles(a)??999)-(distanceMiles(b)??999);
    if(sort==="short") return (wa??9999)-(wb??9999) || score(b)-score(a);
    if(sort==="long") return (wb??-1)-(wa??-1) || score(b)-score(a);
    if(sort==="popular") return pop(b)-pop(a) || (wa??9999)-(wb??9999);
@@ -266,7 +298,7 @@ function render(){
  const shown=rows;
  q("#count").textContent=shown.length+" attraction"+(shown.length===1?"":"s")+" shown";
  q("#cards").innerHTML=shown.map((x,i)=>{
-   const w=wait(x),s=score(x),p=pop(x),m=meta(x);
+   const w=wait(x),s=score(x),p=pop(x),m=meta(x),dist=distanceMiles(x);
    const srLive=liveSingleRider(x),srSupport=supportsSingleRider(x);
    const extraMeta=[srLive?"Single rider now":srSupport?"Single rider":"",settingLabel(m.setting),thrillLabel(m.thrill)].filter(Boolean).map(v=>"<span>"+esc(v)+"</span>").join("");
    let tag=s>=4.05?"Excellent bet":s>=3.5?"Good bet":"";
@@ -277,6 +309,7 @@ function render(){
          ${tag?`<span class="badge">${tag}</span>`:""}
          ${p>=4.5?"<span>Very popular</span>":p>=3.8?"<span>Popular</span>":""}
          ${extraMeta}
+         ${dist!=null?`<span class="distance">${esc(formatDistance(dist))}</span>`:""}
          <span>${esc(x.status==="OPERATING"?"Open":x.status||"Unknown")}</span>
        </div>
      </div>
@@ -292,12 +325,23 @@ async function load(){
  const ts=Date.now();
  const dlUrl="https://api.themeparks.wiki/v1/entity/7340550b-c14d-4def-80bb-acdb51d49a66/live?"+ts;
  const dcaUrl="https://api.themeparks.wiki/v1/entity/832fcd51-ea19-4e77-85c7-75d5843b127c/live?"+ts;
+ const dlChildrenUrl="https://api.themeparks.wiki/v1/entity/7340550b-c14d-4def-80bb-acdb51d49a66/children?"+ts;
+ const dcaChildrenUrl="https://api.themeparks.wiki/v1/entity/832fcd51-ea19-4e77-85c7-75d5843b127c/children?"+ts;
  try{
-   const [dlr,dcar]=await Promise.all([
+   const [dlr,dcar,dlc,dcac]=await Promise.all([
      fetch(dlUrl,{cache:"no-store"}),
-     fetch(dcaUrl,{cache:"no-store"})
+     fetch(dcaUrl,{cache:"no-store"}),
+     fetch(dlChildrenUrl,{cache:"no-store"}),
+     fetch(dcaChildrenUrl,{cache:"no-store"})
    ]);
    if(!dlr.ok||!dcar.ok)throw new Error("Live API unavailable");
+   if(dlc.ok&&dcac.ok){
+     const childDocs=[await dlc.json(),await dcac.json()];
+     childDocs.forEach(doc=>{
+       const arr=doc.children||doc.entities||doc.data||[];
+       if(Array.isArray(arr))arr.forEach(e=>{if(e?.id&&e?.location)ENTITY_LOCATIONS[e.id]=e.location});
+     });
+   }
    payload={
      generatedAt:new Date().toISOString(),
      dl:await dlr.json(),
@@ -324,6 +368,31 @@ document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
  b.classList.add("active");park=b.dataset.park;render();
 });
 q("#refresh").onclick=load;
+function setLocationUi(state){
+ const btn=q("#locationBtn"),txt=q("#locationText");
+ if(state==="on"){btn.classList.add("on");txt.textContent="Nearby on"}
+ else if(state==="error"){btn.classList.remove("on");txt.textContent="Location off"}
+ else{btn.classList.remove("on");txt.textContent="Location"}
+}
+function requestLocation(){
+ if(!navigator.geolocation){
+   setLocationUi("error");
+   q("#message").innerHTML='<div class="error">Location is not supported by this browser.</div>';
+   return;
+ }
+ q("#locationText").textContent="Locating…";
+ const onPosition=pos=>{
+   userLocation={latitude:pos.coords.latitude,longitude:pos.coords.longitude,accuracy:pos.coords.accuracy};
+   setLocationUi("on");render();
+ };
+ const onError=err=>{
+   setLocationUi("error");
+   q("#message").innerHTML='<div class="error">Location permission is off. Allow location for this site in Safari to use Best nearby.</div>';
+ };
+ if(geoWatch!=null)navigator.geolocation.clearWatch(geoWatch);
+ geoWatch=navigator.geolocation.watchPosition(onPosition,onError,{enableHighAccuracy:true,maximumAge:15000,timeout:12000});
+}
+q("#locationBtn").onclick=requestLocation;
 function openFilterSheet(){
  q("#filterOverlay").classList.add("open");document.body.classList.add("sheetopen");
 }
@@ -349,6 +418,7 @@ document.querySelectorAll(".chips").forEach(group=>{
        if(selected(key).has(value)){selected(key).delete(value);btn.classList.remove("selected")}
        else{selected(key).add(value);btn.classList.add("selected")}
      }
+     if(key==="sort" && value==="nearby" && !userLocation)requestLocation();
      updateFilterBadge();render();
    };
  });
