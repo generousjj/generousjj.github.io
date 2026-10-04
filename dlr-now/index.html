@@ -375,11 +375,26 @@ document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
 q("#refresh").onclick=load;
 function setLocationUi(state){
  const btn=q("#locationBtn"),txt=q("#locationText");
- if(state==="on"){btn.classList.add("on");txt.textContent="Nearby on"}
+ if(state==="on"){btn.classList.add("on");txt.textContent="Nearby on · tap off"}
  else if(state==="error"){btn.classList.remove("on");txt.textContent="Location off"}
  else{btn.classList.remove("on");txt.textContent="Location"}
 }
+function disableLocation(){
+ if(geoWatch!=null){navigator.geolocation.clearWatch(geoWatch);geoWatch=null;}
+ userLocation=null;
+ setLocationUi("off");
+ const sortGroup=document.querySelector('.chips[data-group="sort"]');
+ if(groupHas("sort","nearby")||groupHas("sort","closest")){
+   selected("sort").clear();selected("sort").add("best");
+   if(sortGroup){
+     sortGroup.querySelectorAll(".chip").forEach(x=>x.classList.remove("selected"));
+     const best=sortGroup.querySelector('[data-value="best"]'); if(best)best.classList.add("selected");
+   }
+ }
+ render();
+}
 function requestLocation(){
+ if(userLocation){disableLocation();return;}
  if(!navigator.geolocation){
    setLocationUi("error");
    q("#message").innerHTML='<div class="error">Location is not supported by this browser.</div>';
