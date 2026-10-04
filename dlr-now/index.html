@@ -68,6 +68,7 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
       <div class="chips" data-group="sort" data-single="true">
         <button class="chip selected" data-value="best">Best Bet</button>
         <button class="chip" data-value="nearby">Best nearby</button>
+        <button class="chip" data-value="closest">Closest</button>
         <button class="chip" data-value="short">Shortest wait</button>
         <button class="chip" data-value="long">Longest wait</button>
         <button class="chip" data-value="popular">Most popular</button>
@@ -288,6 +289,7 @@ function render(){
  rows.sort((a,b)=>{
    const wa=wait(a), wb=wait(b);
    if(sort==="nearby") return nearbyScore(b)-nearbyScore(a) || (distanceMiles(a)??999)-(distanceMiles(b)??999);
+   if(sort==="closest") return (distanceMiles(a)??999)-(distanceMiles(b)??999) || score(b)-score(a);
    if(sort==="short") return (wa??9999)-(wb??9999) || score(b)-score(a);
    if(sort==="long") return (wb??-1)-(wa??-1) || score(b)-score(a);
    if(sort==="popular") return pop(b)-pop(a) || (wa??9999)-(wb??9999);
@@ -328,19 +330,22 @@ async function load(){
  const dlChildrenUrl="https://api.themeparks.wiki/v1/entity/7340550b-c14d-4def-80bb-acdb51d49a66/children?"+ts;
  const dcaChildrenUrl="https://api.themeparks.wiki/v1/entity/832fcd51-ea19-4e77-85c7-75d5843b127c/children?"+ts;
  try{
-   const [dlr,dcar,dlc,dcac]=await Promise.all([
+   const [dlr,dcar]=await Promise.all([
      fetch(dlUrl,{cache:"no-store"}),
-     fetch(dcaUrl,{cache:"no-store"}),
+     fetch(dcaUrl,{cache:"no-store"})
+   ]);
+   if(!dlr.ok||!dcar.ok)throw new Error("Live API unavailable");
+   const childResults=await Promise.allSettled([
      fetch(dlChildrenUrl,{cache:"no-store"}),
      fetch(dcaChildrenUrl,{cache:"no-store"})
    ]);
-   if(!dlr.ok||!dcar.ok)throw new Error("Live API unavailable");
-   if(dlc.ok&&dcac.ok){
-     const childDocs=[await dlc.json(),await dcac.json()];
-     childDocs.forEach(doc=>{
+   for(const result of childResults){
+     if(result.status!=="fulfilled"||!result.value.ok)continue;
+     try{
+       const doc=await result.value.json();
        const arr=doc.children||doc.entities||doc.data||[];
        if(Array.isArray(arr))arr.forEach(e=>{if(e?.id&&e?.location)ENTITY_LOCATIONS[e.id]=e.location});
-     });
+     }catch(_){}
    }
    payload={
      generatedAt:new Date().toISOString(),
@@ -418,7 +423,7 @@ document.querySelectorAll(".chips").forEach(group=>{
        if(selected(key).has(value)){selected(key).delete(value);btn.classList.remove("selected")}
        else{selected(key).add(value);btn.classList.add("selected")}
      }
-     if(key==="sort" && value==="nearby" && !userLocation)requestLocation();
+     if(key==="sort" && (value==="nearby" || value==="closest") && !userLocation)requestLocation();
      updateFilterBadge();render();
    };
  });
