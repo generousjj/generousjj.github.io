@@ -129,15 +129,34 @@ function render(){
 }
 async function load(){
  q("#updated").textContent="Refreshing…";
+ const ts=Date.now();
+ const dlUrl="https://api.themeparks.wiki/v1/entity/7340550b-c14d-4def-80bb-acdb51d49a66/live?"+ts;
+ const dcaUrl="https://api.themeparks.wiki/v1/entity/832fcd51-ea19-4e77-85c7-75d5843b127c/live?"+ts;
  try{
-   const r=await fetch("./data.json?"+Date.now(),{cache:"no-store"});
-   if(!r.ok)throw new Error("Data file not ready");
-   payload=await r.json(); lastLoad=new Date();
+   const [dlr,dcar]=await Promise.all([
+     fetch(dlUrl,{cache:"no-store"}),
+     fetch(dcaUrl,{cache:"no-store"})
+   ]);
+   if(!dlr.ok||!dcar.ok)throw new Error("Live API unavailable");
+   payload={
+     generatedAt:new Date().toISOString(),
+     dl:await dlr.json(),
+     dca:await dcar.json()
+   };
+   lastLoad=new Date();
    q("#message").innerHTML="";
    render();
  }catch(e){
-   q("#message").innerHTML='<div class="error">Live data is not ready yet. Try Refresh in a moment.</div>';
-   q("#updated").textContent="not ready";
+   try{
+     const r=await fetch("./data.json?"+ts,{cache:"no-store"});
+     if(!r.ok)throw new Error("Backup data unavailable");
+     payload=await r.json(); lastLoad=new Date(payload.generatedAt||Date.now());
+     q("#message").innerHTML='<div class="note">Using the most recent backup snapshot because direct live refresh failed.</div>';
+     render();
+   }catch(e2){
+     q("#message").innerHTML='<div class="error">Could not load live or backup wait data.</div>';
+     q("#updated").textContent="not available";
+   }
  }
 }
 document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
@@ -146,7 +165,7 @@ document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
 });
 q("#refresh").onclick=load;
 setInterval(()=>{if(payload)render()},30000);
-setInterval(load,60000);
+setInterval(load,300000);
 load();
 </script>
 </body>
