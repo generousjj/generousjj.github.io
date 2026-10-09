@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:52:17Z",
+  "generatedAt": "2026-10-09T17:37:56Z",
   "dl": {
     "id": "7340550b-c14d-4def-80bb-acdb51d49a66",
     "name": "Disneyland Park",
@@ -13,7 +13,37 @@
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "354450;entityType=restaurant",
         "status": "OPERATING",
-        "lastUpdated": "2026-10-09T00:01:08.314Z"
+        "diningAvailability": [
+          {
+            "waitTime": 15,
+            "partySize": 1
+          },
+          {
+            "waitTime": 15,
+            "partySize": 2
+          },
+          {
+            "waitTime": 15,
+            "partySize": 3
+          },
+          {
+            "waitTime": 15,
+            "partySize": 4
+          },
+          {
+            "waitTime": 15,
+            "partySize": 6
+          },
+          {
+            "waitTime": 15,
+            "partySize": 7
+          },
+          {
+            "waitTime": 15,
+            "partySize": 8
+          }
+        ],
+        "lastUpdated": "2026-10-09T17:01:04.552Z"
       },
       {
         "id": "05b17c11-fd4c-4b85-ab45-3e269dc56559",
@@ -44,88 +74,88 @@
         "externalId": "353403;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
+            "time": "2026-10-09T08:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T10:00:00-07:00",
+            "time": "2026-10-09T10:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T11:00:00-07:00",
+            "time": "2026-10-09T11:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T12:00:00-07:00",
+            "time": "2026-10-09T12:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T13:00:00-07:00",
+            "time": "2026-10-09T13:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T14:00:00-07:00",
+            "time": "2026-10-09T14:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T15:00:00-07:00",
+            "time": "2026-10-09T15:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T16:00:00-07:00",
+            "time": "2026-10-09T16:00:00-07:00",
             "waitTime": 5,
             "percentage": 4
           },
           {
-            "time": "2026-10-08T17:00:00-07:00",
+            "time": "2026-10-09T17:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T18:00:00-07:00",
+            "time": "2026-10-09T18:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T19:00:00-07:00",
+            "time": "2026-10-09T19:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T20:00:00-07:00",
+            "time": "2026-10-09T20:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T21:00:00-07:00",
+            "time": "2026-10-09T21:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T22:00:00-07:00",
+            "time": "2026-10-09T22:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T23:00:00-07:00",
+            "time": "2026-10-09T23:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
@@ -133,11 +163,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T16:45:00-07:00",
-            "startTime": "2026-10-08T09:00:00-07:00"
+            "endTime": "2026-10-09T16:45:00-07:00",
+            "startTime": "2026-10-09T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-08T23:45:57.316Z"
+        "lastUpdated": "2026-10-09T16:00:16.406Z"
       },
       {
         "id": "0bd8e001-83f8-4c9e-9e14-df5a2d6400c3",
@@ -163,15 +193,97 @@
         "externalId": "353295;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 35
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T13:50:00-07:00",
+            "returnStart": "2026-10-09T12:50:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -179,7 +291,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.049Z"
+        "lastUpdated": "2026-10-09T17:31:37.548Z"
       },
       {
         "id": "106c1e5a-a5e7-42d7-96ab-bc100d8faf71",
@@ -192,7 +304,89 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -200,7 +394,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.149Z"
+        "lastUpdated": "2026-10-09T16:48:24.685Z"
       },
       {
         "id": "1b23667a-d8fb-436d-8952-c3e3f2e56d13",
@@ -213,15 +407,15 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T13:30:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
+            "endTime": "2026-10-09T13:30:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-08T20:31:02.572Z"
+        "lastUpdated": "2026-10-09T15:01:14.724Z"
       },
       {
         "id": "1b83fda8-d60e-48e4-9a3d-90ddcbcd1001",
@@ -231,10 +425,92 @@
         "externalId": "353363;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 15
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -242,7 +518,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.212Z"
+        "lastUpdated": "2026-10-09T17:31:13.650Z"
       },
       {
         "id": "1da85181-bf0f-4ccc-b98e-243142f7347b",
@@ -252,15 +528,97 @@
         "externalId": "353293;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 35
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T12:15:00-07:00",
+            "returnStart": "2026-10-09T11:15:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -268,7 +626,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.026Z"
+        "lastUpdated": "2026-10-09T17:28:38.631Z"
       },
       {
         "id": "228b9736-f889-469f-92f7-0e89bf150d5c",
@@ -355,18 +713,18 @@
         "externalId": "18738682;entityType=Entertainment",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 45
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "showtimes": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T17:00:00-07:00",
-            "startTime": "2026-10-08T10:00:00-07:00"
+            "endTime": "2026-10-09T17:00:00-07:00",
+            "startTime": "2026-10-09T10:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T00:01:08.304Z"
+        "lastUpdated": "2026-10-09T17:20:06.649Z"
       },
       {
         "id": "34b1d70f-11c4-42df-935e-d5582c9f1a8e",
@@ -376,98 +734,98 @@
         "externalId": "19193461;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 55
           },
           "PAID_RETURN_TIME": {
             "price": {
-              "amount": 3000,
+              "amount": 3600,
               "currency": "USD",
-              "formatted": "$30.00"
+              "formatted": "$36.00"
             },
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T11:50:00-07:00",
+            "returnStart": "2026-10-09T10:50:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 38
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 47
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 70,
+            "percentage": 60
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 73
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 73
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 73
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 73
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 80,
+            "percentage": 68
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 73
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 56
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 51
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
             "waitTime": 50,
             "percentage": 43
           },
           {
-            "time": "2026-10-08T10:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T11:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T12:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T13:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T14:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T15:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 34
-          },
-          {
-            "time": "2026-10-08T16:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T17:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T18:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-08T19:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 38
-          },
-          {
-            "time": "2026-10-08T20:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 30
-          },
-          {
-            "time": "2026-10-08T21:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 21
-          },
-          {
-            "time": "2026-10-08T22:00:00-07:00",
+            "time": "2026-10-09T22:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T23:00:00-07:00",
+            "time": "2026-10-09T23:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
@@ -475,11 +833,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T22:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T05:00:59.643Z"
+        "lastUpdated": "2026-10-09T17:33:12.990Z"
       },
       {
         "id": "34f7bd8a-ec8e-41ac-9d63-d94ffc54f1ef",
@@ -520,15 +878,97 @@
         "externalId": "367492;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 10
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T11:35:00-07:00",
+            "returnStart": "2026-10-09T10:35:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -536,7 +976,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.504Z"
+        "lastUpdated": "2026-10-09T17:31:37.645Z"
       },
       {
         "id": "3665b38e-3e56-4c84-ad20-3e39672079a1",
@@ -553,7 +993,7 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "17734741;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -561,7 +1001,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.601Z"
+        "lastUpdated": "2026-10-09T15:00:00.523Z"
       },
       {
         "id": "4119dd28-6da8-46a0-9246-bea86e07ac61",
@@ -606,10 +1046,92 @@
         "externalId": "353429;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 15
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -622,7 +1144,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.394Z"
+        "lastUpdated": "2026-10-09T17:37:12.217Z"
       },
       {
         "id": "526ada11-4688-442b-96d4-4077eac4f988",
@@ -642,10 +1164,92 @@
         "externalId": "353449;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 15
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -653,7 +1257,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.493Z"
+        "lastUpdated": "2026-10-09T17:15:13.762Z"
       },
       {
         "id": "56d0bd6d-5106-4420-8f60-0005475c04c3",
@@ -663,10 +1267,10 @@
         "externalId": "353313;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -674,7 +1278,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.117Z"
+        "lastUpdated": "2026-10-09T15:01:14.438Z"
       },
       {
         "id": "59647168-d239-4161-8b24-92eb128e96fb",
@@ -684,10 +1288,92 @@
         "externalId": "353337;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 25
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -700,7 +1386,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.172Z"
+        "lastUpdated": "2026-10-09T17:37:12.209Z"
       },
       {
         "id": "5a107a57-9174-4f3f-9be7-625a5d5bb899",
@@ -713,15 +1399,15 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "showtimes": [
           {
             "type": "Operating",
             "endTime": "2026-10-09T19:30:00-07:00",
-            "startTime": "2026-10-09T08:00:00-07:00"
+            "startTime": "2026-10-09T08:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:00:41.472Z"
+        "lastUpdated": "2026-10-09T15:31:16.750Z"
       },
       {
         "id": "5bd95ae8-181d-449c-8f04-a621e2448961",
@@ -731,94 +1417,100 @@
         "externalId": "353311;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
+            "time": "2026-10-09T08:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T10:00:00-07:00",
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T11:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-08T12:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-08T13:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-08T14:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-08T15:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-08T16:00:00-07:00",
+            "time": "2026-10-09T12:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T17:00:00-07:00",
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T18:00:00-07:00",
+            "time": "2026-10-09T18:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T19:00:00-07:00",
+            "time": "2026-10-09T19:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T20:00:00-07:00",
+            "time": "2026-10-09T20:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T21:00:00-07:00",
+            "time": "2026-10-09T21:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T22:00:00-07:00",
+            "time": "2026-10-09T22:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T23:00:00-07:00",
+            "time": "2026-10-09T23:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
         ],
-        "operatingHours": [],
-        "lastUpdated": "2026-10-08T14:28:21.510Z"
+        "operatingHours": [
+          {
+            "type": "Operating",
+            "endTime": "2026-10-09T17:00:00-07:00",
+            "startTime": "2026-10-09T10:00:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-09T17:00:06.226Z"
       },
       {
         "id": "640525ab-75db-4f3c-b917-27ecb7b5ef97",
@@ -838,10 +1530,92 @@
         "externalId": "353327;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 20
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -849,7 +1623,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.160Z"
+        "lastUpdated": "2026-10-09T17:22:06.723Z"
       },
       {
         "id": "6c225598-91c9-44a3-95e2-7c423475db61",
@@ -859,10 +1633,92 @@
         "externalId": "353291;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 30
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -870,7 +1726,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:01.980Z"
+        "lastUpdated": "2026-10-09T16:56:06.715Z"
       },
       {
         "id": "6c30d5b0-8c0a-406f-9258-0b6c55d4a5e4",
@@ -880,88 +1736,88 @@
         "externalId": "353375;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 10
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
+            "time": "2026-10-09T08:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T10:00:00-07:00",
+            "time": "2026-10-09T10:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T11:00:00-07:00",
+            "time": "2026-10-09T11:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T12:00:00-07:00",
+            "time": "2026-10-09T12:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T13:00:00-07:00",
+            "time": "2026-10-09T13:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T14:00:00-07:00",
+            "time": "2026-10-09T14:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T15:00:00-07:00",
+            "time": "2026-10-09T15:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T16:00:00-07:00",
+            "time": "2026-10-09T16:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T17:00:00-07:00",
+            "time": "2026-10-09T17:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T18:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-08T19:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-08T20:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-08T21:00:00-07:00",
+            "time": "2026-10-09T18:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T22:00:00-07:00",
+            "time": "2026-10-09T19:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T23:00:00-07:00",
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
@@ -969,11 +1825,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T20:40:00-07:00",
-            "startTime": "2026-10-08T09:00:00-07:00"
+            "endTime": "2026-10-09T17:40:00-07:00",
+            "startTime": "2026-10-09T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T03:40:59.930Z"
+        "lastUpdated": "2026-10-09T16:06:09.095Z"
       },
       {
         "id": "6ce9cdd1-0a43-459e-83cd-f4cace9cfa7b",
@@ -983,15 +1839,97 @@
         "externalId": "353421;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 30
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T12:10:00-07:00",
+            "returnStart": "2026-10-09T11:10:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1004,7 +1942,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.359Z"
+        "lastUpdated": "2026-10-09T17:32:06.200Z"
       },
       {
         "id": "6e2af074-3a67-4f38-9bcf-2f5a572c87df",
@@ -1017,15 +1955,15 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T20:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
+            "endTime": "2026-10-09T20:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T03:00:58.994Z"
+        "lastUpdated": "2026-10-09T15:01:14.770Z"
       },
       {
         "id": "72340a8a-b6d2-474f-aca5-5ea7d2d52335",
@@ -1161,10 +2099,92 @@
         "externalId": "353405;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 25
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1172,7 +2192,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.339Z"
+        "lastUpdated": "2026-10-09T17:29:13.111Z"
       },
       {
         "id": "835deb74-de54-4d7f-9dc4-dacab90fcb60",
@@ -1180,7 +2200,7 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353335;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1188,7 +2208,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.626Z"
+        "lastUpdated": "2026-10-09T15:00:00.555Z"
       },
       {
         "id": "88197808-3c56-4198-a5a4-6066541251cf",
@@ -1198,15 +2218,97 @@
         "externalId": "353301;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 20
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T12:00:00-07:00",
+            "returnStart": "2026-10-09T11:00:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1214,7 +2316,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.060Z"
+        "lastUpdated": "2026-10-09T17:31:20.340Z"
       },
       {
         "id": "888525b0-5a6f-4b8e-9f07-b6a32812b04d",
@@ -1316,10 +2418,92 @@
         "externalId": "353305;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 10
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1327,7 +2511,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.094Z"
+        "lastUpdated": "2026-10-09T16:59:09.474Z"
       },
       {
         "id": "90d5a091-478c-4df1-adfe-c605b4005013",
@@ -1435,10 +2619,92 @@
         "externalId": "353401;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 10
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1451,7 +2717,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.316Z"
+        "lastUpdated": "2026-10-09T17:00:06.258Z"
       },
       {
         "id": "9167db1d-e5e7-46da-a07f-ae30a87bc4c4",
@@ -1461,15 +2727,97 @@
         "externalId": "353435;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 35
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T18:30:00-07:00",
+            "returnStart": "2026-10-09T17:30:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 54
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 54
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 54
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 62
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 70
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 70
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 62
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 70,
+            "percentage": 58
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 54
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 62
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1477,7 +2825,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.426Z"
+        "lastUpdated": "2026-10-09T17:36:05.139Z"
       },
       {
         "id": "9212c98b-3638-4f0b-bf42-2e2848330e1d",
@@ -1554,10 +2902,92 @@
         "externalId": "353389;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 20
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1570,7 +3000,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.273Z"
+        "lastUpdated": "2026-10-09T17:32:06.191Z"
       },
       {
         "id": "a07f3110-013e-43bb-a182-e66bb8b5e28d",
@@ -1580,10 +3010,92 @@
         "externalId": "367495;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 30
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1596,7 +3108,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.522Z"
+        "lastUpdated": "2026-10-09T17:33:13.003Z"
       },
       {
         "id": "a6760f7b-3489-47df-9547-d70dd2d8cb76",
@@ -1637,18 +3149,100 @@
         "externalId": "412062678;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 35
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T13:50:00-07:00",
+            "returnStart": "2026-10-09T12:50:00-07:00"
           },
           "SINGLE_RIDER": {
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 54
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 80,
+            "percentage": 66
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 70
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 80,
+            "percentage": 66
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 62
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1656,7 +3250,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.586Z"
+        "lastUpdated": "2026-10-09T17:31:37.664Z"
       },
       {
         "id": "b0eca3d3-a519-47f9-a5a7-9911126da2df",
@@ -1669,7 +3263,7 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1682,7 +3276,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.198Z"
+        "lastUpdated": "2026-10-09T15:01:14.509Z"
       },
       {
         "id": "b2c2549c-e9da-4fdd-98ea-1dcff596fed7",
@@ -1692,18 +3286,100 @@
         "externalId": "19193459;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 20
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T12:10:00-07:00",
+            "returnStart": "2026-10-09T11:10:00-07:00"
           },
           "SINGLE_RIDER": {
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1711,7 +3387,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:01.965Z"
+        "lastUpdated": "2026-10-09T17:31:37.519Z"
       },
       {
         "id": "bcfd1e17-3eab-4203-b597-6257a257d427",
@@ -1719,7 +3395,7 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "393385;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1727,7 +3403,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.665Z"
+        "lastUpdated": "2026-10-09T15:00:00.624Z"
       },
       {
         "id": "c02fb82d-0860-4e95-8c61-899fa594d20e",
@@ -1735,7 +3411,7 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353383;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1743,7 +3419,7 @@
             "startTime": "2026-10-09T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.641Z"
+        "lastUpdated": "2026-10-09T16:00:00.662Z"
       },
       {
         "id": "c23af6ba-8515-406a-8a48-d0818ba0bfc9",
@@ -1753,10 +3429,92 @@
         "externalId": "353399;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 35
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1769,7 +3527,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.297Z"
+        "lastUpdated": "2026-10-09T17:19:10.950Z"
       },
       {
         "id": "c7ce633e-1f6b-4699-98c9-6772bb196b16",
@@ -1778,7 +3536,7 @@
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "354129;entityType=restaurant",
         "status": "OPERATING",
-        "lastUpdated": "2026-10-09T00:59:57.875Z"
+        "lastUpdated": "2026-10-09T17:30:31.178Z"
       },
       {
         "id": "c9e39189-7e99-4e0a-97e0-4a0d5654d257",
@@ -1801,7 +3559,7 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353321;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1814,7 +3572,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.619Z"
+        "lastUpdated": "2026-10-09T15:00:00.548Z"
       },
       {
         "id": "cb84b53c-dbb5-483d-a717-00d9259c6484",
@@ -1845,10 +3603,10 @@
         "externalId": "353443;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 10
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1856,7 +3614,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.470Z"
+        "lastUpdated": "2026-10-09T17:12:12.361Z"
       },
       {
         "id": "cc718d11-fa15-44ee-87d0-ded989ad61bc",
@@ -1866,15 +3624,97 @@
         "externalId": "353439;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 20
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T11:35:00-07:00",
+            "returnStart": "2026-10-09T10:35:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1882,7 +3722,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.444Z"
+        "lastUpdated": "2026-10-09T17:31:37.626Z"
       },
       {
         "id": "cc980e8e-192f-48b6-848c-27784084e54b",
@@ -1892,10 +3732,10 @@
         "externalId": "353323;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 30
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -1903,7 +3743,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.139Z"
+        "lastUpdated": "2026-10-09T16:51:10.237Z"
       },
       {
         "id": "cd670bff-81d1-4f34-8676-7bafdf49220a",
@@ -1913,15 +3753,97 @@
         "externalId": "411821333;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 35
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T14:10:00-07:00",
+            "returnStart": "2026-10-09T13:10:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1934,7 +3856,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.546Z"
+        "lastUpdated": "2026-10-09T17:31:37.654Z"
       },
       {
         "id": "e0cfed11-96d7-40f3-907f-5cfed172592a",
@@ -1980,10 +3902,92 @@
         "externalId": "411936760;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 0
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -1996,7 +4000,7 @@
             "startTime": "2026-10-09T23:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.570Z"
+        "lastUpdated": "2026-10-09T16:24:09.762Z"
       },
       {
         "id": "e2d460e9-2bef-4613-b126-092ab7cb37e5",
@@ -2006,10 +4010,10 @@
         "externalId": "353315;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -2017,7 +4021,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.128Z"
+        "lastUpdated": "2026-10-09T15:08:06.099Z"
       },
       {
         "id": "e9ef1443-c735-43b6-81c6-45e53527cf93",
@@ -2042,7 +4046,49 @@
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "19268344;entityType=restaurant",
         "status": "OPERATING",
-        "lastUpdated": "2026-10-09T06:19:31.601Z"
+        "diningAvailability": [
+          {
+            "waitTime": 10,
+            "partySize": 1
+          },
+          {
+            "waitTime": 10,
+            "partySize": 2
+          },
+          {
+            "waitTime": 10,
+            "partySize": 3
+          },
+          {
+            "waitTime": 10,
+            "partySize": 4
+          },
+          {
+            "waitTime": 10,
+            "partySize": 5
+          },
+          {
+            "waitTime": 10,
+            "partySize": 6
+          },
+          {
+            "waitTime": 10,
+            "partySize": 7
+          },
+          {
+            "waitTime": 10,
+            "partySize": 8
+          },
+          {
+            "waitTime": 10,
+            "partySize": 9
+          },
+          {
+            "waitTime": 10,
+            "partySize": 10
+          }
+        ],
+        "lastUpdated": "2026-10-09T17:34:28.415Z"
       },
       {
         "id": "eeafc865-a4e0-4dc5-9cea-446108bf7d48",
@@ -2066,7 +4112,7 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353371;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -2074,7 +4120,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.633Z"
+        "lastUpdated": "2026-10-09T15:00:00.573Z"
       },
       {
         "id": "f7904912-3f08-4563-b99e-fd59f43cc9f2",
@@ -2084,10 +4130,92 @@
         "externalId": "353365;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -2100,7 +4228,7 @@
             "startTime": "2026-10-09T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.232Z"
+        "lastUpdated": "2026-10-09T15:01:14.546Z"
       },
       {
         "id": "fa0ef252-8002-4c39-934b-46c3231d206e",
@@ -2131,15 +4259,97 @@
         "externalId": "353377;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 40
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T13:45:00-07:00",
+            "returnStart": "2026-10-09T12:45:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T22:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T23:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
@@ -2147,7 +4357,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:02.252Z"
+        "lastUpdated": "2026-10-09T17:31:37.575Z"
       },
       {
         "id": "fdf0e3b1-2eeb-42b4-9516-5d43463d021e",
@@ -2198,15 +4408,15 @@
         "externalId": "18249927;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 40
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T17:10:00-07:00",
+            "returnStart": "2026-10-09T16:10:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
@@ -2214,7 +4424,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:01:01.953Z"
+        "lastUpdated": "2026-10-09T17:37:12.184Z"
       }
     ]
   },
@@ -2318,23 +4528,18 @@
         "externalId": "353341;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.616Z"
+        "lastUpdated": "2026-10-09T15:15:18.993Z"
       },
       {
         "id": "1214912c-de6d-4493-9344-c245357f7af6",
@@ -2343,7 +4548,25 @@
         "parkId": "832fcd51-ea19-4e77-85c7-75d5843b127c",
         "externalId": "19013078;entityType=restaurant",
         "status": "OPERATING",
-        "lastUpdated": "2026-10-08T23:23:28.008Z"
+        "diningAvailability": [
+          {
+            "waitTime": 15,
+            "partySize": 1
+          },
+          {
+            "waitTime": 15,
+            "partySize": 2
+          },
+          {
+            "waitTime": 15,
+            "partySize": 3
+          },
+          {
+            "waitTime": 15,
+            "partySize": 4
+          }
+        ],
+        "lastUpdated": "2026-10-09T16:01:15.377Z"
       },
       {
         "id": "12180467-471a-4f93-a7b1-7115aab487f2",
@@ -2441,15 +4664,15 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
+            "endTime": "2026-10-09T21:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T01:01:05.000Z"
+        "lastUpdated": "2026-10-09T15:01:14.490Z"
       },
       {
         "id": "2108cc58-80df-4fff-9b91-735e89873ffd",
@@ -2490,31 +4713,98 @@
         "externalId": "19531124;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 45
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T15:40:00-07:00",
+            "returnStart": "2026-10-09T14:40:00-07:00"
           },
           "SINGLE_RIDER": {
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.574Z"
+        "lastUpdated": "2026-10-09T17:31:37.539Z"
       },
       {
         "id": "24066306-d364-4048-b4c9-a0e81980c5b4",
@@ -2571,11 +4861,16 @@
           },
           {
             "type": "Operating",
-            "endTime": "2026-10-09T16:00:00-07:00",
+            "endTime": "2026-10-09T15:15:00-07:00",
             "startTime": "2026-10-09T09:45:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-09T16:00:00-07:00",
+            "startTime": "2026-10-09T15:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:00:41.298Z"
+        "lastUpdated": "2026-10-09T14:06:05.724Z"
       },
       {
         "id": "2fdd02e8-3835-4ef8-bd07-4c3332fb84fa",
@@ -2595,23 +4890,90 @@
         "externalId": "353367;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.651Z"
+        "lastUpdated": "2026-10-09T15:01:14.555Z"
       },
       {
         "id": "3ee735b5-68dc-470a-a4a2-6ddd415b9cbd",
@@ -2637,28 +4999,95 @@
         "externalId": "353387;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 45
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T13:10:00-07:00",
+            "returnStart": "2026-10-09T12:10:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.674Z"
+        "lastUpdated": "2026-10-09T17:31:37.583Z"
       },
       {
         "id": "449e351b-a05a-4a52-8893-0ed5c1f6fc48",
@@ -2712,15 +5141,15 @@
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T16:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-08T23:00:57.313Z"
+        "lastUpdated": "2026-10-09T15:01:14.661Z"
       },
       {
         "id": "46097afe-a1ea-4807-93d3-14d14f36e55f",
@@ -2730,23 +5159,90 @@
         "externalId": "18752875;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 25
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.386Z"
+        "lastUpdated": "2026-10-09T17:10:05.463Z"
       },
       {
         "id": "4b7f57a0-c841-43d1-8abb-d13a3b7f2597",
@@ -2782,23 +5278,18 @@
         "externalId": "19009994;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 15
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T19:30:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.531Z"
+        "lastUpdated": "2026-10-09T17:11:12.840Z"
       },
       {
         "id": "4f5b28d0-b78e-482b-8e2e-1f90756d6220",
@@ -2808,26 +5299,21 @@
         "externalId": "15510732;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           },
           "SINGLE_RIDER": {
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.053Z"
+        "lastUpdated": "2026-10-09T16:18:05.515Z"
       },
       {
         "id": "528016ef-db24-47fa-a0f2-b6d26d61e29f",
@@ -2837,23 +5323,90 @@
         "externalId": "353379;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 15
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T19:30:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.662Z"
+        "lastUpdated": "2026-10-09T17:15:13.752Z"
       },
       {
         "id": "531f6200-393e-4e4d-b95e-aedd30102e49",
@@ -2879,31 +5432,98 @@
         "externalId": "353303;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 50
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T12:55:00-07:00",
+            "returnStart": "2026-10-09T11:55:00-07:00"
           },
           "SINGLE_RIDER": {
             "waitTime": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.591Z"
+        "lastUpdated": "2026-10-09T17:31:37.557Z"
       },
       {
         "id": "6d876f4c-c3ff-4ae3-a2d8-d4b831e1039b",
@@ -2913,23 +5533,18 @@
         "externalId": "19285637;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.542Z"
+        "lastUpdated": "2026-10-09T17:37:12.196Z"
       },
       {
         "id": "753b558a-ff18-4ed9-a3c2-70e76b421618",
@@ -2946,7 +5561,7 @@
         "entityType": "ATTRACTION",
         "parkId": "832fcd51-ea19-4e77-85c7-75d5843b127c",
         "externalId": "353457;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Performance Time",
@@ -3079,7 +5694,7 @@
             "startTime": "2026-10-09T21:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.656Z"
+        "lastUpdated": "2026-10-09T15:00:00.615Z"
       },
       {
         "id": "77f205a4-d482-4d91-a5ff-71e54a086ad2",
@@ -3089,28 +5704,23 @@
         "externalId": "412543296;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 40
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T11:40:00-07:00",
+            "returnStart": "2026-10-09T10:40:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.704Z"
+        "lastUpdated": "2026-10-09T17:37:12.231Z"
       },
       {
         "id": "7a09a2f0-e226-4f3e-86f8-2598ab67ec44",
@@ -3120,23 +5730,90 @@
         "externalId": "18752877;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 25
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.454Z"
+        "lastUpdated": "2026-10-09T17:00:06.194Z"
       },
       {
         "id": "832fcd51-ea19-4e77-85c7-75d5843b127c",
@@ -3160,28 +5837,95 @@
         "externalId": "353453;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 30
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T16:45:00-07:00",
+            "returnStart": "2026-10-09T15:45:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.692Z"
+        "lastUpdated": "2026-10-09T17:35:12.552Z"
       },
       {
         "id": "8d4b6d5f-558f-4210-82b5-02b0570232ea",
@@ -3201,58 +5945,78 @@
         "externalId": "19299875;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 10
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
+            "time": "2026-10-09T08:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T10:00:00-07:00",
+            "time": "2026-10-09T10:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T11:00:00-07:00",
+            "time": "2026-10-09T11:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T12:00:00-07:00",
+            "time": "2026-10-09T12:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T13:00:00-07:00",
+            "time": "2026-10-09T13:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T14:00:00-07:00",
+            "time": "2026-10-09T14:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T15:00:00-07:00",
+            "time": "2026-10-09T15:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T16:00:00-07:00",
+            "time": "2026-10-09T16:00:00-07:00",
             "waitTime": 10,
             "percentage": 8
           },
           {
-            "time": "2026-10-08T17:00:00-07:00",
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
@@ -3260,11 +6024,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T17:00:00-07:00",
-            "startTime": "2026-10-08T09:00:00-07:00"
+            "endTime": "2026-10-09T21:00:00-07:00",
+            "startTime": "2026-10-09T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T00:01:08.287Z"
+        "lastUpdated": "2026-10-09T16:21:56.867Z"
       },
       {
         "id": "9df51934-6bc9-42bc-8cda-bb308beb8680",
@@ -3354,28 +6118,95 @@
         "externalId": "353345;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T11:35:00-07:00",
+            "returnStart": "2026-10-09T10:35:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 20,
+            "percentage": 16
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T21:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T01:05:58.714Z"
+        "lastUpdated": "2026-10-09T17:31:37.566Z"
       },
       {
         "id": "b7678dab-5544-48d5-8fdc-c1a0127cfbcd",
@@ -3385,7 +6216,7 @@
         "externalId": "353451;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 60
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -3393,55 +6224,75 @@
             "returnStart": null
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-08T10:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-08T11:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
             "waitTime": 60,
             "percentage": 50
           },
           {
-            "time": "2026-10-08T12:00:00-07:00",
+            "time": "2026-10-09T10:00:00-07:00",
             "waitTime": 60,
             "percentage": 50
           },
           {
-            "time": "2026-10-08T13:00:00-07:00",
-            "waitTime": 70,
-            "percentage": 58
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 50
           },
           {
-            "time": "2026-10-08T14:00:00-07:00",
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 80,
+            "percentage": 66
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 95,
+            "percentage": 79
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T15:00:00-07:00",
+            "time": "2026-10-09T15:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T16:00:00-07:00",
+            "time": "2026-10-09T16:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T17:00:00-07:00",
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
@@ -3449,11 +6300,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T14:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
+            "endTime": "2026-10-09T14:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-08T21:00:58.341Z"
+        "lastUpdated": "2026-10-09T17:29:13.138Z"
       },
       {
         "id": "b7ea1c83-0973-44c1-8045-f32042be94d5",
@@ -3575,36 +6426,103 @@
         "externalId": "16514416;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 120
           },
           "SINGLE_RIDER": {
             "waitTime": null
           },
           "PAID_RETURN_TIME": {
             "price": {
-              "amount": 2400,
+              "amount": 2900,
               "currency": "USD",
-              "formatted": "$24.00"
+              "formatted": "$29.00"
             },
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T13:00:00-07:00",
+            "returnStart": "2026-10-09T12:00:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 74
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 60,
+            "percentage": 59
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 74
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 85,
+            "percentage": 84
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 74
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 74
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 74
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 75,
+            "percentage": 74
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 65,
+            "percentage": 64
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 44
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.346Z"
+        "lastUpdated": "2026-10-09T17:31:37.510Z"
       },
       {
         "id": "c8a4b7b1-c1b2-4dfe-b73c-4e834b4a73db",
@@ -3614,23 +6532,90 @@
         "externalId": "353361;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 20
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.638Z"
+        "lastUpdated": "2026-10-09T17:26:06.676Z"
       },
       {
         "id": "c9803366-6f37-4406-82af-7692357e3ca9",
@@ -3640,58 +6625,78 @@
         "externalId": "353413;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 5
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
-            "time": "2026-10-08T08:00:00-07:00",
+            "time": "2026-10-09T08:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T09:00:00-07:00",
+            "time": "2026-10-09T09:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           },
           {
-            "time": "2026-10-08T10:00:00-07:00",
+            "time": "2026-10-09T10:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T11:00:00-07:00",
+            "time": "2026-10-09T11:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T12:00:00-07:00",
+            "time": "2026-10-09T12:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T13:00:00-07:00",
+            "time": "2026-10-09T13:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T14:00:00-07:00",
+            "time": "2026-10-09T14:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T15:00:00-07:00",
+            "time": "2026-10-09T15:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T16:00:00-07:00",
+            "time": "2026-10-09T16:00:00-07:00",
             "waitTime": 5,
             "percentage": 9
           },
           {
-            "time": "2026-10-08T17:00:00-07:00",
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 9
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 9
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 9
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
             "waitTime": 0,
             "percentage": 0
           }
@@ -3699,11 +6704,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T16:15:00-07:00",
-            "startTime": "2026-10-08T10:00:00-07:00"
+            "endTime": "2026-10-09T19:45:00-07:00",
+            "startTime": "2026-10-09T10:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-08T23:16:03.301Z"
+        "lastUpdated": "2026-10-09T17:02:06.123Z"
       },
       {
         "id": "d2aa0987-49a2-45dc-a635-3a8bf7401230",
@@ -3711,7 +6716,7 @@
         "entityType": "ATTRACTION",
         "parkId": "832fcd51-ea19-4e77-85c7-75d5843b127c",
         "externalId": "353289;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "operatingHours": [
           {
             "type": "Performance Time",
@@ -3834,7 +6839,7 @@
             "startTime": "2026-10-09T21:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T07:45:14.610Z"
+        "lastUpdated": "2026-10-09T15:00:00.538Z"
       },
       {
         "id": "dca741a6-3472-4d4f-a9aa-7774aae81754",
@@ -3885,28 +6890,95 @@
         "externalId": "15575069;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 25
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T11:35:00-07:00",
+            "returnStart": "2026-10-09T10:35:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 25,
+            "percentage": 20
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.077Z"
+        "lastUpdated": "2026-10-09T17:35:12.530Z"
       },
       {
         "id": "e46d8982-4991-4b9e-8e4a-b519d3ca6060",
@@ -3944,7 +7016,7 @@
         "entityType": "ATTRACTION",
         "parkId": "832fcd51-ea19-4e77-85c7-75d5843b127c",
         "externalId": "353447;entityType=Attraction",
-        "status": "CLOSED",
+        "status": "OPERATING",
         "forecast": [
           {
             "time": "2026-10-09T08:00:00-07:00",
@@ -4024,7 +7096,7 @@
             "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T11:01:04.546Z"
+        "lastUpdated": "2026-10-09T15:00:00.593Z"
       },
       {
         "id": "f44a5072-3cda-4c7c-8574-33ad09d16cca",
@@ -4034,28 +7106,95 @@
         "externalId": "15822029;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": null
+            "waitTime": 30
           },
           "RETURN_TIME": {
-            "state": "FINISHED",
-            "returnEnd": null,
-            "returnStart": null
+            "state": "AVAILABLE",
+            "returnEnd": "2026-10-09T12:55:00-07:00",
+            "returnStart": "2026-10-09T11:55:00-07:00"
           }
         },
-        "status": "CLOSED",
+        "status": "OPERATING",
+        "forecast": [
+          {
+            "time": "2026-10-09T08:00:00-07:00",
+            "waitTime": 10,
+            "percentage": 8
+          },
+          {
+            "time": "2026-10-09T09:00:00-07:00",
+            "waitTime": 15,
+            "percentage": 12
+          },
+          {
+            "time": "2026-10-09T10:00:00-07:00",
+            "waitTime": 35,
+            "percentage": 29
+          },
+          {
+            "time": "2026-10-09T11:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T12:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T13:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T14:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T15:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T16:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T17:00:00-07:00",
+            "waitTime": 55,
+            "percentage": 45
+          },
+          {
+            "time": "2026-10-09T18:00:00-07:00",
+            "waitTime": 50,
+            "percentage": 41
+          },
+          {
+            "time": "2026-10-09T19:00:00-07:00",
+            "waitTime": 45,
+            "percentage": 37
+          },
+          {
+            "time": "2026-10-09T20:00:00-07:00",
+            "waitTime": 40,
+            "percentage": 33
+          },
+          {
+            "time": "2026-10-09T21:00:00-07:00",
+            "waitTime": 30,
+            "percentage": 25
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-08T18:00:00-07:00",
-            "startTime": "2026-10-08T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-08T23:00:00-07:00",
-            "startTime": "2026-10-08T18:00:00-07:00"
+            "endTime": "2026-10-09T22:00:00-07:00",
+            "startTime": "2026-10-09T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-09T06:01:03.287Z"
+        "lastUpdated": "2026-10-09T17:34:05.754Z"
       },
       {
         "id": "f71bfc6e-2f10-40a1-bf29-a4b98c5350f4",
