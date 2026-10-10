@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T07:18:40Z",
+  "generatedAt": "2026-10-10T13:51:01Z",
   "dl": {
     "id": "7340550b-c14d-4def-80bb-acdb51d49a66",
     "name": "Disneyland Park",
@@ -3845,14 +3845,86 @@
         "parkId": "832fcd51-ea19-4e77-85c7-75d5843b127c",
         "externalId": "353447;entityType=Attraction",
         "status": "CLOSED",
+        "forecast": [
+          {
+            "time": "2026-10-10T08:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T09:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T10:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T11:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T12:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T13:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T14:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T15:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T16:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T17:00:00-07:00",
+            "waitTime": 5,
+            "percentage": 4
+          },
+          {
+            "time": "2026-10-10T18:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-10T19:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-10T20:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          },
+          {
+            "time": "2026-10-10T21:00:00-07:00",
+            "waitTime": 0,
+            "percentage": 0
+          }
+        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-09T18:00:00-07:00",
-            "startTime": "2026-10-09T08:00:00-07:00"
+            "endTime": "2026-10-10T18:00:00-07:00",
+            "startTime": "2026-10-10T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-10T05:30:00.375Z"
+        "lastUpdated": "2026-10-10T11:01:02.323Z"
       },
       {
         "id": "f44a5072-3cda-4c7c-8574-33ad09d16cca",
