@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T05:01:55Z",
+  "generatedAt": "2026-10-16T09:39:54Z",
   "dl": {
     "id": "7340550b-c14d-4def-80bb-acdb51d49a66",
     "name": "Disneyland Park",
@@ -30,11 +30,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T20:00:00-07:00",
-            "startTime": "2026-10-15T14:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T14:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:00:58.305Z"
+        "lastUpdated": "2026-10-16T07:32:12.174Z"
       },
       {
         "id": "07952343-3498-404b-8337-734de9a185c1",
@@ -48,96 +48,14 @@
           }
         },
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T16:45:00-07:00",
-            "startTime": "2026-10-15T09:00:00-07:00"
+            "endTime": "2026-10-16T16:45:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T23:45:46.790Z"
+        "lastUpdated": "2026-10-16T07:32:12.069Z"
       },
       {
         "id": "0bd8e001-83f8-4c9e-9e14-df5a2d6400c3",
@@ -145,9 +63,15 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "19348571;entityType=Entertainment",
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-13T07:02:21.788Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:30:00-07:00",
+            "startTime": "2026-10-16T21:30:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.263Z"
       },
       {
         "id": "0de1413a-73ee-46cf-af2e-c491cc7c7d3b",
@@ -157,7 +81,7 @@
         "externalId": "353295;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 35
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -165,97 +89,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:57:50.593Z"
+        "lastUpdated": "2026-10-16T07:00:51.823Z"
       },
       {
         "id": "106c1e5a-a5e7-42d7-96ab-bc100d8faf71",
@@ -268,97 +110,15 @@
             "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T15:00:45.777Z"
+        "lastUpdated": "2026-10-16T07:00:51.904Z"
       },
       {
         "id": "1b23667a-d8fb-436d-8952-c3e3f2e56d13",
@@ -375,11 +135,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T13:30:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T20:30:47.973Z"
+        "lastUpdated": "2026-10-16T07:32:12.155Z"
       },
       {
         "id": "1b83fda8-d60e-48e4-9a3d-90ddcbcd1001",
@@ -389,100 +149,18 @@
         "externalId": "353363;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:40:48.157Z"
+        "lastUpdated": "2026-10-16T07:00:51.954Z"
       },
       {
         "id": "1da85181-bf0f-4ccc-b98e-243142f7347b",
@@ -492,105 +170,23 @@
         "externalId": "353293;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           },
           "RETURN_TIME": {
-            "state": "AVAILABLE",
-            "returnEnd": "2026-10-16T00:00:00-07:00",
-            "returnStart": "2026-10-15T23:00:00-07:00"
+            "state": "FINISHED",
+            "returnEnd": null,
+            "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:29.321Z"
+        "lastUpdated": "2026-10-16T07:00:51.809Z"
       },
       {
         "id": "228b9736-f889-469f-92f7-0e89bf150d5c",
@@ -602,11 +198,11 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:05:00-07:00",
-            "startTime": "2026-10-15T13:05:00-07:00"
+            "endTime": "2026-10-16T13:05:00-07:00",
+            "startTime": "2026-10-16T13:05:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.721Z"
+        "lastUpdated": "2026-10-16T07:00:52.423Z"
       },
       {
         "id": "2aedc657-1ee2-4545-a1ce-14753f28cc66",
@@ -629,9 +225,45 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "401501;entityType=Entertainment",
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-13T07:02:21.864Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T12:00:00-07:00",
+            "startTime": "2026-10-16T12:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T13:00:00-07:00",
+            "startTime": "2026-10-16T13:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T14:00:00-07:00",
+            "startTime": "2026-10-16T14:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T15:05:00-07:00",
+            "startTime": "2026-10-16T15:05:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:00:00-07:00",
+            "startTime": "2026-10-16T16:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T17:00:00-07:00",
+            "startTime": "2026-10-16T17:00:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.369Z"
       },
       {
         "id": "33cbbd09-6d93-40d7-b758-9d7b7d3fd2eb",
@@ -648,11 +280,11 @@
         "showtimes": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T17:00:00-07:00",
-            "startTime": "2026-10-15T10:00:00-07:00"
+            "endTime": "2026-10-16T17:00:00-07:00",
+            "startTime": "2026-10-16T10:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T00:00:50.584Z"
+        "lastUpdated": "2026-10-16T07:32:12.221Z"
       },
       {
         "id": "34b1d70f-11c4-42df-935e-d5582c9f1a8e",
@@ -662,7 +294,7 @@
         "externalId": "19193461;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 55
+            "waitTime": null
           },
           "PAID_RETURN_TIME": {
             "price": {
@@ -675,97 +307,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 38
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 51
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 65,
-            "percentage": 56
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 65,
-            "percentage": 56
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 65,
-            "percentage": 56
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 43
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 51
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 47
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 51
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 51
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 47
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 47
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 47
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 38
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T22:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:48.285Z"
+        "lastUpdated": "2026-10-16T07:32:11.865Z"
       },
       {
         "id": "34f7bd8a-ec8e-41ac-9d63-d94ffc54f1ef",
@@ -777,26 +327,26 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T20:55:00-07:00",
-            "startTime": "2026-10-15T20:55:00-07:00"
+            "endTime": "2026-10-16T20:55:00-07:00",
+            "startTime": "2026-10-16T20:55:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T21:55:00-07:00",
-            "startTime": "2026-10-15T21:55:00-07:00"
+            "endTime": "2026-10-16T21:55:00-07:00",
+            "startTime": "2026-10-16T21:55:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T22:55:00-07:00",
-            "startTime": "2026-10-15T22:55:00-07:00"
+            "endTime": "2026-10-16T22:55:00-07:00",
+            "startTime": "2026-10-16T22:55:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T23:55:00-07:00",
-            "startTime": "2026-10-15T23:55:00-07:00"
+            "endTime": "2026-10-16T23:55:00-07:00",
+            "startTime": "2026-10-16T23:55:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.784Z"
+        "lastUpdated": "2026-10-16T07:00:52.506Z"
       },
       {
         "id": "3638ac09-9fce-4a43-8c79-8ebbe17afce2",
@@ -806,105 +356,23 @@
         "externalId": "367492;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           },
           "RETURN_TIME": {
-            "state": "AVAILABLE",
-            "returnEnd": "2026-10-15T23:00:00-07:00",
-            "returnStart": "2026-10-15T22:00:00-07:00"
+            "state": "FINISHED",
+            "returnEnd": null,
+            "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:29.354Z"
+        "lastUpdated": "2026-10-16T07:00:52.105Z"
       },
       {
         "id": "3665b38e-3e56-4c84-ad20-3e39672079a1",
@@ -925,11 +393,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T20:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:00:00.690Z"
+        "lastUpdated": "2026-10-16T07:32:11.817Z"
       },
       {
         "id": "4119dd28-6da8-46a0-9246-bea86e07ac61",
@@ -941,21 +409,21 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:50:00-07:00",
-            "startTime": "2026-10-15T11:50:00-07:00"
+            "endTime": "2026-10-16T11:50:00-07:00",
+            "startTime": "2026-10-16T11:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:05:00-07:00",
-            "startTime": "2026-10-15T13:05:00-07:00"
+            "endTime": "2026-10-16T13:05:00-07:00",
+            "startTime": "2026-10-16T13:05:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:05:00-07:00",
-            "startTime": "2026-10-15T14:05:00-07:00"
+            "endTime": "2026-10-16T14:05:00-07:00",
+            "startTime": "2026-10-16T14:05:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T09:18:13.097Z"
+        "lastUpdated": "2026-10-16T07:00:52.400Z"
       },
       {
         "id": "4784fd0f-9ba3-4a5d-a4b9-ed33b93c4489",
@@ -974,100 +442,23 @@
         "externalId": "353429;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:40:48.169Z"
+        "lastUpdated": "2026-10-16T07:00:52.048Z"
       },
       {
         "id": "526ada11-4688-442b-96d4-4077eac4f988",
@@ -1079,11 +470,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T18:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T09:18:13.606Z"
+        "lastUpdated": "2026-10-16T07:32:12.207Z"
       },
       {
         "id": "52a8ef64-d54c-4974-883f-027c3026e3f1",
@@ -1093,100 +484,18 @@
         "externalId": "353449;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:39:49.923Z"
+        "lastUpdated": "2026-10-16T07:00:52.093Z"
       },
       {
         "id": "56d0bd6d-5106-4420-8f60-0005475c04c3",
@@ -1196,18 +505,18 @@
         "externalId": "353313;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:31:48.060Z"
+        "lastUpdated": "2026-10-16T07:00:51.869Z"
       },
       {
         "id": "59647168-d239-4161-8b24-92eb128e96fb",
@@ -1217,100 +526,23 @@
         "externalId": "353337;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 20
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:15:49.024Z"
+        "lastUpdated": "2026-10-16T07:00:51.925Z"
       },
       {
         "id": "5a107a57-9174-4f3f-9be7-625a5d5bb899",
@@ -1320,18 +552,18 @@
         "externalId": "401526;entityType=Entertainment",
         "queue": {
           "STANDBY": {
-            "waitTime": 30
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "showtimes": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T23:30:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T19:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:12:50.166Z"
+        "lastUpdated": "2026-10-16T07:32:12.231Z"
       },
       {
         "id": "5bd95ae8-181d-449c-8f04-a621e2448961",
@@ -1345,90 +577,8 @@
           }
         },
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
         "operatingHours": [],
-        "lastUpdated": "2026-10-15T13:32:41.802Z"
+        "lastUpdated": "2026-10-16T07:32:11.935Z"
       },
       {
         "id": "640525ab-75db-4f3c-b917-27ecb7b5ef97",
@@ -1448,100 +598,18 @@
         "externalId": "353327;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:53:49.520Z"
+        "lastUpdated": "2026-10-16T07:00:51.914Z"
       },
       {
         "id": "6c225598-91c9-44a3-95e2-7c423475db61",
@@ -1551,100 +619,18 @@
         "externalId": "353291;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 25
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:57:50.584Z"
+        "lastUpdated": "2026-10-16T07:00:51.791Z"
       },
       {
         "id": "6c30d5b0-8c0a-406f-9258-0b6c55d4a5e4",
@@ -1658,96 +644,14 @@
           }
         },
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T20:40:00-07:00",
-            "startTime": "2026-10-15T10:30:00-07:00"
+            "endTime": "2026-10-16T17:40:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:40:47.776Z"
+        "lastUpdated": "2026-10-16T07:32:12.031Z"
       },
       {
         "id": "6ce9cdd1-0a43-459e-83cd-f4cace9cfa7b",
@@ -1757,7 +661,7 @@
         "externalId": "353421;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 25
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -1765,97 +669,20 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:41:29.341Z"
+        "lastUpdated": "2026-10-16T07:00:52.038Z"
       },
       {
         "id": "6e2af074-3a67-4f38-9bcf-2f5a572c87df",
@@ -1872,11 +699,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T20:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:00:58.314Z"
+        "lastUpdated": "2026-10-16T07:32:12.185Z"
       },
       {
         "id": "72340a8a-b6d2-474f-aca5-5ea7d2d52335",
@@ -1884,9 +711,40 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "17346575;entityType=Entertainment",
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-14T07:02:18.746Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T10:15:00-07:00",
+            "startTime": "2026-10-16T10:15:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T11:25:00-07:00",
+            "startTime": "2026-10-16T11:25:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T12:40:00-07:00",
+            "startTime": "2026-10-16T12:40:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T14:15:00-07:00",
+            "startTime": "2026-10-16T14:15:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T15:25:00-07:00",
+            "startTime": "2026-10-16T15:25:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:35:00-07:00",
+            "startTime": "2026-10-16T16:35:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.195Z"
       },
       {
         "id": "78568c55-6dcb-4893-a14e-ba7ed9bddaff",
@@ -1904,35 +762,9 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "401554;entityType=Entertainment",
-        "status": "OPERATING",
-        "showtimes": [
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T08:15:00-07:00",
-            "startTime": "2026-10-15T08:15:00-07:00"
-          },
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T09:10:00-07:00",
-            "startTime": "2026-10-15T09:10:00-07:00"
-          },
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
-          },
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T12:45:00-07:00",
-            "startTime": "2026-10-15T12:45:00-07:00"
-          },
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T13:55:00-07:00",
-            "startTime": "2026-10-15T13:55:00-07:00"
-          }
-        ],
-        "lastUpdated": "2026-10-15T07:05:18.711Z"
+        "status": "CLOSED",
+        "showtimes": [],
+        "lastUpdated": "2026-10-16T07:00:52.412Z"
       },
       {
         "id": "7bedcc70-2443-4b54-9815-b41d3a3a59f2",
@@ -1940,15 +772,9 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "19348570;entityType=Entertainment",
-        "status": "OPERATING",
-        "showtimes": [
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T21:30:00-07:00",
-            "startTime": "2026-10-15T21:30:00-07:00"
-          }
-        ],
-        "lastUpdated": "2026-10-15T07:05:18.627Z"
+        "status": "CLOSED",
+        "showtimes": [],
+        "lastUpdated": "2026-10-16T07:00:52.252Z"
       },
       {
         "id": "8160b905-b318-41be-84bf-869fb6a55b14",
@@ -1960,36 +786,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T08:30:00-07:00",
-            "startTime": "2026-10-15T08:30:00-07:00"
+            "endTime": "2026-10-16T08:30:00-07:00",
+            "startTime": "2026-10-16T08:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:30:00-07:00",
-            "startTime": "2026-10-15T09:30:00-07:00"
+            "endTime": "2026-10-16T09:30:00-07:00",
+            "startTime": "2026-10-16T09:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:30:00-07:00",
-            "startTime": "2026-10-15T10:30:00-07:00"
+            "endTime": "2026-10-16T10:30:00-07:00",
+            "startTime": "2026-10-16T10:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:30:00-07:00",
-            "startTime": "2026-10-15T11:30:00-07:00"
+            "endTime": "2026-10-16T11:30:00-07:00",
+            "startTime": "2026-10-16T11:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:35:00-07:00",
-            "startTime": "2026-10-15T12:35:00-07:00"
+            "endTime": "2026-10-16T12:35:00-07:00",
+            "startTime": "2026-10-16T12:35:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:30:00-07:00",
-            "startTime": "2026-10-15T14:30:00-07:00"
+            "endTime": "2026-10-16T14:30:00-07:00",
+            "startTime": "2026-10-16T14:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.550Z"
+        "lastUpdated": "2026-10-16T07:00:52.154Z"
       },
       {
         "id": "82aeb29b-504a-416f-b13f-f41fa5b766aa",
@@ -1999,100 +825,18 @@
         "externalId": "353405;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:31:55.575Z"
+        "lastUpdated": "2026-10-16T07:00:52.027Z"
       },
       {
         "id": "835deb74-de54-4d7f-9dc4-dacab90fcb60",
@@ -2100,15 +844,15 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353335;entityType=Attraction",
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T15:00:00.666Z"
+        "lastUpdated": "2026-10-16T07:32:11.954Z"
       },
       {
         "id": "88197808-3c56-4198-a5a4-6066541251cf",
@@ -2118,105 +862,23 @@
         "externalId": "353301;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 20
+            "waitTime": null
           },
           "RETURN_TIME": {
-            "state": "AVAILABLE",
-            "returnEnd": "2026-10-15T23:15:00-07:00",
-            "returnStart": "2026-10-15T22:15:00-07:00"
+            "state": "FINISHED",
+            "returnEnd": null,
+            "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:29.333Z"
+        "lastUpdated": "2026-10-16T07:00:51.838Z"
       },
       {
         "id": "8b12916b-a384-4305-838a-c4b07affbb14",
@@ -2228,41 +890,41 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:55:00-07:00",
-            "startTime": "2026-10-15T11:55:00-07:00"
+            "endTime": "2026-10-16T11:55:00-07:00",
+            "startTime": "2026-10-16T11:55:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:50:00-07:00",
-            "startTime": "2026-10-15T12:50:00-07:00"
+            "endTime": "2026-10-16T12:50:00-07:00",
+            "startTime": "2026-10-16T12:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:00:00-07:00",
-            "startTime": "2026-10-15T14:00:00-07:00"
+            "endTime": "2026-10-16T14:00:00-07:00",
+            "startTime": "2026-10-16T14:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:20:00-07:00",
-            "startTime": "2026-10-15T15:20:00-07:00"
+            "endTime": "2026-10-16T15:20:00-07:00",
+            "startTime": "2026-10-16T15:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:15:00-07:00",
-            "startTime": "2026-10-15T16:15:00-07:00"
+            "endTime": "2026-10-16T16:15:00-07:00",
+            "startTime": "2026-10-16T16:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T17:05:00-07:00",
-            "startTime": "2026-10-15T17:05:00-07:00"
+            "endTime": "2026-10-16T17:05:00-07:00",
+            "startTime": "2026-10-16T17:05:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.693Z"
+        "lastUpdated": "2026-10-16T07:00:52.382Z"
       },
       {
         "id": "8c36ff0b-3a32-4d7b-9388-0516c19277db",
@@ -2270,9 +932,20 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "401483;entityType=Entertainment",
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-13T07:02:21.851Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:00:00-07:00",
+            "startTime": "2026-10-16T21:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T22:30:00-07:00",
+            "startTime": "2026-10-16T22:30:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.347Z"
       },
       {
         "id": "8deb6338-b65f-467c-9dd3-56ed8c02c355",
@@ -2291,100 +964,18 @@
         "externalId": "353305;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:48.297Z"
+        "lastUpdated": "2026-10-16T07:00:51.852Z"
       },
       {
         "id": "90d5a091-478c-4df1-adfe-c605b4005013",
@@ -2393,96 +984,19 @@
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353427;entityType=Attraction",
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T19:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T13:32:41.972Z"
+        "lastUpdated": "2026-10-16T07:32:12.091Z"
       },
       {
         "id": "90ee50d4-7cc9-4824-b29d-2aac801acc29",
@@ -2492,100 +1006,23 @@
         "externalId": "353401;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:15:50.563Z"
+        "lastUpdated": "2026-10-16T07:00:52.016Z"
       },
       {
         "id": "9167db1d-e5e7-46da-a07f-ae30a87bc4c4",
@@ -2595,7 +1032,7 @@
         "externalId": "353435;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 65
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -2603,97 +1040,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 65,
-            "percentage": 54
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 55,
-            "percentage": 45
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:49:50.765Z"
+        "lastUpdated": "2026-10-16T07:00:52.057Z"
       },
       {
         "id": "9212c98b-3638-4f0b-bf42-2e2848330e1d",
@@ -2705,26 +1060,26 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:15:00-07:00",
-            "startTime": "2026-10-15T09:15:00-07:00"
+            "endTime": "2026-10-16T09:15:00-07:00",
+            "startTime": "2026-10-16T09:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:05:00-07:00",
-            "startTime": "2026-10-15T10:05:00-07:00"
+            "endTime": "2026-10-16T10:05:00-07:00",
+            "startTime": "2026-10-16T10:05:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:05:00-07:00",
-            "startTime": "2026-10-15T15:05:00-07:00"
+            "endTime": "2026-10-16T15:05:00-07:00",
+            "startTime": "2026-10-16T15:05:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T09:18:13.105Z"
+        "lastUpdated": "2026-10-16T07:00:52.434Z"
       },
       {
         "id": "95a9cde3-ff1f-40a3-8276-2477ded688f8",
@@ -2736,31 +1091,31 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:20:00-07:00",
-            "startTime": "2026-10-15T12:20:00-07:00"
+            "endTime": "2026-10-16T12:20:00-07:00",
+            "startTime": "2026-10-16T12:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:40:00-07:00",
-            "startTime": "2026-10-15T13:40:00-07:00"
+            "endTime": "2026-10-16T13:40:00-07:00",
+            "startTime": "2026-10-16T13:40:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:25:00-07:00",
-            "startTime": "2026-10-15T15:25:00-07:00"
+            "endTime": "2026-10-16T15:25:00-07:00",
+            "startTime": "2026-10-16T15:25:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:45:00-07:00",
-            "startTime": "2026-10-15T16:45:00-07:00"
+            "endTime": "2026-10-16T16:45:00-07:00",
+            "startTime": "2026-10-16T16:45:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T09:18:13.114Z"
+        "lastUpdated": "2026-10-16T07:00:52.528Z"
       },
       {
         "id": "9d401ad3-49b2-469f-ac73-93eb429428fb",
@@ -2770,100 +1125,23 @@
         "externalId": "353389;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:45:49.918Z"
+        "lastUpdated": "2026-10-16T07:00:51.994Z"
       },
       {
         "id": "a07f3110-013e-43bb-a182-e66bb8b5e28d",
@@ -2873,100 +1151,23 @@
         "externalId": "367495;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:15:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:45:57.771Z"
+        "lastUpdated": "2026-10-16T07:00:52.117Z"
       },
       {
         "id": "a6760f7b-3489-47df-9547-d70dd2d8cb76",
@@ -2978,26 +1179,26 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:25:00-07:00",
-            "startTime": "2026-10-15T11:25:00-07:00"
+            "endTime": "2026-10-16T11:25:00-07:00",
+            "startTime": "2026-10-16T11:25:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:15:00-07:00",
-            "startTime": "2026-10-15T12:15:00-07:00"
+            "endTime": "2026-10-16T12:15:00-07:00",
+            "startTime": "2026-10-16T12:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:15:00-07:00",
-            "startTime": "2026-10-15T15:15:00-07:00"
+            "endTime": "2026-10-16T15:15:00-07:00",
+            "startTime": "2026-10-16T15:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:15:00-07:00",
-            "startTime": "2026-10-15T16:15:00-07:00"
+            "endTime": "2026-10-16T16:15:00-07:00",
+            "startTime": "2026-10-16T16:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.675Z"
+        "lastUpdated": "2026-10-16T07:00:52.337Z"
       },
       {
         "id": "a9076acd-7630-4bad-a8da-e6bd689ddcac",
@@ -3007,7 +1208,7 @@
         "externalId": "412062678;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 25
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -3018,97 +1219,15 @@
             "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:39:49.934Z"
+        "lastUpdated": "2026-10-16T07:00:52.144Z"
       },
       {
         "id": "b0eca3d3-a519-47f9-a5a7-9911126da2df",
@@ -3121,15 +1240,20 @@
             "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T15:00:45.810Z"
+        "lastUpdated": "2026-10-16T07:00:51.938Z"
       },
       {
         "id": "b2c2549c-e9da-4fdd-98ea-1dcff596fed7",
@@ -3139,108 +1263,26 @@
         "externalId": "19193459;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           },
           "RETURN_TIME": {
-            "state": "AVAILABLE",
-            "returnEnd": "2026-10-16T00:30:00-07:00",
-            "returnStart": "2026-10-15T23:30:00-07:00"
+            "state": "FINISHED",
+            "returnEnd": null,
+            "returnStart": null
           },
           "SINGLE_RIDER": {
             "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:45:37.542Z"
+        "lastUpdated": "2026-10-16T07:00:51.779Z"
       },
       {
         "id": "bcfd1e17-3eab-4203-b597-6257a257d427",
@@ -3252,11 +1294,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T15:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T15:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T22:00:00.470Z"
+        "lastUpdated": "2026-10-16T07:32:12.164Z"
       },
       {
         "id": "c02fb82d-0860-4e95-8c61-899fa594d20e",
@@ -3268,11 +1310,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T19:00:00-07:00",
-            "startTime": "2026-10-15T09:00:00-07:00"
+            "endTime": "2026-10-16T19:00:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T02:00:00.430Z"
+        "lastUpdated": "2026-10-16T07:32:12.051Z"
       },
       {
         "id": "c23af6ba-8515-406a-8a48-d0818ba0bfc9",
@@ -3282,100 +1324,23 @@
         "externalId": "353399;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 30
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:15:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:48:48.374Z"
+        "lastUpdated": "2026-10-16T07:00:52.005Z"
       },
       {
         "id": "c7ce633e-1f6b-4699-98c9-6772bb196b16",
@@ -3407,15 +1372,20 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353321;entityType=Attraction",
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T15:00:00.649Z"
+        "lastUpdated": "2026-10-16T07:32:11.945Z"
       },
       {
         "id": "cb84b53c-dbb5-483d-a717-00d9259c6484",
@@ -3427,16 +1397,16 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:30:00-07:00",
-            "startTime": "2026-10-15T10:30:00-07:00"
+            "endTime": "2026-10-16T10:30:00-07:00",
+            "startTime": "2026-10-16T10:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:15:00-07:00",
-            "startTime": "2026-10-15T14:15:00-07:00"
+            "endTime": "2026-10-16T14:15:00-07:00",
+            "startTime": "2026-10-16T14:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.611Z"
+        "lastUpdated": "2026-10-16T07:00:52.230Z"
       },
       {
         "id": "cb929138-d77a-4dd2-983c-f651bbd1bd92",
@@ -3446,18 +1416,18 @@
         "externalId": "353443;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:13:47.985Z"
+        "lastUpdated": "2026-10-16T07:00:52.079Z"
       },
       {
         "id": "cc718d11-fa15-44ee-87d0-ded989ad61bc",
@@ -3467,105 +1437,23 @@
         "externalId": "353439;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           },
           "RETURN_TIME": {
-            "state": "AVAILABLE",
-            "returnEnd": "2026-10-15T23:00:00-07:00",
-            "returnStart": "2026-10-15T22:00:00-07:00"
+            "state": "FINISHED",
+            "returnEnd": null,
+            "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:29.343Z"
+        "lastUpdated": "2026-10-16T07:00:52.068Z"
       },
       {
         "id": "cc980e8e-192f-48b6-848c-27784084e54b",
@@ -3575,18 +1463,18 @@
         "externalId": "353323;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:28:47.938Z"
+        "lastUpdated": "2026-10-16T07:00:51.892Z"
       },
       {
         "id": "cd670bff-81d1-4f34-8676-7bafdf49220a",
@@ -3596,7 +1484,7 @@
         "externalId": "411821333;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 20
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -3604,97 +1492,20 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 35,
-            "percentage": 29
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:56:29.365Z"
+        "lastUpdated": "2026-10-16T07:00:52.127Z"
       },
       {
         "id": "e0cfed11-96d7-40f3-907f-5cfed172592a",
@@ -3707,9 +1518,15 @@
             "waitTime": null
           }
         },
-        "status": "REFURBISHMENT",
-        "operatingHours": [],
-        "lastUpdated": "2026-09-16T04:06:03.486Z"
+        "status": "CLOSED",
+        "operatingHours": [
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:32:12.012Z"
       },
       {
         "id": "e1cb16d6-ac90-44e6-9711-6729650623a1",
@@ -3721,16 +1538,16 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:30:00-07:00",
-            "startTime": "2026-10-15T13:30:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T13:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:45:00-07:00",
-            "startTime": "2026-10-15T14:45:00-07:00"
+            "endTime": "2026-10-16T14:45:00-07:00",
+            "startTime": "2026-10-16T14:45:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.751Z"
+        "lastUpdated": "2026-10-16T07:00:52.456Z"
       },
       {
         "id": "e27b1db8-9ec9-4f8b-9ca6-fd6377de66ee",
@@ -3743,97 +1560,20 @@
             "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:15:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T23:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T15:01:46.962Z"
+        "lastUpdated": "2026-10-16T07:00:52.136Z"
       },
       {
         "id": "e2d460e9-2bef-4613-b126-092ab7cb37e5",
@@ -3843,18 +1583,18 @@
         "externalId": "353315;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:03:47.791Z"
+        "lastUpdated": "2026-10-16T07:00:51.881Z"
       },
       {
         "id": "e9ef1443-c735-43b6-81c6-45e53527cf93",
@@ -3862,9 +1602,15 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "412107646;entityType=Entertainment",
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-13T07:02:21.920Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:30:00-07:00",
+            "startTime": "2026-10-16T21:30:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.471Z"
       },
       {
         "id": "eb29424b-42ed-41a2-891c-d4c9494eab12",
@@ -3873,49 +1619,7 @@
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "19268344;entityType=restaurant",
         "status": "OPERATING",
-        "diningAvailability": [
-          {
-            "waitTime": 10,
-            "partySize": 1
-          },
-          {
-            "waitTime": 10,
-            "partySize": 2
-          },
-          {
-            "waitTime": 10,
-            "partySize": 3
-          },
-          {
-            "waitTime": 10,
-            "partySize": 4
-          },
-          {
-            "waitTime": 10,
-            "partySize": 5
-          },
-          {
-            "waitTime": 10,
-            "partySize": 6
-          },
-          {
-            "waitTime": 10,
-            "partySize": 7
-          },
-          {
-            "waitTime": 10,
-            "partySize": 8
-          },
-          {
-            "waitTime": 10,
-            "partySize": 9
-          },
-          {
-            "waitTime": 10,
-            "partySize": 10
-          }
-        ],
-        "lastUpdated": "2026-10-16T04:50:10.362Z"
+        "lastUpdated": "2026-10-16T06:15:39.884Z"
       },
       {
         "id": "eeafc865-a4e0-4dc5-9cea-446108bf7d48",
@@ -3927,11 +1631,11 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:15:00-07:00",
-            "startTime": "2026-10-15T16:15:00-07:00"
+            "endTime": "2026-10-16T16:15:00-07:00",
+            "startTime": "2026-10-16T16:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.683Z"
+        "lastUpdated": "2026-10-16T07:00:52.358Z"
       },
       {
         "id": "f5bb0d14-7eee-4ede-9230-eb256ce3664c",
@@ -3939,15 +1643,15 @@
         "entityType": "ATTRACTION",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "353371;entityType=Attraction",
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T15:00:00.678Z"
+        "lastUpdated": "2026-10-16T07:32:12.021Z"
       },
       {
         "id": "f7904912-3f08-4563-b99e-fd59f43cc9f2",
@@ -3957,100 +1661,23 @@
         "externalId": "353365;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 4
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T20:45:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
+          },
+          {
+            "type": "Operating",
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:25:48.768Z"
+        "lastUpdated": "2026-10-16T07:00:51.967Z"
       },
       {
         "id": "fa0ef252-8002-4c39-934b-46c3231d206e",
@@ -4062,21 +1689,16 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T20:30:00-07:00",
-            "startTime": "2026-10-15T20:30:00-07:00"
+            "endTime": "2026-10-16T20:30:00-07:00",
+            "startTime": "2026-10-16T20:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T21:25:00-07:00",
-            "startTime": "2026-10-15T21:25:00-07:00"
-          },
-          {
-            "type": "Performance Time",
-            "endTime": "2026-10-15T22:15:00-07:00",
-            "startTime": "2026-10-15T22:15:00-07:00"
+            "endTime": "2026-10-16T22:15:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.792Z"
+        "lastUpdated": "2026-10-16T07:00:52.517Z"
       },
       {
         "id": "faaa8be9-cc1e-4535-ac20-04a535654bd0",
@@ -4086,7 +1708,7 @@
         "externalId": "353377;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 50
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -4094,97 +1716,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 15,
-            "percentage": 12
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T18:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T19:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T20:00:00-07:00",
-            "waitTime": 30,
-            "percentage": 25
-          },
-          {
-            "time": "2026-10-15T21:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T22:00:00-07:00",
-            "waitTime": 25,
-            "percentage": 20
-          },
-          {
-            "time": "2026-10-15T23:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          }
-        ],
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:59:48.464Z"
+        "lastUpdated": "2026-10-16T07:00:51.980Z"
       },
       {
         "id": "fdf0e3b1-2eeb-42b4-9516-5d43463d021e",
@@ -4192,9 +1732,40 @@
         "entityType": "SHOW",
         "parkId": "7340550b-c14d-4def-80bb-acdb51d49a66",
         "externalId": "401463;entityType=Entertainment",
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-14T07:02:18.846Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T12:15:00-07:00",
+            "startTime": "2026-10-16T12:15:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T13:10:00-07:00",
+            "startTime": "2026-10-16T13:10:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T14:20:00-07:00",
+            "startTime": "2026-10-16T14:20:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:15:00-07:00",
+            "startTime": "2026-10-16T16:15:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T17:00:00-07:00",
+            "startTime": "2026-10-16T17:00:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.316Z"
       },
       {
         "id": "ff52cb64-c1d5-4feb-9d43-5dbd429bac81",
@@ -4204,7 +1775,7 @@
         "externalId": "18249927;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 45
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -4212,15 +1783,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-16T00:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-17T00:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T05:00:49.406Z"
+        "lastUpdated": "2026-10-16T07:00:51.759Z"
       }
     ]
   },
@@ -4249,36 +1820,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:10:00-07:00",
-            "startTime": "2026-10-15T12:10:00-07:00"
+            "endTime": "2026-10-16T15:30:00-07:00",
+            "startTime": "2026-10-16T15:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:10:00-07:00",
-            "startTime": "2026-10-15T13:10:00-07:00"
+            "endTime": "2026-10-16T16:30:00-07:00",
+            "startTime": "2026-10-16T16:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:15:00-07:00",
-            "startTime": "2026-10-15T14:15:00-07:00"
+            "endTime": "2026-10-16T17:30:00-07:00",
+            "startTime": "2026-10-16T17:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:45:00-07:00",
-            "startTime": "2026-10-15T15:45:00-07:00"
+            "endTime": "2026-10-16T18:45:00-07:00",
+            "startTime": "2026-10-16T18:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:45:00-07:00",
-            "startTime": "2026-10-15T16:45:00-07:00"
+            "endTime": "2026-10-16T19:35:00-07:00",
+            "startTime": "2026-10-16T19:35:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T17:45:00-07:00",
-            "startTime": "2026-10-15T17:45:00-07:00"
+            "endTime": "2026-10-16T20:25:00-07:00",
+            "startTime": "2026-10-16T20:25:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.619Z"
+        "lastUpdated": "2026-10-16T07:00:52.241Z"
       },
       {
         "id": "0ee981af-9e3b-4c36-80a2-a7f00fa4841f",
@@ -4290,31 +1861,31 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:45:00-07:00",
-            "startTime": "2026-10-15T11:45:00-07:00"
+            "endTime": "2026-10-16T11:45:00-07:00",
+            "startTime": "2026-10-16T11:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:50:00-07:00",
-            "startTime": "2026-10-15T12:50:00-07:00"
+            "endTime": "2026-10-16T12:50:00-07:00",
+            "startTime": "2026-10-16T12:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:55:00-07:00",
-            "startTime": "2026-10-15T13:55:00-07:00"
+            "endTime": "2026-10-16T13:55:00-07:00",
+            "startTime": "2026-10-16T13:55:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:25:00-07:00",
-            "startTime": "2026-10-15T15:25:00-07:00"
+            "endTime": "2026-10-16T15:25:00-07:00",
+            "startTime": "2026-10-16T15:25:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:30:00-07:00",
-            "startTime": "2026-10-15T16:30:00-07:00"
+            "endTime": "2026-10-16T16:30:00-07:00",
+            "startTime": "2026-10-16T16:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.767Z"
+        "lastUpdated": "2026-10-16T07:00:52.495Z"
       },
       {
         "id": "10a5fc6f-5ad3-414b-9bdd-e6bae097b6ad",
@@ -4327,20 +1898,15 @@
             "waitTime": null
           }
         },
-        "status": "DOWN",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T16:46:48.164Z"
+        "lastUpdated": "2026-10-16T07:32:11.974Z"
       },
       {
         "id": "1214912c-de6d-4493-9344-c245357f7af6",
@@ -4361,11 +1927,11 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T15:00:00-07:00"
+            "endTime": "2026-10-16T18:00:00-07:00",
+            "startTime": "2026-10-16T15:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.759Z"
+        "lastUpdated": "2026-10-16T07:00:52.484Z"
       },
       {
         "id": "13bc1b70-3a42-41eb-9cb5-7fa8615af2ca",
@@ -4396,36 +1962,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:30:00-07:00",
-            "startTime": "2026-10-15T10:30:00-07:00"
+            "endTime": "2026-10-16T11:30:00-07:00",
+            "startTime": "2026-10-16T11:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:30:00-07:00",
-            "startTime": "2026-10-15T11:30:00-07:00"
+            "endTime": "2026-10-16T12:30:00-07:00",
+            "startTime": "2026-10-16T12:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:30:00-07:00",
-            "startTime": "2026-10-15T12:30:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T13:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:00:00-07:00",
-            "startTime": "2026-10-15T14:00:00-07:00"
+            "endTime": "2026-10-16T15:00:00-07:00",
+            "startTime": "2026-10-16T15:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:00:00-07:00",
-            "startTime": "2026-10-15T15:00:00-07:00"
+            "endTime": "2026-10-16T16:00:00-07:00",
+            "startTime": "2026-10-16T16:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:00:00-07:00",
-            "startTime": "2026-10-15T16:00:00-07:00"
+            "endTime": "2026-10-16T17:00:00-07:00",
+            "startTime": "2026-10-16T17:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.658Z"
+        "lastUpdated": "2026-10-16T07:00:52.306Z"
       },
       {
         "id": "1bef32e2-73b4-4de3-bb07-f71c3f301f22",
@@ -4451,11 +2017,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T21:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:00:52.201Z"
+        "lastUpdated": "2026-10-16T07:32:11.964Z"
       },
       {
         "id": "2108cc58-80df-4fff-9b91-735e89873ffd",
@@ -4465,7 +2031,7 @@
         "externalId": "18774860;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -4473,20 +2039,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T14:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T14:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:58:48.208Z"
+        "lastUpdated": "2026-10-16T07:32:11.845Z"
       },
       {
         "id": "2295351d-ce6b-4c04-92d5-5b416372c5b5",
@@ -4507,20 +2068,15 @@
             "waitTime": null
           }
         },
-        "status": "DOWN",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:22:47.940Z"
+        "lastUpdated": "2026-10-16T07:32:11.901Z"
       },
       {
         "id": "24066306-d364-4048-b4c9-a0e81980c5b4",
@@ -4533,15 +2089,9 @@
             "waitTime": null
           }
         },
-        "status": "DOWN",
-        "operatingHours": [
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:45:00-07:00"
-          }
-        ],
-        "lastUpdated": "2026-10-16T04:52:55.985Z"
+        "status": "CLOSED",
+        "operatingHours": [],
+        "lastUpdated": "2026-10-16T07:32:11.892Z"
       },
       {
         "id": "2459a357-2b20-4445-8476-6a9a7e5eab54",
@@ -4558,20 +2108,9 @@
         "entityType": "SHOW",
         "parkId": "832fcd51-ea19-4e77-85c7-75d5843b127c",
         "externalId": "412643335;entityType=Entertainment",
-        "status": "OPERATING",
-        "showtimes": [
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T20:05:00-07:00",
-            "startTime": "2026-10-15T20:05:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T22:15:00-07:00",
-            "startTime": "2026-10-15T22:15:00-07:00"
-          }
-        ],
-        "lastUpdated": "2026-10-15T09:18:13.122Z"
+        "status": "CLOSED",
+        "showtimes": [],
+        "lastUpdated": "2026-10-16T07:00:52.540Z"
       },
       {
         "id": "29be8df3-70fa-478b-a772-098cf643936c",
@@ -4583,16 +2122,16 @@
         "showtimes": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T09:30:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T09:45:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           },
           {
             "type": "Operating",
-            "endTime": "2026-10-15T14:00:00-07:00",
-            "startTime": "2026-10-15T09:30:00-07:00"
+            "endTime": "2026-10-16T16:00:00-07:00",
+            "startTime": "2026-10-16T09:45:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T19:48:22.738Z"
+        "lastUpdated": "2026-10-16T07:00:52.219Z"
       },
       {
         "id": "2fdd02e8-3835-4ef8-bd07-4c3332fb84fa",
@@ -4612,23 +2151,18 @@
         "externalId": "353367;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:00:00.676Z"
+        "lastUpdated": "2026-10-16T07:32:12.003Z"
       },
       {
         "id": "3ee735b5-68dc-470a-a4a2-6ddd415b9cbd",
@@ -4640,11 +2174,11 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.642Z"
+        "lastUpdated": "2026-10-16T07:00:52.285Z"
       },
       {
         "id": "40524fba-5d84-49e7-9204-f493dbe2d5a4",
@@ -4654,7 +2188,7 @@
         "externalId": "353387;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -4662,20 +2196,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:55:52.851Z"
+        "lastUpdated": "2026-10-16T07:32:12.060Z"
       },
       {
         "id": "449e351b-a05a-4a52-8893-0ed5c1f6fc48",
@@ -4687,36 +2216,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:30:00-07:00",
-            "startTime": "2026-10-15T11:30:00-07:00"
+            "endTime": "2026-10-16T12:30:00-07:00",
+            "startTime": "2026-10-16T12:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:30:00-07:00",
-            "startTime": "2026-10-15T12:30:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T13:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:30:00-07:00",
-            "startTime": "2026-10-15T13:30:00-07:00"
+            "endTime": "2026-10-16T14:35:00-07:00",
+            "startTime": "2026-10-16T14:35:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:10:00-07:00",
-            "startTime": "2026-10-15T15:10:00-07:00"
+            "endTime": "2026-10-16T16:05:00-07:00",
+            "startTime": "2026-10-16T16:05:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:10:00-07:00",
-            "startTime": "2026-10-15T16:10:00-07:00"
+            "endTime": "2026-10-16T17:05:00-07:00",
+            "startTime": "2026-10-16T17:05:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T17:10:00-07:00",
-            "startTime": "2026-10-15T17:10:00-07:00"
+            "endTime": "2026-10-16T18:05:00-07:00",
+            "startTime": "2026-10-16T18:05:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.576Z"
+        "lastUpdated": "2026-10-16T07:00:52.172Z"
       },
       {
         "id": "44c1f655-25d3-440c-b1a8-db736a12b105",
@@ -4733,11 +2262,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T16:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T23:00:46.479Z"
+        "lastUpdated": "2026-10-16T07:32:12.100Z"
       },
       {
         "id": "46097afe-a1ea-4807-93d3-14d14f36e55f",
@@ -4747,23 +2276,18 @@
         "externalId": "18752875;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 20
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:18:49.351Z"
+        "lastUpdated": "2026-10-16T07:32:11.827Z"
       },
       {
         "id": "4b7f57a0-c841-43d1-8abb-d13a3b7f2597",
@@ -4785,11 +2309,11 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.667Z"
+        "lastUpdated": "2026-10-16T07:00:52.326Z"
       },
       {
         "id": "4ca6cdbf-4c5f-45bf-b0dc-db83393ec208",
@@ -4799,23 +2323,18 @@
         "externalId": "19009994;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T19:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:07:54.611Z"
+        "lastUpdated": "2026-10-16T07:32:11.855Z"
       },
       {
         "id": "4f5b28d0-b78e-482b-8e2e-1f90756d6220",
@@ -4831,20 +2350,15 @@
             "waitTime": null
           }
         },
-        "status": "DOWN",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T23:11:45.684Z"
+        "lastUpdated": "2026-10-16T07:32:11.773Z"
       },
       {
         "id": "528016ef-db24-47fa-a0f2-b6d26d61e29f",
@@ -4854,23 +2368,18 @@
         "externalId": "353379;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T19:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:04:50.323Z"
+        "lastUpdated": "2026-10-16T07:32:12.042Z"
       },
       {
         "id": "5d07a2b1-49ca-4de7-9d32-6d08edf69b08",
@@ -4880,7 +2389,7 @@
         "externalId": "353303;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -4891,20 +2400,15 @@
             "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T03:20:47.396Z"
+        "lastUpdated": "2026-10-16T07:32:11.924Z"
       },
       {
         "id": "6d876f4c-c3ff-4ae3-a2d8-d4b831e1039b",
@@ -4914,23 +2418,18 @@
         "externalId": "19285637;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:11:48.331Z"
+        "lastUpdated": "2026-10-16T07:32:11.874Z"
       },
       {
         "id": "753b558a-ff18-4ed9-a3c2-70e76b421618",
@@ -4951,76 +2450,136 @@
         "operatingHours": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:00:00-07:00",
-            "startTime": "2026-10-15T09:00:00-07:00"
+            "endTime": "2026-10-16T09:00:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:30:00-07:00",
-            "startTime": "2026-10-15T09:30:00-07:00"
+            "endTime": "2026-10-16T09:30:00-07:00",
+            "startTime": "2026-10-16T09:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:00:00-07:00",
-            "startTime": "2026-10-15T10:00:00-07:00"
+            "endTime": "2026-10-16T10:00:00-07:00",
+            "startTime": "2026-10-16T10:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:30:00-07:00",
-            "startTime": "2026-10-15T10:30:00-07:00"
+            "endTime": "2026-10-16T10:30:00-07:00",
+            "startTime": "2026-10-16T10:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:30:00-07:00",
-            "startTime": "2026-10-15T11:30:00-07:00"
+            "endTime": "2026-10-16T11:30:00-07:00",
+            "startTime": "2026-10-16T11:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:00:00-07:00",
-            "startTime": "2026-10-15T12:00:00-07:00"
+            "endTime": "2026-10-16T12:00:00-07:00",
+            "startTime": "2026-10-16T12:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:30:00-07:00",
-            "startTime": "2026-10-15T12:30:00-07:00"
+            "endTime": "2026-10-16T12:30:00-07:00",
+            "startTime": "2026-10-16T12:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:00:00-07:00",
-            "startTime": "2026-10-15T13:00:00-07:00"
+            "endTime": "2026-10-16T13:00:00-07:00",
+            "startTime": "2026-10-16T13:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:30:00-07:00",
-            "startTime": "2026-10-15T13:30:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T13:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:00:00-07:00",
-            "startTime": "2026-10-15T14:00:00-07:00"
+            "endTime": "2026-10-16T14:00:00-07:00",
+            "startTime": "2026-10-16T14:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:30:00-07:00",
-            "startTime": "2026-10-15T14:30:00-07:00"
+            "endTime": "2026-10-16T14:30:00-07:00",
+            "startTime": "2026-10-16T14:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:00:00-07:00",
-            "startTime": "2026-10-15T15:00:00-07:00"
+            "endTime": "2026-10-16T15:00:00-07:00",
+            "startTime": "2026-10-16T15:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:30:00-07:00",
-            "startTime": "2026-10-15T15:30:00-07:00"
+            "endTime": "2026-10-16T15:30:00-07:00",
+            "startTime": "2026-10-16T15:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:00:00-07:00",
+            "startTime": "2026-10-16T16:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:30:00-07:00",
+            "startTime": "2026-10-16T16:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T17:00:00-07:00",
+            "startTime": "2026-10-16T17:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T17:30:00-07:00",
+            "startTime": "2026-10-16T17:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T18:00:00-07:00",
+            "startTime": "2026-10-16T18:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T18:30:00-07:00",
+            "startTime": "2026-10-16T18:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T19:00:00-07:00",
+            "startTime": "2026-10-16T19:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T19:30:00-07:00",
+            "startTime": "2026-10-16T19:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T20:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T20:30:00-07:00",
+            "startTime": "2026-10-16T20:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:00:00-07:00",
+            "startTime": "2026-10-16T21:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:30:00-07:00",
+            "startTime": "2026-10-16T21:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T23:30:00.343Z"
+        "lastUpdated": "2026-10-16T07:32:12.145Z"
       },
       {
         "id": "77f205a4-d482-4d91-a5ff-71e54a086ad2",
@@ -5030,7 +2589,7 @@
         "externalId": "412543296;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 25
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -5038,20 +2597,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:51:49.483Z"
+        "lastUpdated": "2026-10-16T07:32:12.197Z"
       },
       {
         "id": "7a09a2f0-e226-4f3e-86f8-2598ab67ec44",
@@ -5061,23 +2615,18 @@
         "externalId": "18752877;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 10
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:38:48.344Z"
+        "lastUpdated": "2026-10-16T07:32:11.837Z"
       },
       {
         "id": "86ab3069-110d-49c5-a7e7-29ddf28695a6",
@@ -5087,7 +2636,7 @@
         "externalId": "353453;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 25
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -5095,20 +2644,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:02:47.855Z"
+        "lastUpdated": "2026-10-16T07:32:12.132Z"
       },
       {
         "id": "8d4b6d5f-558f-4210-82b5-02b0570232ea",
@@ -5132,66 +2676,14 @@
           }
         },
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 10,
-            "percentage": 8
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T17:00:00-07:00",
-            "startTime": "2026-10-15T09:00:00-07:00"
+            "endTime": "2026-10-16T21:00:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T00:00:50.572Z"
+        "lastUpdated": "2026-10-16T07:32:11.884Z"
       },
       {
         "id": "9df51934-6bc9-42bc-8cda-bb308beb8680",
@@ -5242,36 +2734,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:00:00-07:00",
-            "startTime": "2026-10-15T10:00:00-07:00"
+            "endTime": "2026-10-16T10:00:00-07:00",
+            "startTime": "2026-10-16T10:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:00:00-07:00",
-            "startTime": "2026-10-15T12:00:00-07:00"
+            "endTime": "2026-10-16T12:00:00-07:00",
+            "startTime": "2026-10-16T12:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:30:00-07:00",
-            "startTime": "2026-10-15T13:30:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T13:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:30:00-07:00",
-            "startTime": "2026-10-15T14:30:00-07:00"
+            "endTime": "2026-10-16T14:30:00-07:00",
+            "startTime": "2026-10-16T14:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:30:00-07:00",
-            "startTime": "2026-10-15T15:30:00-07:00"
+            "endTime": "2026-10-16T15:30:00-07:00",
+            "startTime": "2026-10-16T15:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.594Z"
+        "lastUpdated": "2026-10-16T07:00:52.207Z"
       },
       {
         "id": "b1d285a7-2444-4a7c-b7bb-d2d4d6428a85",
@@ -5293,16 +2785,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T21:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:32:47.965Z"
+        "lastUpdated": "2026-10-16T07:32:11.984Z"
       },
       {
         "id": "b7678dab-5544-48d5-8fdc-c1a0127cfbcd",
@@ -5321,66 +2808,14 @@
           }
         },
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 20,
-            "percentage": 16
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 40,
-            "percentage": 33
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 50,
-            "percentage": 41
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 45,
-            "percentage": 37
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 60,
-            "percentage": 50
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T14:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T14:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T21:00:51.730Z"
+        "lastUpdated": "2026-10-16T07:32:12.121Z"
       },
       {
         "id": "b7ea1c83-0973-44c1-8045-f32042be94d5",
@@ -5392,36 +2827,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:45:00-07:00",
-            "startTime": "2026-10-15T10:45:00-07:00"
+            "endTime": "2026-10-16T10:45:00-07:00",
+            "startTime": "2026-10-16T10:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:45:00-07:00",
-            "startTime": "2026-10-15T11:45:00-07:00"
+            "endTime": "2026-10-16T11:45:00-07:00",
+            "startTime": "2026-10-16T11:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:45:00-07:00",
-            "startTime": "2026-10-15T12:45:00-07:00"
+            "endTime": "2026-10-16T12:45:00-07:00",
+            "startTime": "2026-10-16T12:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:30:00-07:00",
-            "startTime": "2026-10-15T14:30:00-07:00"
+            "endTime": "2026-10-16T14:30:00-07:00",
+            "startTime": "2026-10-16T14:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:30:00-07:00",
-            "startTime": "2026-10-15T15:30:00-07:00"
+            "endTime": "2026-10-16T15:30:00-07:00",
+            "startTime": "2026-10-16T15:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:30:00-07:00",
-            "startTime": "2026-10-15T16:30:00-07:00"
+            "endTime": "2026-10-16T16:30:00-07:00",
+            "startTime": "2026-10-16T16:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.634Z"
+        "lastUpdated": "2026-10-16T07:00:52.274Z"
       },
       {
         "id": "bdb0a3ec-eb7a-41c9-918f-ccee7194743e",
@@ -5433,66 +2868,66 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:50:00-07:00",
-            "startTime": "2026-10-15T09:50:00-07:00"
+            "endTime": "2026-10-16T09:50:00-07:00",
+            "startTime": "2026-10-16T09:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:20:00-07:00",
-            "startTime": "2026-10-15T10:20:00-07:00"
+            "endTime": "2026-10-16T10:20:00-07:00",
+            "startTime": "2026-10-16T10:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:50:00-07:00",
-            "startTime": "2026-10-15T10:50:00-07:00"
+            "endTime": "2026-10-16T10:50:00-07:00",
+            "startTime": "2026-10-16T10:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:20:00-07:00",
-            "startTime": "2026-10-15T11:20:00-07:00"
+            "endTime": "2026-10-16T11:20:00-07:00",
+            "startTime": "2026-10-16T11:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:50:00-07:00",
-            "startTime": "2026-10-15T11:50:00-07:00"
+            "endTime": "2026-10-16T11:50:00-07:00",
+            "startTime": "2026-10-16T11:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:20:00-07:00",
-            "startTime": "2026-10-15T12:20:00-07:00"
+            "endTime": "2026-10-16T12:20:00-07:00",
+            "startTime": "2026-10-16T12:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:50:00-07:00",
-            "startTime": "2026-10-15T13:50:00-07:00"
+            "endTime": "2026-10-16T13:50:00-07:00",
+            "startTime": "2026-10-16T13:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:20:00-07:00",
-            "startTime": "2026-10-15T14:20:00-07:00"
+            "endTime": "2026-10-16T14:20:00-07:00",
+            "startTime": "2026-10-16T14:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:50:00-07:00",
-            "startTime": "2026-10-15T14:50:00-07:00"
+            "endTime": "2026-10-16T14:50:00-07:00",
+            "startTime": "2026-10-16T14:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:20:00-07:00",
-            "startTime": "2026-10-15T15:20:00-07:00"
+            "endTime": "2026-10-16T15:20:00-07:00",
+            "startTime": "2026-10-16T15:20:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:50:00-07:00",
-            "startTime": "2026-10-15T15:50:00-07:00"
+            "endTime": "2026-10-16T15:50:00-07:00",
+            "startTime": "2026-10-16T15:50:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:20:00-07:00",
-            "startTime": "2026-10-15T16:20:00-07:00"
+            "endTime": "2026-10-16T16:20:00-07:00",
+            "startTime": "2026-10-16T16:20:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.650Z"
+        "lastUpdated": "2026-10-16T07:00:52.296Z"
       },
       {
         "id": "c60c768b-3461-465c-8f4f-b44b087506fc",
@@ -5502,7 +2937,7 @@
         "externalId": "16514416;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 35
+            "waitTime": null
           },
           "SINGLE_RIDER": {
             "waitTime": null
@@ -5518,20 +2953,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T05:01:08.457Z"
+        "lastUpdated": "2026-10-16T07:32:11.807Z"
       },
       {
         "id": "c8a4b7b1-c1b2-4dfe-b73c-4e834b4a73db",
@@ -5541,23 +2971,18 @@
         "externalId": "353361;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:44:46.248Z"
+        "lastUpdated": "2026-10-16T07:32:11.993Z"
       },
       {
         "id": "c9803366-6f37-4406-82af-7692357e3ca9",
@@ -5571,66 +2996,14 @@
           }
         },
         "status": "CLOSED",
-        "forecast": [
-          {
-            "time": "2026-10-15T08:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T09:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          },
-          {
-            "time": "2026-10-15T10:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T11:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T12:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T13:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T14:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T15:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T16:00:00-07:00",
-            "waitTime": 5,
-            "percentage": 9
-          },
-          {
-            "time": "2026-10-15T17:00:00-07:00",
-            "waitTime": 0,
-            "percentage": 0
-          }
-        ],
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T16:15:00-07:00",
-            "startTime": "2026-10-15T10:00:00-07:00"
+            "endTime": "2026-10-16T19:45:00-07:00",
+            "startTime": "2026-10-16T10:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T23:15:44.947Z"
+        "lastUpdated": "2026-10-16T07:32:12.080Z"
       },
       {
         "id": "d2aa0987-49a2-45dc-a635-3a8bf7401230",
@@ -5642,71 +3015,136 @@
         "operatingHours": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:00:00-07:00",
-            "startTime": "2026-10-15T09:00:00-07:00"
+            "endTime": "2026-10-16T09:00:00-07:00",
+            "startTime": "2026-10-16T09:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T09:30:00-07:00",
-            "startTime": "2026-10-15T09:30:00-07:00"
+            "endTime": "2026-10-16T09:30:00-07:00",
+            "startTime": "2026-10-16T09:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:00:00-07:00",
-            "startTime": "2026-10-15T10:00:00-07:00"
+            "endTime": "2026-10-16T10:00:00-07:00",
+            "startTime": "2026-10-16T10:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T10:30:00-07:00",
-            "startTime": "2026-10-15T10:30:00-07:00"
+            "endTime": "2026-10-16T10:30:00-07:00",
+            "startTime": "2026-10-16T10:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:00:00-07:00",
-            "startTime": "2026-10-15T11:00:00-07:00"
+            "endTime": "2026-10-16T11:00:00-07:00",
+            "startTime": "2026-10-16T11:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:30:00-07:00",
-            "startTime": "2026-10-15T11:30:00-07:00"
+            "endTime": "2026-10-16T11:30:00-07:00",
+            "startTime": "2026-10-16T11:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:00:00-07:00",
-            "startTime": "2026-10-15T12:00:00-07:00"
+            "endTime": "2026-10-16T12:00:00-07:00",
+            "startTime": "2026-10-16T12:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:30:00-07:00",
-            "startTime": "2026-10-15T12:30:00-07:00"
+            "endTime": "2026-10-16T12:30:00-07:00",
+            "startTime": "2026-10-16T12:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:00:00-07:00",
-            "startTime": "2026-10-15T13:00:00-07:00"
+            "endTime": "2026-10-16T13:00:00-07:00",
+            "startTime": "2026-10-16T13:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:30:00-07:00",
-            "startTime": "2026-10-15T13:30:00-07:00"
+            "endTime": "2026-10-16T13:30:00-07:00",
+            "startTime": "2026-10-16T13:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:00:00-07:00",
-            "startTime": "2026-10-15T14:00:00-07:00"
+            "endTime": "2026-10-16T14:00:00-07:00",
+            "startTime": "2026-10-16T14:00:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:30:00-07:00",
-            "startTime": "2026-10-15T14:30:00-07:00"
+            "endTime": "2026-10-16T14:30:00-07:00",
+            "startTime": "2026-10-16T14:30:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:00:00-07:00",
-            "startTime": "2026-10-15T15:00:00-07:00"
+            "endTime": "2026-10-16T15:00:00-07:00",
+            "startTime": "2026-10-16T15:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T15:30:00-07:00",
+            "startTime": "2026-10-16T15:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:00:00-07:00",
+            "startTime": "2026-10-16T16:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T16:30:00-07:00",
+            "startTime": "2026-10-16T16:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T17:00:00-07:00",
+            "startTime": "2026-10-16T17:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T17:30:00-07:00",
+            "startTime": "2026-10-16T17:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T18:00:00-07:00",
+            "startTime": "2026-10-16T18:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T18:30:00-07:00",
+            "startTime": "2026-10-16T18:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T19:00:00-07:00",
+            "startTime": "2026-10-16T19:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T19:30:00-07:00",
+            "startTime": "2026-10-16T19:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T20:00:00-07:00",
+            "startTime": "2026-10-16T20:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T20:30:00-07:00",
+            "startTime": "2026-10-16T20:30:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:00:00-07:00",
+            "startTime": "2026-10-16T21:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:30:00-07:00",
+            "startTime": "2026-10-16T21:30:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T23:00:00.140Z"
+        "lastUpdated": "2026-10-16T07:32:11.914Z"
       },
       {
         "id": "dca741a6-3472-4d4f-a9aa-7774aae81754",
@@ -5718,36 +3156,36 @@
         "showtimes": [
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T11:15:00-07:00",
-            "startTime": "2026-10-15T11:15:00-07:00"
+            "endTime": "2026-10-16T11:15:00-07:00",
+            "startTime": "2026-10-16T11:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T12:15:00-07:00",
-            "startTime": "2026-10-15T12:15:00-07:00"
+            "endTime": "2026-10-16T12:15:00-07:00",
+            "startTime": "2026-10-16T12:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T13:15:00-07:00",
-            "startTime": "2026-10-15T13:15:00-07:00"
+            "endTime": "2026-10-16T13:15:00-07:00",
+            "startTime": "2026-10-16T13:15:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T14:45:00-07:00",
-            "startTime": "2026-10-15T14:45:00-07:00"
+            "endTime": "2026-10-16T14:45:00-07:00",
+            "startTime": "2026-10-16T14:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T15:45:00-07:00",
-            "startTime": "2026-10-15T15:45:00-07:00"
+            "endTime": "2026-10-16T15:45:00-07:00",
+            "startTime": "2026-10-16T15:45:00-07:00"
           },
           {
             "type": "Performance Time",
-            "endTime": "2026-10-15T16:45:00-07:00",
-            "startTime": "2026-10-15T16:45:00-07:00"
+            "endTime": "2026-10-16T16:45:00-07:00",
+            "startTime": "2026-10-16T16:45:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.585Z"
+        "lastUpdated": "2026-10-16T07:00:52.182Z"
       },
       {
         "id": "e1fbc7a1-2cd1-4282-b373-ac11d9d9d38a",
@@ -5757,7 +3195,7 @@
         "externalId": "15575069;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 5
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -5765,20 +3203,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:16:46.544Z"
+        "lastUpdated": "2026-10-16T07:32:11.785Z"
       },
       {
         "id": "e46d8982-4991-4b9e-8e4a-b519d3ca6060",
@@ -5795,9 +3228,20 @@
             "nextAllocationTime": null
           }
         },
-        "status": "CLOSED",
-        "showtimes": [],
-        "lastUpdated": "2026-10-15T07:05:18.741Z"
+        "status": "OPERATING",
+        "showtimes": [
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T21:00:00-07:00",
+            "startTime": "2026-10-16T21:00:00-07:00"
+          },
+          {
+            "type": "Performance Time",
+            "endTime": "2026-10-16T22:15:00-07:00",
+            "startTime": "2026-10-16T22:15:00-07:00"
+          }
+        ],
+        "lastUpdated": "2026-10-16T07:00:52.444Z"
       },
       {
         "id": "eb77ee1f-3207-44fd-acfc-d7bc18602007",
@@ -5809,11 +3253,11 @@
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T18:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T01:00:00.723Z"
+        "lastUpdated": "2026-10-16T07:32:12.111Z"
       },
       {
         "id": "f44a5072-3cda-4c7c-8574-33ad09d16cca",
@@ -5823,7 +3267,7 @@
         "externalId": "15822029;entityType=Attraction",
         "queue": {
           "STANDBY": {
-            "waitTime": 15
+            "waitTime": null
           },
           "RETURN_TIME": {
             "state": "FINISHED",
@@ -5831,20 +3275,15 @@
             "returnStart": null
           }
         },
-        "status": "OPERATING",
+        "status": "CLOSED",
         "operatingHours": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T18:00:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
-          },
-          {
-            "type": "Special Ticketed Event",
-            "endTime": "2026-10-15T23:00:00-07:00",
-            "startTime": "2026-10-15T18:00:00-07:00"
+            "endTime": "2026-10-16T22:00:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-16T04:44:49.113Z"
+        "lastUpdated": "2026-10-16T07:32:11.798Z"
       },
       {
         "id": "f71bfc6e-2f10-40a1-bf29-a4b98c5350f4",
@@ -5856,11 +3295,11 @@
         "showtimes": [
           {
             "type": "Operating",
-            "endTime": "2026-10-15T17:30:00-07:00",
-            "startTime": "2026-10-15T08:00:00-07:00"
+            "endTime": "2026-10-16T21:30:00-07:00",
+            "startTime": "2026-10-16T08:00:00-07:00"
           }
         ],
-        "lastUpdated": "2026-10-15T07:05:18.567Z"
+        "lastUpdated": "2026-10-16T07:00:52.163Z"
       }
     ]
   }
