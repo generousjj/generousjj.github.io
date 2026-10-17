@@ -1,12 +1,6 @@
 name: Update DLR wait data
 
 on:
-  push:
-    paths:
-      - 'dlr-waits/index.html'
-      - '.github/workflows/update-dlr-waits.yml'
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
