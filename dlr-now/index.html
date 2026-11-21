@@ -15,7 +15,7 @@ body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}.wrap{max-wi
 h1{font-size:27px;letter-spacing:-.6px;margin:3px 0 2px}.sub{font-size:13px;color:var(--muted);margin-bottom:13px}
 .seg{position:sticky;top:max(8px,env(safe-area-inset-top));z-index:10;display:grid;grid-template-columns:1fr 1fr;gap:5px;background:#081728ee;border:1px solid var(--line);padding:5px;border-radius:14px;backdrop-filter:blur(14px)}
 .seg button{border:0;background:transparent;color:var(--muted);font:700 14px inherit;border-radius:10px;padding:11px 6px}.seg button.active{background:var(--panel2);color:var(--text)}
-.topline{display:flex;align-items:center;gap:8px;margin:12px 1px 10px}.label{font-size:13px;color:var(--muted)}.updated{margin-left:auto;font-size:12px;color:var(--muted)}
+.topline{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 1px 10px}.label{font-size:13px;color:var(--muted)}.updated{margin-left:auto;font-size:12px;color:var(--muted)}
 .filterbtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 10px;font-weight:750;font-size:12px}.filterbtn svg{width:16px;height:16px}.filtercount{display:none;min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--accent);color:#06111e;align-items:center;justify-content:center;font-size:10px;font-weight:850}.filtercount.show{display:inline-flex}.count{font-size:12px;color:var(--muted);margin:0 1px 10px}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none;align-items:flex-end;justify-content:center}.overlay.open{display:flex}.sheet{width:min(760px,100%);max-height:82vh;overflow:auto;background:#0b1726;border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;padding:14px 14px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -18px 50px rgba(0,0,0,.4)}.sheethead{display:flex;align-items:center;gap:10px;position:sticky;top:-14px;background:#0b1726;padding:3px 0 12px;z-index:2}.sheettitle{font-size:19px;font-weight:800}.sheetactions{margin-left:auto;display:flex;gap:7px}.sheetbtn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 11px;font-size:12px;font-weight:750}.sheetbtn.clear{background:transparent;color:var(--muted)}.filtersection{padding:12px 0;border-top:1px solid var(--line)}.filtersection:first-of-type{border-top:0}.filtersection h3{font-size:12px;color:#d5e4f3;margin:0 0 8px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:9px 12px;font-size:13px;font-weight:700}.chip.selected{background:#173657;border-color:#4a83b7;color:#eef7ff}body.sheetopen{overflow:hidden}.cards{display:grid;gap:9px}.card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),var(--panel));border-radius:16px;padding:13px 14px;display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center}
 .rank{font-size:18px;font-weight:800;color:#89a8c9;text-align:center}.rank.top{color:#fff}.name{font-size:16px;font-weight:760;line-height:1.2}.meta{font-size:12px;color:var(--muted);margin-top:5px;display:flex;gap:6px;flex-wrap:wrap}
 .badge{border:1px solid #31577a;background:#102a43;color:#bdddff;border-radius:999px;padding:2px 6px;font-size:10px;font-weight:750}.wait{text-align:right;min-width:70px}.mins{font-size:28px;font-weight:850;letter-spacing:-1px;line-height:1}.unit{font-size:11px;color:var(--muted);margin-top:3px}
@@ -40,6 +40,15 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 <button data-park="dca">DCA</button>
 </div>
 
+
+
+</div>
+<section id="disney-world" hidden aria-labelledby="wait-title">
+<div class="headrow"><div><h2 id="wait-title">Disney World waits</h2><p class="lead">Check posted standby waits across Walt Disney World. Refreshes every minute while this section is on screen.</p></div><button class="refresh" id="wait-refresh" type="button">Refresh waits ↻</button></div>
+<div class="wait-controls"><label>Park<select id="wait-park"></select></label><label>Find an attraction<input id="wait-search" type="search" placeholder="Search rides…"></label></div>
+<p id="wait-message" class="wait-message" role="status">Choose a park to check waits.</p>
+
+</section>
 
 <div class="topline">
 <span class="label">Attractions</span>
@@ -156,16 +165,9 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 Best Bet favors popular attractions with shorter waits. Best nearby adds straight-line proximity from your phone. Tap Filters to combine preferences such as Indoor + Mixed.
 </div>
 
-</div>
-<section id="disney-world" hidden aria-labelledby="wait-title">
-<div class="headrow"><div><h2 id="wait-title">Disney World waits</h2><p class="lead">Check posted standby waits across Walt Disney World. Refreshes every minute while this section is on screen.</p></div><button class="refresh" id="wait-refresh" type="button">Refresh waits ↻</button></div>
-<div class="wait-controls"><label>Park<select id="wait-park"></select></label><label>Find an attraction<input id="wait-search" type="search" placeholder="Search rides…"></label><label>Sort by<select id="wait-sort"><option value="shortest">Shortest wait</option><option value="name">Attraction name</option><option value="longest">Longest wait</option></select></label></div>
-<p id="wait-message" class="wait-message" role="status">Choose a park to check waits.</p><div id="wait-list" class="wait-list"></div>
-<p class="wait-message" style="margin-top:16px">Posted waits can change. Missing waits are never treated as zero. All times Eastern. <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">Powered by ThemeParks.wiki</a> · <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/mobile-apps/" target="_blank" rel="noopener">My Disney Experience</a></p><noscript>Enable JavaScript to load live waits.</noscript>
-</section>
-
+<p id="world-credit" class="wait-message" style="margin-top:16px">Posted waits can change. Missing waits are never treated as zero. All times Eastern. <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">Powered by ThemeParks.wiki</a> · <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/mobile-apps/" target="_blank" rel="noopener">My Disney Experience</a></p><noscript>Enable JavaScript to load live waits.</noscript>
 <footer>
-Live data refreshed about every 5 minutes via <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">ThemeParks.wiki</a>.
+Live data from <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">ThemeParks.wiki</a>.
 Unofficial and not affiliated with Disney.
 </footer>
 </div>
@@ -187,16 +189,87 @@ const POP={
 "mater's junkyard jamboree":3.3,"silly symphony swings":3,"golden zephyr":2.7
 };
 const META={"walt disney - a magical life":{"setting":"indoor","thrill":"low"},"pirate's lair on tom sawyer island":{"setting":"outdoor","thrill":"low"},"big thunder mountain railroad":{"setting":"outdoor","thrill":"high"},"walt disney's enchanted tiki room":{"setting":"indoor","thrill":"low"},"great moments with mr. lincoln":{"setting":"indoor","thrill":"low"},"jungle cruise":{"setting":"outdoor","thrill":"low"},"astro orbitor":{"setting":"outdoor","thrill":"moderate"},"buzz lightyear astro blasters":{"setting":"indoor","thrill":"low"},"casey jr. circus train":{"setting":"outdoor","thrill":"low"},"disneyland monorail":{"setting":"mixed","thrill":"low"},"disneyland railroad":{"setting":"mixed","thrill":"low"},"dumbo the flying elephant":{"setting":"outdoor","thrill":"low"},"finding nemo submarine voyage":{"setting":"mixed","thrill":"low"},"haunted mansion":{"setting":"indoor","thrill":"moderate"},"haunted mansion holiday":{"setting":"indoor","thrill":"moderate"},"indiana jones adventure":{"setting":"indoor","thrill":"high","single":true},"it's a small world":{"setting":"indoor","thrill":"low"},"it's a small world holiday":{"setting":"indoor","thrill":"low"},"king arthur carrousel":{"setting":"outdoor","thrill":"low"},"mad tea party":{"setting":"outdoor","thrill":"moderate"},"matterhorn bobsleds":{"setting":"outdoor","thrill":"high","single":true},"mickey & minnie's runaway railway":{"setting":"indoor","thrill":"moderate"},"mickey and minnie's runaway railway":{"setting":"indoor","thrill":"moderate"},"millennium falcon: smugglers run":{"setting":"indoor","thrill":"moderate","single":true},"mr. toad's wild ride":{"setting":"indoor","thrill":"moderate"},"peter pan's flight":{"setting":"indoor","thrill":"low"},"pinocchio's daring journey":{"setting":"indoor","thrill":"low"},"pirates of the caribbean":{"setting":"indoor","thrill":"low"},"roger rabbit's car toon spin":{"setting":"indoor","thrill":"moderate"},"sailing ship columbia":{"setting":"outdoor","thrill":"low"},"snow white's enchanted wish":{"setting":"indoor","thrill":"low"},"space mountain":{"setting":"indoor","thrill":"high","single":true},"hyperspace mountain":{"setting":"indoor","thrill":"high","single":true},"star tours - the adventures continue":{"setting":"indoor","thrill":"high"},"star tours – the adventures continue":{"setting":"indoor","thrill":"high"},"star wars: rise of the resistance":{"setting":"mixed","thrill":"high"},"storybook land canal boats":{"setting":"outdoor","thrill":"low"},"tiana's bayou adventure":{"setting":"mixed","thrill":"high","single":true},"the many adventures of winnie the pooh":{"setting":"indoor","thrill":"low"},"mark twain riverboat":{"setting":"outdoor","thrill":"low"},"davy crockett's explorer canoes":{"setting":"outdoor","thrill":"moderate"},"main street vehicles":{"setting":"outdoor","thrill":"low"},"alice in wonderland":{"setting":"indoor","thrill":"low"},"autopia":{"setting":"outdoor","thrill":"low"},"radiator springs racers":{"setting":"mixed","thrill":"high","single":true},"guardians of the galaxy – mission: breakout!":{"setting":"indoor","thrill":"high"},"guardians of the galaxy - mission: breakout!":{"setting":"indoor","thrill":"high"},"guardians of the galaxy - monsters after dark":{"setting":"indoor","thrill":"high"},"web slingers: a spider-man adventure":{"setting":"indoor","thrill":"moderate","single":true},"incredicoaster":{"setting":"outdoor","thrill":"high","single":true},"soarin' around the world":{"setting":"indoor","thrill":"moderate","single":true},"soarin’ across america":{"setting":"indoor","thrill":"moderate","single":true},"soarin' across america":{"setting":"indoor","thrill":"moderate","single":true},"soarin' over california":{"setting":"indoor","thrill":"moderate","single":true},"toy story midway mania!":{"setting":"indoor","thrill":"low"},"grizzly river run":{"setting":"outdoor","thrill":"high","single":true},"monsters, inc. mike & sulley to the rescue!":{"setting":"indoor","thrill":"low"},"goofy's sky school":{"setting":"outdoor","thrill":"high","single":true},"the little mermaid ~ ariel's undersea adventure":{"setting":"indoor","thrill":"low"},"inside out emotional whirlwind":{"setting":"outdoor","thrill":"low"},"luigi's rollickin' roadsters":{"setting":"outdoor","thrill":"moderate"},"mater's junkyard jamboree":{"setting":"outdoor","thrill":"moderate"},"mater's graveyard jambooree":{"setting":"outdoor","thrill":"moderate"},"mater's jingle jamboree":{"setting":"outdoor","thrill":"moderate"},"silly symphony swings":{"setting":"outdoor","thrill":"moderate"},"golden zephyr":{"setting":"outdoor","thrill":"low"},"jumpin' jellyfish":{"setting":"outdoor","thrill":"moderate"},"redwood creek challenge trail":{"setting":"outdoor","thrill":"moderate"},"animation academy":{"setting":"indoor","thrill":"low"},"turtle talk with crush":{"setting":"indoor","thrill":"low"},"mickey's philharmagic":{"setting":"indoor","thrill":"low"},"pixar pal-a-round – non-swinging":{"setting":"outdoor","thrill":"low"},"pixar pal-a-round - non-swinging":{"setting":"outdoor","thrill":"low"},"pixar pal-a-round - swinging":{"setting":"outdoor","thrill":"moderate"},"jessie's critter carousel":{"setting":"outdoor","thrill":"low"}};
+// Florida attraction profiles supply editorial popularity, setting and thrill estimates.
+const WORLD_PROFILES = new Map();
+function profile(names, popularity, setting, thrill, single=false) {
+ for (const name of names.split("|")) WORLD_PROFILES.set(name, {popularity,setting,thrill,single});
+}
+profile("space mountain|guardians of the galaxy: cosmic rewind|avatar flight of passage",5,"indoor","high");
+profile("tron lightcycle / run",5,"mixed","high");
+profile("seven dwarfs mine train",5,"mixed","moderate");
+profile("slinky dog dash",5,"outdoor","moderate");
+profile("test track",4.8,"mixed","high",true);
+profile("expedition everest",4.8,"outdoor","high",true);
+profile("rock 'n' roller coaster",4.8,"indoor","high",true);
+profile("the twilight zone tower of terror",4.8,"indoor","high");
+profile("star wars: rise of the resistance",5,"mixed","high",true);
+profile("millennium falcon: smugglers run",4.4,"indoor","moderate",true);
+profile("remy's ratatouille adventure",4.8,"indoor","moderate",true);
+profile("frozen ever after",4.8,"indoor","moderate");
+profile("na'vi river journey|peter pan's flight",4.6,"indoor","low");
+profile("kilimanjaro safaris|jungle cruise",4.5,"outdoor","low");
+profile("toy story mania|buzz lightyear's space ranger spin",4.2,"indoor","low");
+profile("soarin",4.6,"indoor","moderate");
+profile("mission: space|star tours",3.9,"indoor","high");
+profile("the barnstormer",3.4,"outdoor","moderate");
+profile("kali river rapids",4,"outdoor","high");
+profile("living with the land",3.6,"mixed","low");
+profile("spaceship earth",3.9,"indoor","low");
+profile("journey into imagination with figment|the seas with nemo|gran fiesta tour|under the sea",3.3,"indoor","low");
+profile("peoplemover|walt disney world railroad|wildlife express train",3.3,"mixed","low");
+profile("the magic carpets of aladdin|prince charming regal carrousel|tomorrowland speedway|triceratop spin",3,"outdoor","low");
+profile("astro orbiter|alien swirling saucers",3.6,"outdoor","moderate");
+profile("country bear|carousel of progress|monsters inc. laugh floor|the hall of presidents|awesome planet|american adventure",3,"indoor","low");
+profile("journey of water",3.5,"outdoor","low");
+profile("summit plummet|slush gusher|crush 'n' gusher|miss adventure falls|humunga kowabunga",4.4,"outdoor","high");
+profile("teamboat springs|runoff rapids|toboggan racers|snow stormers|downhill double dipper|gangplank falls|keelhaul falls|mayday falls|storm slides",3.8,"outdoor","moderate");
+profile("castaway creek|cross country creek|melt-away bay|ketchakiddee creek|tike's peak",3.3,"outdoor","low");
+function worldProfile(x){
+ const n=String(x.name||"").toLowerCase().replace(/[‘’]/g,"'").replace(/[™®"]/g,"").trim();
+ if(WORLD_PROFILES.has(n))return WORLD_PROFILES.get(n);
+ for(const [key,value] of WORLD_PROFILES)if(n.includes(key))return value;
+ const shared=META[n];
+ return {setting:shared?.setting,thrill:shared?.thrill,popularity:POP[n]??2.5};
+}
 function normName(x){return String(x?.name||"").toLowerCase().trim()}
-function meta(x){return META[normName(x)]||{setting:"unknown",thrill:"unknown"}}
-function liveSingleRider(x){const sr=x?.queue?.SINGLE_RIDER;return !!sr && (sr.waitTime!=null || sr.state==="AVAILABLE" || Object.keys(sr).length>0)}
-function supportsSingleRider(x){return liveSingleRider(x) || !!meta(x).single}
+function meta(x){if(x.world)return worldProfile(x);return META[normName(x)]||{setting:"unknown",thrill:"unknown"}}
+function liveSingleRider(x){const sr=x?.queue?.SINGLE_RIDER;if(x.world)return x.status==="OPERATING" && !!sr && (sr.state ? sr.state==="AVAILABLE" : Number.isFinite(sr.waitTime)&&sr.waitTime>=0);return !!sr && (sr.waitTime!=null || sr.state==="AVAILABLE" || Object.keys(sr).length>0)}
+function supportsSingleRider(x){return (x.world && !!x.queue?.SINGLE_RIDER) || liveSingleRider(x) || !!meta(x).single}
 function popBucket(x){const p=pop(x);if(p>=4.5)return "very";if(p>=3.8)return "popular";if(p>=3.0)return "moderate";return "lower"}
 function settingLabel(v){return v==="mixed"?"Indoor/outdoor":v==="indoor"?"Indoor":v==="outdoor"?"Outdoor":""}
 function thrillLabel(v){return v==="low"?"Low thrill":v==="moderate"?"Moderate thrill":v==="high"?"High thrill":""}
 let park="dl",payload=null,lastLoad=null,userLocation=null,geoWatch=null;
 const ENTITY_LOCATIONS={};
 const q=s=>document.querySelector(s);
+const storageKey="dlr-best-bet.view.v1";
+let saved={};
+try { const data=JSON.parse(localStorage.getItem(storageKey)); if(data && typeof data==="object")saved=data; } catch {}
+let world=false, worldEntry=null, restoreScroll=true;
+function save(){try{localStorage.setItem(storageKey,JSON.stringify(saved))}catch{}}
+function viewKey(){return world?"wdw":"dlr"}
+function parkView(){return world?q("#wait-park").value:park}
+function rememberScroll(key=parkView()){
+ if(restoreScroll)return;
+ saved.scroll={...saved.scroll,[key]:window.scrollY};save();
+}
+window.addEventListener("pagehide",()=>rememberScroll());
+document.addEventListener("visibilitychange",()=>{if(document.hidden)rememberScroll()});
+function saveFilters(){
+ saved[viewKey()+"Filters"]=Object.fromEntries(Object.entries(FILTERS).map(([key,values])=>[key,[...values]]));save();
+}
+function restoreFilters(){
+ const prefs=saved[viewKey()+"Filters"]||{};
+ document.querySelectorAll(".chips").forEach(group=>{
+   const key=group.dataset.group, values=selected(key);
+   values.clear();
+   for(const chip of group.querySelectorAll(".chip")){
+     if(Array.isArray(prefs[key]) && prefs[key].includes(chip.dataset.value) && !(group.dataset.single && values.size)) values.add(chip.dataset.value);
+   }
+   if(key==="sort" && !values.size)values.add("best");
+   for(const chip of group.querySelectorAll(".chip"))chip.classList.toggle("selected",values.has(chip.dataset.value));
+ });
+ updateFilterBadge();
+}
 const FILTERS={
   sort:new Set(["best"]),
   status:new Set(),
@@ -220,6 +293,7 @@ function unionMatch(group,value){const s=selected(group);return s.size===0||s.ha
 
 
 function pop(x){
+ if(x.world)return worldProfile(x).popularity;
  const n=String(x.name||"").toLowerCase().trim();
  if(POP[n]!=null)return POP[n];
  if(n.includes("rise of the resistance"))return 5;
@@ -232,7 +306,7 @@ function pop(x){
  if(n.includes("tiana"))return 5;
  return 2.5;
 }
-function wait(x){const w=x?.queue?.STANDBY?.waitTime;return Number.isFinite(w)?w:null}
+function wait(x){const w=x?.queue?.STANDBY?.waitTime;return Number.isFinite(w)&&(!x.world||(x.status==="OPERATING"&&w>=0))?w:null}
 function score(x){
  if(x.status!=="OPERATING")return -99;
  const p=pop(x),w=wait(x);
@@ -240,7 +314,7 @@ function score(x){
  return p*.60+waitScore*.40;
 }
 function entityLocation(x){
- const loc=ENTITY_LOCATIONS[x?.id];
+ const loc=ENTITY_LOCATIONS[x?.id]||x?.location;
  if(!loc || !Number.isFinite(loc.latitude) || !Number.isFinite(loc.longitude)) return null;
  return loc;
 }
@@ -272,15 +346,16 @@ function ago(iso){
  return m<1?"just now":m+"m ago";
 }
 function render(){
- if(!payload)return;
- const raw=payload[park]?.liveData||[];
+ const raw=world?worldEntry?.rides:payload?.[park]?.liveData;
+ if(!raw){q("#cards").replaceChildren();q("#count").textContent="";return;}
  const sort=[...selected("sort")][0]||"best";
  const statusFilter=[...selected("status")][0]||"all";
  const waitFilter=[...selected("wait")][0]||"all";
  const queueFilter=[...selected("queue")][0]||"all";
  const singleFilter=[...selected("single")][0]||"all";
 
- let rows=raw.filter(x=>x.entityType==="ATTRACTION");
+ let rows=raw.filter(x=>x.world || x.entityType==="ATTRACTION");
+ if(world){const query=q("#wait-search").value.trim().toLowerCase();rows=rows.filter(x=>x.name.toLowerCase().includes(query))};
 
  if(statusFilter==="open") rows=rows.filter(x=>x.status==="OPERATING");
  if(statusFilter==="closed") rows=rows.filter(x=>x.status!=="OPERATING");
@@ -326,12 +401,19 @@ function render(){
          ${extraMeta}
          ${dist!=null?`<span class="distance">${esc(formatDistance(dist))}</span>`:""}
          <span>${esc(x.status==="OPERATING"?"Open":x.status||"Unknown")}</span>
+         ${x.world && Number.isFinite(Date.parse(x.lastUpdated)) ? `<span>Last change ${esc(new Date(x.lastUpdated).toLocaleString("en-US",{timeZone:"America/New_York",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}))} ET</span>` : ""}
        </div>
      </div>
      <div class="wait"><div class="mins ${cls(w)}">${w==null?"—":w}</div><div class="unit">${w==null?"no posted wait":"minutes"}</div></div>
    </div>`;
  }).join("");
  q("#message").innerHTML=shown.length?"":'<div class="error">No attractions match those filters.</div>';
+ if(world && !raw.length)q("#message").textContent="No attraction wait data available for this park.";
+ if(restoreScroll){
+   restoreScroll=false;
+   window.scrollTo(0,Number(saved.scroll?.[parkView()])||0);
+ }
+ if(world)return;
  const g=payload.generatedAt?new Date(payload.generatedAt):lastLoad;
  q("#updated").textContent=g?"data "+ago(g):"loaded";
 }
@@ -366,24 +448,24 @@ async function load(){
      dca:await dcar.json()
    };
    lastLoad=new Date();
-   q("#message").innerHTML="";
+   if(!world)q("#message").innerHTML="";
    render();
  }catch(e){
    try{
      const r=await fetch("./data.json?"+ts,{cache:"no-store"});
      if(!r.ok)throw new Error("Backup data unavailable");
      payload=await r.json(); lastLoad=new Date(payload.generatedAt||Date.now());
-     q("#message").innerHTML='<div class="note">Using the most recent backup snapshot because direct live refresh failed.</div>';
+     if(!world)q("#message").innerHTML='<div class="note">Using the most recent backup snapshot because direct live refresh failed.</div>';
      render();
    }catch(e2){
-     q("#message").innerHTML='<div class="error">Could not load live or backup wait data.</div>';
+     if(!world)q("#message").innerHTML='<div class="error">Could not load live or backup wait data.</div>';
      q("#updated").textContent="not available";
    }
  }
 }
 document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{
  document.querySelectorAll(".seg button").forEach(x=>x.classList.remove("active"));
- b.classList.add("active");park=b.dataset.park;render();
+ rememberScroll();b.classList.add("active");park=b.dataset.park;saved.park=park;save();restoreScroll=true;render();
 });
 q("#refresh").onclick=load;
 function setLocationUi(state){
@@ -404,7 +486,7 @@ function disableLocation(){
      const best=sortGroup.querySelector('[data-value="best"]'); if(best)best.classList.add("selected");
    }
  }
- render();
+ saveFilters();render();
 }
 function requestLocation(){
  if(userLocation){disableLocation();return;}
@@ -452,7 +534,7 @@ document.querySelectorAll(".chips").forEach(group=>{
        else{selected(key).add(value);btn.classList.add("selected")}
      }
      if(key==="sort" && (value==="nearby" || value==="closest") && !userLocation)requestLocation();
-     updateFilterBadge();render();
+     saveFilters();updateFilterBadge();render();
    };
  });
 });
@@ -461,25 +543,13 @@ q("#clearFilters").onclick=()=>{
  selected("sort").clear();selected("sort").add("best");
  document.querySelectorAll(".chip").forEach(x=>x.classList.remove("selected"));
  document.querySelector('.chips[data-group="sort"] [data-value="best"]').classList.add("selected");
- updateFilterBadge();render();
+ saveFilters();updateFilterBadge();render();
 };
 setInterval(()=>{if(payload)render()},30000);
 setInterval(load,300000);
+if(saved.park==="dca")park="dca";
+document.querySelectorAll(".seg button").forEach(b=>b.classList.toggle("active",b.dataset.park===park));
 load();
-
-
-(() => {
-  const dlr=document.getElementById('dlr-content'),wdw=document.getElementById('disney-world');
-  const buttons=[document.getElementById('resort-dlr'),document.getElementById('resort-wdw')];
-  function selectResort(world){
-    dlr.hidden=world;wdw.hidden=!world;
-    buttons[0].setAttribute('aria-pressed',String(!world));buttons[1].setAttribute('aria-pressed',String(world));
-  }
-  buttons[0].onclick=()=>{selectResort(false);history.replaceState(null,'','#disneyland');};
-  buttons[1].onclick=()=>{selectResort(true);history.replaceState(null,'','#disney-world');};
-  window.addEventListener('hashchange',()=>selectResort(location.hash==='#disney-world'));
-  selectResort(location.hash==='#disney-world');
-})();
 
 (() => {
   const parks = [
@@ -491,43 +561,36 @@ load();
     ['ead53ea5-22e5-4095-9a83-8c29300d7c63', 'Blizzard Beach']
   ];
   const el = id => document.getElementById(id);
-  const park = el('wait-park'), list = el('wait-list'), message = el('wait-message');
-  const cache = new Map(); let controller, visible = false, busy = false, failed = false;
+  const park = el('wait-park'), message = el('wait-message');
+  const cache = new Map(); let controller, busy = false, failed = false;
   parks.forEach(([id,name]) => park.add(new Option(name,id)));
   const time = value => new Date(value).toLocaleTimeString('en-US', {timeZone:'America/New_York',hour:'numeric',minute:'2-digit'});
-  const minutes = r => r.status === 'OPERATING' && Number.isFinite(r.queue?.STANDBY?.waitTime) && r.queue.STANDBY.waitTime >= 0 ? r.queue.STANDBY.waitTime : null;
-  function render() {
-    const entry = cache.get(park.value); list.replaceChildren();
-    if (!entry) return;
-    const stale = Date.now() - entry.fetched > 180000;
-    message.textContent = `${failed || stale ? 'Refresh unavailable. Showing previous data. ' : ''}Checked ${time(entry.fetched)} ET • ${entry.rides.length} attractions. ${stale ? 'Data may be outdated.' : ''}`;
-    const query = el('wait-search').value.trim().toLowerCase();
-    const rides = entry.rides.filter(r => r.name.toLowerCase().includes(query));
-    rides.sort((a,b) => {
-      if(el('wait-sort').value === 'name') return a.name.localeCompare(b.name);
-      const av=minutes(a), bv=minutes(b);
-      if(av === null && bv !== null) return 1;
-      if(bv === null && av !== null) return -1;
-      return (av === null ? 0 : (av-bv)*(el('wait-sort').value === 'longest' ? -1 : 1)) || a.name.localeCompare(b.name);
-    });
-    rides.forEach(r => {
-      const row = document.createElement('div'); row.className='wait-ride';
-      const title = document.createElement('div'), name = document.createElement('strong'); name.textContent=r.name; title.append(name);
-      if(r.lastUpdated && Number.isFinite(Date.parse(r.lastUpdated))) {
-        const note=document.createElement('small'); note.textContent=`Last change ${new Date(r.lastUpdated).toLocaleDateString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric'})}, ${time(r.lastUpdated)} ET`; title.append(note);
-      }
-      const value=document.createElement('span'), wait=minutes(r);
-      value.className='wait-value'+(wait === null ? ' unavailable' : '');
-      value.textContent=wait !== null ? `${wait} min` : ({OPERATING:'No posted wait',DOWN:'Temporarily down',CLOSED:'Closed',REFURBISHMENT:'Refurbishment'}[r.status] || 'Status unavailable');
-      row.append(title,value); list.append(row);
-    });
-    if(!rides.length) { const empty=document.createElement('p'); empty.textContent=entry.rides.length ? 'No matching attractions. Try another search.' : 'No attraction wait data available for this park. Check My Disney Experience for availability.'; list.append(empty); }
+  function displayEntry(){
+    if(!world)return;
+    worldEntry=cache.get(park.value);
+    if(worldEntry){
+      const stale=Date.now()-worldEntry.fetched>180000;
+      message.textContent=(failed||stale?'Showing previous data. ':'')+'Checked '+time(worldEntry.fetched)+' ET.'+(stale?' Data may be outdated.':'');
+    }
+    render();
+  }
+  const locationsLoaded=new Set();
+  async function loadLocations(id){
+    if(locationsLoaded.has(id))return;
+    locationsLoaded.add(id);
+    try{
+      const response=await fetch('https://api.themeparks.wiki/v1/entity/'+id+'/children');
+      if(!response.ok)throw Error();
+      const data=await response.json();
+      for(const child of data.children||[])if(child.location)ENTITY_LOCATIONS[child.id]=child.location;
+      if(world&&park.value===id)render();
+    }catch{locationsLoaded.delete(id)}
   }
   async function refresh(force=false) {
     const id=park.value, existing=cache.get(id);
     if(busy) return;
-    if(!force && existing && Date.now()-existing.fetched<60000) {render();return;}
-    busy=true; failed=false; el('wait-refresh').disabled=true;
+    if(!force && existing && Date.now()-existing.fetched<60000) {displayEntry();return;}
+    loadLocations(id); busy=true; failed=false; el('wait-refresh').disabled=true;
     message.textContent=existing ? 'Refreshing waits…' : 'Loading waits…';
     controller=new AbortController(); const timeout=setTimeout(()=>controller.abort(),12000);
     try {
@@ -535,20 +598,43 @@ load();
       if(!response.ok) throw new Error('Feed unavailable');
       const data=await response.json();
       if(!Array.isArray(data.liveData)) throw new Error('Invalid feed');
-      cache.set(id,{fetched:Date.now(),rides:data.liveData.filter(r=>r.entityType==='ATTRACTION' || r.queue?.STANDBY)});
-      if(park.value===id) render();
+      cache.set(id,{fetched:Date.now(),rides:data.liveData.filter(r=>r.entityType==='ATTRACTION' || r.queue?.STANDBY).map(r=>({...r,world:true}))});
+      if(park.value===id) displayEntry();
     } catch(error) {
-      if(park.value===id) { failed=true; if(existing) render(); else {list.replaceChildren();message.textContent='Could not load waits. Check your connection and tap Refresh waits to retry.';} }
+      if(park.value===id) { failed=true; if(existing) displayEntry(); else {message.textContent='Could not load waits. Check your connection and tap Refresh waits to retry.';} }
     } finally {clearTimeout(timeout);busy=false;el('wait-refresh').disabled=false;if(park.value!==id) refresh();}
   }
-  park.addEventListener('change',()=>{list.replaceChildren();failed=false;message.textContent='Loading waits…';render();if(busy) controller.abort();else refresh();});
-  el('wait-search').addEventListener('input',render);el('wait-sort').addEventListener('change',render);
-  el('wait-refresh').addEventListener('click',()=>refresh(true));
-  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible&&!document.hidden) refresh();}).observe(el('disney-world'));
-  setInterval(()=>{if(visible&&!document.hidden) refresh();},60000);
-  document.addEventListener('visibilitychange',()=>{if(visible&&!document.hidden)refresh();});
+  if(parks.some(([id])=>id===saved.worldPark))park.value=saved.worldPark;
+  el('wait-search').value=typeof saved.search==='string'?saved.search:'';
+  function chooseResort(next){
+    world=next; saved.resort=viewKey();save();restoreScroll=true;
+    el('dlr-content').hidden=world;el('disney-world').hidden=!world;
+    el('world-credit').hidden=!world;el('refresh').hidden=world;el('updated').hidden=world;
+    el('resort-dlr').setAttribute('aria-pressed',String(!world));
+    el('resort-wdw').setAttribute('aria-pressed',String(world));
+    el('message').replaceChildren();restoreFilters();
+    if(!userLocation && geoWatch==null && (groupHas("sort","nearby")||groupHas("sort","closest")))requestLocation();
+    if(world){displayEntry();refresh()}else render();
+  }
+  function navigate(next){
+    rememberScroll();history.replaceState(null,'',next?'#disney-world':'#disneyland');chooseResort(next);
+  }
+  el('resort-dlr').onclick=()=>navigate(false);
+  el('resort-wdw').onclick=()=>navigate(true);
+  function fromHash(){return location.hash==='#disney-world'||(location.hash!=='#disneyland'&&saved.resort==='wdw')}
+  window.addEventListener('hashchange',()=>{rememberScroll();chooseResort(fromHash())});
+  let previousPark=park.value;
+  park.addEventListener('change',()=>{
+    rememberScroll(previousPark);previousPark=park.value;
+    saved.worldPark=park.value;save();restoreScroll=true;failed=false;message.textContent='Loading waits…';displayEntry();
+    if(busy)controller.abort();else refresh();
+  });
+  el('wait-search').addEventListener('input',()=>{saved.search=el('wait-search').value;save();render()});
+  el('wait-refresh').onclick=()=>refresh(true);
+  setInterval(()=>{if(world&&!document.hidden)refresh()},60000);
+  document.addEventListener('visibilitychange',()=>{if(world&&!document.hidden)refresh()});
+  chooseResort(fromHash());
 })();
-
 </script>
 </body>
 </html>
