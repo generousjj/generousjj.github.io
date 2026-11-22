@@ -24,7 +24,7 @@ h1{font-size:27px;letter-spacing:-.6px;margin:3px 0 2px}.sub{font-size:13px;colo
 button.refresh,.locationbtn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:8px 10px;font-weight:700;font-size:12px}.locationbtn{display:inline-flex;align-items:center;gap:5px}.locationbtn.on{border-color:#3f7fb4;background:#12304e}.locationbtn svg{width:15px;height:15px}.distance{color:#b8cbe0}
 footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;margin-top:18px}a{color:var(--accent)}
 
-[hidden]{display:none!important}.resorts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:14px 0}.resorts button{font:700 14px system-ui;padding:12px 8px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--muted)}.resorts button[aria-pressed="true"]{background:#173657;border-color:#4a83b7;color:var(--text)}
+[hidden]{display:none!important}.resorts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:14px 0}.resorts button{font:700 14px system-ui;padding:12px 8px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--muted)}.resorts button[aria-pressed="true"]{background:#173657;border-color:#4a83b7;color:var(--text)}
 #disney-world h2{font-size:23px;margin:18px 0 7px}#disney-world .lead{color:var(--muted);font-size:13px;line-height:1.5}#disney-world .headrow{display:flex;gap:12px;align-items:center;justify-content:space-between}#disney-world .headrow button{flex-shrink:0}
 .wait-controls{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.wait-controls label{display:grid;gap:5px;font-size:12px;font-weight:700;flex:1;min-width:140px;color:var(--muted)}.wait-controls label:first-child{flex-basis:100%}.wait-controls input,.wait-controls select{font:inherit;font-size:16px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);width:100%}.wait-list{display:grid;gap:9px}.wait-ride{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:15px;display:flex;justify-content:space-between;align-items:center;gap:14px}.wait-ride strong{font-size:16px}.wait-value{font-weight:800;font-size:22px;white-space:nowrap;color:var(--good)}.wait-value.unavailable{font-size:12px;color:var(--muted);white-space:normal;text-align:right}.wait-ride small{display:block;font-size:10px;color:var(--muted);margin-top:5px}.wait-message{font-size:12px;line-height:1.5;color:var(--muted)}#wait-refresh:disabled{opacity:.6;cursor:wait}
 </style>
@@ -34,7 +34,7 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 <h1>DLR Best Bet</h1>
 <div class="sub">Popular rides with unusually reasonable waits rise to the top.</div>
 
-<nav class="resorts" aria-label="Resort"><button type="button" id="resort-dlr" aria-pressed="true" aria-controls="dlr-content">Disneyland Resort</button><button type="button" id="resort-wdw" aria-pressed="false" aria-controls="disney-world">Disney World</button></nav><div id="dlr-content">
+<nav class="resorts" aria-label="Resort"><button type="button" id="resort-dlr" aria-pressed="true" aria-controls="dlr-content">Disneyland Resort</button><button type="button" id="resort-wdw" aria-pressed="false" aria-controls="disney-world">Disney World</button><button type="button" id="resort-epic" aria-pressed="false" aria-controls="disney-world">Epic Universe</button></nav><div id="dlr-content">
 <div class="seg">
 <button class="active" data-park="dl">Disneyland</button>
 <button data-park="dca">DCA</button>
@@ -165,7 +165,7 @@ footer{color:var(--muted);font-size:11px;line-height:1.45;text-align:center;marg
 Best Bet favors popular attractions with shorter waits. Best nearby adds straight-line proximity from your phone. Tap Filters to combine preferences such as Indoor + Mixed.
 </div>
 
-<p id="world-credit" class="wait-message" style="margin-top:16px">Posted waits can change. Missing waits are never treated as zero. All times Eastern. <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">Powered by ThemeParks.wiki</a> · <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/mobile-apps/" target="_blank" rel="noopener">My Disney Experience</a></p><noscript>Enable JavaScript to load live waits.</noscript>
+<p id="world-credit" class="wait-message" style="margin-top:16px">Posted waits can change. Missing waits are never treated as zero. All times Eastern. <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">Powered by ThemeParks.wiki</a> <span>· <a href="https://disneyworld.disney.go.com/plan/my-disney-experience/mobile-apps/" target="_blank" rel="noopener">My Disney Experience</a></span></p><noscript>Enable JavaScript to load live waits.</noscript>
 <footer>
 Live data from <a href="https://www.themeparks.wiki/" target="_blank" rel="noopener">ThemeParks.wiki</a>.
 Unofficial and not affiliated with Disney.
@@ -224,6 +224,15 @@ profile("journey of water",3.5,"outdoor","low");
 profile("summit plummet|slush gusher|crush 'n' gusher|miss adventure falls|humunga kowabunga",4.4,"outdoor","high");
 profile("teamboat springs|runoff rapids|toboggan racers|snow stormers|downhill double dipper|gangplank falls|keelhaul falls|mayday falls|storm slides",3.8,"outdoor","moderate");
 profile("castaway creek|cross country creek|melt-away bay|ketchakiddee creek|tike's peak",3.3,"outdoor","low");
+profile("mine-cart madness",5,"mixed","moderate");
+profile("harry potter and the battle at the ministry",5,"indoor","moderate");
+profile("stardust racers",4.8,"outdoor","high");
+profile("monsters unchained",4.8,"indoor","high");
+profile("mario kart",4.7,"indoor","moderate");
+profile("hiccup's wing gliders|curse of the werewolf",4.3,"outdoor","moderate");
+profile("dragon racer's rally",3.6,"outdoor","high");
+profile("yoshi's adventure",3.8,"mixed","low");
+profile("fyre drill|constellation carousel",3.4,"outdoor","low");
 function worldProfile(x){
  const n=String(x.name||"").toLowerCase().replace(/[‘’]/g,"'").replace(/[™®"]/g,"").trim();
  if(WORLD_PROFILES.has(n))return WORLD_PROFILES.get(n);
@@ -244,9 +253,9 @@ const q=s=>document.querySelector(s);
 const storageKey="dlr-best-bet.view.v1";
 let saved={};
 try { const data=JSON.parse(localStorage.getItem(storageKey)); if(data && typeof data==="object")saved=data; } catch {}
-let world=false, worldEntry=null, restoreScroll=true;
+let resort="dlr", world=false, worldEntry=null, restoreScroll=true;
 function save(){try{localStorage.setItem(storageKey,JSON.stringify(saved))}catch{}}
-function viewKey(){return world?"wdw":"dlr"}
+function viewKey(){return resort}
 function parkView(){return world?q("#wait-park").value:park}
 function rememberScroll(key=parkView()){
  if(restoreScroll)return;
@@ -562,8 +571,11 @@ load();
   ];
   const el = id => document.getElementById(id);
   const park = el('wait-park'), message = el('wait-message');
-  const cache = new Map(); let controller, busy = false, failed = false;
-  parks.forEach(([id,name]) => park.add(new Option(name,id)));
+  const cache = new Map(); let controller, switched, pendingPark, busy = false, failed = false;
+  const epicPark = ['12dbb85b-265f-44e6-bccf-f1faa17211fc', 'Universal Epic Universe'];
+  const hashes = {dlr:'#disneyland', wdw:'#disney-world', epic:'#epic-universe'};
+  const disneyLead = el('disney-world').querySelector('.lead').textContent;
+  let previousPark;
   const time = value => new Date(value).toLocaleTimeString('en-US', {timeZone:'America/New_York',hour:'numeric',minute:'2-digit'});
   function displayEntry(){
     if(!world)return;
@@ -590,7 +602,7 @@ load();
     const id=park.value, existing=cache.get(id);
     if(busy) return;
     if(!force && existing && Date.now()-existing.fetched<60000) {displayEntry();return;}
-    loadLocations(id); busy=true; failed=false; el('wait-refresh').disabled=true;
+    loadLocations(id); pendingPark=id; switched=false; busy=true; failed=false; el('wait-refresh').disabled=true;
     message.textContent=existing ? 'Refreshing waits…' : 'Loading waits…';
     controller=new AbortController(); const timeout=setTimeout(()=>controller.abort(),12000);
     try {
@@ -601,35 +613,48 @@ load();
       cache.set(id,{fetched:Date.now(),rides:data.liveData.filter(r=>r.entityType==='ATTRACTION' || r.queue?.STANDBY).map(r=>({...r,world:true}))});
       if(park.value===id) displayEntry();
     } catch(error) {
-      if(park.value===id) { failed=true; if(existing) displayEntry(); else {message.textContent='Could not load waits. Check your connection and tap Refresh waits to retry.';} }
-    } finally {clearTimeout(timeout);busy=false;el('wait-refresh').disabled=false;if(park.value!==id) refresh();}
+      if(world && park.value===id && !switched) { failed=true; if(existing) displayEntry(); else {message.textContent='Could not load waits. Check your connection and tap Refresh waits to retry.';} }
+    } finally {clearTimeout(timeout);busy=false;el('wait-refresh').disabled=false;if(world && (park.value!==id || (controller.signal.aborted && switched))) refresh();}
   }
-  if(parks.some(([id])=>id===saved.worldPark))park.value=saved.worldPark;
-  el('wait-search').value=typeof saved.search==='string'?saved.search:'';
   function chooseResort(next){
-    world=next; saved.resort=viewKey();save();restoreScroll=true;
+    resort=next; world=next!=='dlr'; saved.resort=next;save();restoreScroll=true;
+    const epic=next==='epic';
+    if(world){
+      const options=epic?[epicPark]:parks;
+      park.replaceChildren(...options.map(([id,name])=>new Option(name,id)));
+      if(!epic && parks.some(([id])=>id===saved.worldPark))park.value=saved.worldPark;
+      previousPark=park.value;
+      park.parentElement.hidden=epic;
+      el('wait-title').textContent=epic?'Universal Epic Universe waits':'Disney World waits';
+      el('disney-world').querySelector('.lead').textContent=epic?'Posted standby waits refresh every minute while this tab is open.':disneyLead;
+      el('wait-search').value=(epic?saved.epicSearch:saved.search)||'';
+      el('world-credit').lastElementChild.hidden=epic;
+      failed=false;message.textContent='Loading waits…';
+    }
     el('dlr-content').hidden=world;el('disney-world').hidden=!world;
     el('world-credit').hidden=!world;el('refresh').hidden=world;el('updated').hidden=world;
     el('resort-dlr').setAttribute('aria-pressed',String(!world));
-    el('resort-wdw').setAttribute('aria-pressed',String(world));
+    el('resort-wdw').setAttribute('aria-pressed',String(next==='wdw'));
+    el('resort-epic').setAttribute('aria-pressed',String(epic));
     el('message').replaceChildren();restoreFilters();
     if(!userLocation && geoWatch==null && (groupHas("sort","nearby")||groupHas("sort","closest")))requestLocation();
+    if(busy && (!world || pendingPark!==park.value)){switched=true;controller.abort();}
     if(world){displayEntry();refresh()}else render();
   }
   function navigate(next){
-    rememberScroll();history.replaceState(null,'',next?'#disney-world':'#disneyland');chooseResort(next);
+    rememberScroll();history.replaceState(null,'',hashes[next]);chooseResort(next);
   }
-  el('resort-dlr').onclick=()=>navigate(false);
-  el('resort-wdw').onclick=()=>navigate(true);
-  function fromHash(){return location.hash==='#disney-world'||(location.hash!=='#disneyland'&&saved.resort==='wdw')}
+  el('resort-dlr').onclick=()=>navigate('dlr');
+  el('resort-wdw').onclick=()=>navigate('wdw');
+  el('resort-epic').onclick=()=>navigate('epic');
+  function fromHash(){return Object.keys(hashes).find(key=>hashes[key]===location.hash) || (Object.hasOwn(hashes,saved.resort)?saved.resort:'dlr')}
   window.addEventListener('hashchange',()=>{rememberScroll();chooseResort(fromHash())});
-  let previousPark=park.value;
   park.addEventListener('change',()=>{
     rememberScroll(previousPark);previousPark=park.value;
     saved.worldPark=park.value;save();restoreScroll=true;failed=false;message.textContent='Loading waits…';displayEntry();
-    if(busy)controller.abort();else refresh();
+    if(busy){switched=true;controller.abort();}else refresh();
   });
-  el('wait-search').addEventListener('input',()=>{saved.search=el('wait-search').value;save();render()});
+  el('wait-search').addEventListener('input',()=>{saved[resort==='epic'?'epicSearch':'search']=el('wait-search').value;save();render()});
   el('wait-refresh').onclick=()=>refresh(true);
   setInterval(()=>{if(world&&!document.hidden)refresh()},60000);
   document.addEventListener('visibilitychange',()=>{if(world&&!document.hidden)refresh()});
